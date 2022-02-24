@@ -3,7 +3,6 @@ package com.ml.primerainfanciarest.entities;
 import javax.persistence.*;
 import java.util.Objects;
 
-@Table(name = "imageGallery")
 @Entity
 public class ImageGallery {
     private int id;
