@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/podcast")
+@CrossOrigin
 public class PodcastController {
 
     @Autowired

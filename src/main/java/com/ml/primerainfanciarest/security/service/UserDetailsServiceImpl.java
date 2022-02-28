@@ -1,9 +1,9 @@
-package com.ml.primerainfanciarest.services;
+package com.ml.primerainfanciarest.security.service;
 
 import com.ml.primerainfanciarest.entities.UserPi;
-import com.ml.primerainfanciarest.repositories.UserRepository;
+import com.ml.primerainfanciarest.security.models.UserPrincipal;
+import com.ml.primerainfanciarest.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -13,20 +13,20 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.ArrayList;
-import java.util.List;
 
-@Service("userService")
-@Transactional
-public class UserService{
+@Service
+public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Autowired
-    @Qualifier("UserRepository")
-    private UserRepository repository;
+    UserService service;
 
-    public UserPi getByUserName(String username) {
-        return this.repository.findByUsername(username);
+
+    @Override
+    @Transactional
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        UserPi user = this.service.getByUserName(username);
+
+        return UserPrincipal.build(user);
     }
-
-
 
 }
