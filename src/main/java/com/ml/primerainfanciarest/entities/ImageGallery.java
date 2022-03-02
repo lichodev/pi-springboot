@@ -6,13 +6,14 @@ import java.util.Objects;
 @Entity
 public class ImageGallery {
     private int id;
-    private String image;
+    @Column(name = "image", length = 1000)
+    private byte[] image;
     private String description;
 
     public ImageGallery() {
     }
 
-    public ImageGallery(String image, String description) {
+    public ImageGallery(byte[] image, String description) {
         this.image = image;
         this.description = description;
     }
@@ -28,12 +29,12 @@ public class ImageGallery {
     }
 
     @Basic
-    @Column(name = "image")
-    public String getImage() {
+    @Column(name = "image", length = 1000)
+    public byte[] getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(byte[] image) {
         this.image = image;
     }
 

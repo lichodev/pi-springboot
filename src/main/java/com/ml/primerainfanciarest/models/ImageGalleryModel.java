@@ -4,7 +4,7 @@ import com.ml.primerainfanciarest.entities.ImageGallery;
 
 public class ImageGalleryModel {
     private int id;
-    private String image;
+    private byte[] image;
     private String description;
 
     public ImageGalleryModel(ImageGallery imageGallery) {
@@ -13,7 +13,7 @@ public class ImageGalleryModel {
         this.description = imageGallery.getDescription();
     }
 
-    public ImageGalleryModel(String image, String description) {
+    public ImageGalleryModel(byte[] image, String description) {
         this.image = image;
         this.description = description;
     }
@@ -26,11 +26,11 @@ public class ImageGalleryModel {
         this.id = id;
     }
 
-    public String getImage() {
+    public byte[] getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(byte[] image) {
         this.image = image;
     }
 

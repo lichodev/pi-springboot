@@ -48,6 +48,7 @@ public class JwtProvider {
             logger.error("expired token");
         } catch (IllegalArgumentException e) {
             logger.error("empty token");
+            logger.error(token);
         } catch (SignatureException e) {
             logger.error("failed sign");
         }
