@@ -5,7 +5,7 @@ import com.ml.primerainfanciarest.entities.Workshop;
 public class WorkshopModel {
     private int id;
     private String title;
-    private String video;
+    private byte[] video;
 
     public WorkshopModel(Workshop workshop) {
         this.id = workshop.getId();
@@ -13,7 +13,7 @@ public class WorkshopModel {
         this.video = workshop.getVideo();
     }
 
-    public WorkshopModel(String title, String video) {
+    public WorkshopModel(String title, byte[] video) {
         this.title = title;
         this.video = video;
     }
@@ -34,11 +34,11 @@ public class WorkshopModel {
         this.title = title;
     }
 
-    public String getVideo() {
+    public byte[] getVideo() {
         return video;
     }
 
-    public void setVideo(String video) {
+    public void setVideo(byte[] video) {
         this.video = video;
     }
 }

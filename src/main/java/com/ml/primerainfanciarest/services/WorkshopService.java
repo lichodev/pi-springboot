@@ -28,4 +28,13 @@ public class WorkshopService {
         }
         return workshops;
     }
+
+    public boolean post(Workshop workshop) {
+        try {
+            this.repository.save(workshop);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
 }

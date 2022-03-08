@@ -2,6 +2,7 @@ package com.ml.primerainfanciarest.services;
 
 import com.ml.primerainfanciarest.converters.TipConverter;
 import com.ml.primerainfanciarest.entities.Tip;
+import com.ml.primerainfanciarest.helpers.FileHelper;
 import com.ml.primerainfanciarest.models.TipModel;
 import com.ml.primerainfanciarest.repositories.TipRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,7 @@ public class TipService {
     @Qualifier("TipConverter")
     private TipConverter converter;
 
-    public boolean save(Tip tip) {
+    public boolean post(Tip tip) {
         try {
             repository.save(tip);
             return true;
@@ -34,13 +35,16 @@ public class TipService {
         List<Tip> tips = repository.findAll();
         ArrayList<TipModel> tipsModels = new ArrayList<>();
         for (Tip tip: tips) {
+            tip.setImage(FileHelper.decompressBytes(tip.getImage()));
             tipsModels.add(converter.convert(tip));
         }
         return tipsModels;
     }
 
     public TipModel getById(int id) {
-        return converter.convert(repository.findById(id));
+        TipModel tip = converter.convert(repository.findById(id));
+        tip.setImage(FileHelper.decompressBytes(tip.getImage()));
+        return tip;
     }
 
     public boolean put(int id, int value) {

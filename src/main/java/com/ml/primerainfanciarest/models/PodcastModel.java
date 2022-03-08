@@ -5,8 +5,8 @@ import com.ml.primerainfanciarest.entities.Podcast;
 public class PodcastModel {
     private int id;
     private String title;
-    private String audio;
-    private String image;
+    private byte[] audio;
+    private byte[] image;
 
     public PodcastModel(Podcast podcast) {
         this.id = podcast.getId();
@@ -15,7 +15,7 @@ public class PodcastModel {
         this.image = podcast.getImage();
     }
 
-    public PodcastModel(String title, String audio, String image) {
+    public PodcastModel(String title, byte[] audio, byte[] image) {
         this.title = title;
         this.audio = audio;
         this.image = image;
@@ -37,19 +37,19 @@ public class PodcastModel {
         this.title = title;
     }
 
-    public String getAudio() {
+    public byte[] getAudio() {
         return audio;
     }
 
-    public void setAudio(String audio) {
+    public void setAudio(byte[] audio) {
         this.audio = audio;
     }
 
-    public String getImage() {
+    public byte[] getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(byte[] image) {
         this.image = image;
     }
 }

@@ -2,7 +2,10 @@ package com.ml.primerainfanciarest.services;
 
 import com.ml.primerainfanciarest.converters.ExperienceConverter;
 import com.ml.primerainfanciarest.entities.Experience;
+import com.ml.primerainfanciarest.entities.Reminder;
+import com.ml.primerainfanciarest.helpers.FileHelper;
 import com.ml.primerainfanciarest.models.ExperienceModel;
+import com.ml.primerainfanciarest.models.ReminderModel;
 import com.ml.primerainfanciarest.repositories.ExperienceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -24,15 +27,16 @@ public class ExperienceService {
     private ExperienceConverter converter;
 
     public List<ExperienceModel> getByStatus(boolean status) {
-        List<Experience> experiences = this.repository.findAllByStatus(status);
-        ArrayList<ExperienceModel> experiencesModel = new ArrayList<>();
-        for (Experience e: experiences) {
-            experiencesModel.add(this.converter.convert(e));
+        List<ExperienceModel> experiences = new ArrayList<>();
+        for (Experience e: this.repository.findAllByStatus(status)) {
+            if (e.getImage() != null)
+                e.setImage(FileHelper.decompressBytes(e.getImage()));
+            experiences.add(this.converter.convert(e));
         }
-        return experiencesModel;
+        return experiences;
     }
 
-    public boolean save(Experience experience) {
+    public boolean post(Experience experience) {
         try {
             repository.save(experience);
             return true;

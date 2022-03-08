@@ -7,7 +7,7 @@ public class TipModel {
     private int id;
     private String title;
     private String text;
-    private String image;
+    private byte[] image;
     private int likes;
     private int dislikes;
 
@@ -20,7 +20,7 @@ public class TipModel {
         this.dislikes = tip.getDislikes();
     }
 
-    public TipModel(String title, String text, String image, int likes, int dislikes) {
+    public TipModel(String title, String text, byte[] image, int likes, int dislikes) {
         this.title = title;
         this.text = text;
         this.image = image;
@@ -52,11 +52,11 @@ public class TipModel {
         this.text = text;
     }
 
-    public String getImage() {
+    public byte[] getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(byte[] image) {
         this.image = image;
     }
 

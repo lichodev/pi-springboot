@@ -5,7 +5,7 @@ import com.ml.primerainfanciarest.entities.Experience;
 public class ExperienceModel {
     private int id;
     private String text;
-    private String image;
+    private byte[] image;
     private boolean status;
 
     public ExperienceModel(Experience experience) {
@@ -15,7 +15,7 @@ public class ExperienceModel {
         this.status = experience.getStatus();
     }
 
-    public ExperienceModel(String text, String image, boolean status) {
+    public ExperienceModel(String text, byte[] image, boolean status) {
         this.text = text;
         this.image = image;
         this.status = status;
@@ -37,11 +37,11 @@ public class ExperienceModel {
         this.text = text;
     }
 
-    public String getImage() {
+    public byte[] getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(byte[] image) {
         this.image = image;
     }
 

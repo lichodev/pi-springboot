@@ -2,7 +2,10 @@ package com.ml.primerainfanciarest.services;
 
 import com.ml.primerainfanciarest.converters.PodcastConverter;
 import com.ml.primerainfanciarest.entities.Podcast;
+import com.ml.primerainfanciarest.entities.Reminder;
+import com.ml.primerainfanciarest.helpers.FileHelper;
 import com.ml.primerainfanciarest.models.PodcastModel;
+import com.ml.primerainfanciarest.models.ReminderModel;
 import com.ml.primerainfanciarest.repositories.PodcastRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -25,14 +28,15 @@ public class PodcastService {
     private PodcastConverter converter;
 
     public List<PodcastModel> get() {
-        ArrayList<PodcastModel> podcasts = new ArrayList<>();
+        List<PodcastModel> podcasts = new ArrayList<>();
         for (Podcast p : this.repository.findAll()) {
+            p.setImage(FileHelper.decompressBytes(p.getImage()));
             podcasts.add(this.converter.convert(p));
         }
         return podcasts;
     }
 
-    public boolean save(Podcast podcast) {
+    public boolean post(Podcast podcast) {
         try {
             this.repository.save(podcast);
             return true;

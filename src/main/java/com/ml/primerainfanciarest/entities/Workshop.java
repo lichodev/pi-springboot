@@ -10,13 +10,12 @@ import java.util.Objects;
 public class Workshop {
     private int id;
     private String title;
-    private String video;
+    private byte[] video;
 
     public Workshop() {
     }
 
-    public Workshop(int id, String title, String video) {
-        this.id = id;
+    public Workshop(String title, byte[] video) {
         this.title = title;
         this.video = video;
     }
@@ -43,11 +42,11 @@ public class Workshop {
 
     @Basic
     @Column(name = "video")
-    public String getVideo() {
+    public byte[] getVideo() {
         return video;
     }
 
-    public void setVideo(String video) {
+    public void setVideo(byte[] video) {
         this.video = video;
     }
 

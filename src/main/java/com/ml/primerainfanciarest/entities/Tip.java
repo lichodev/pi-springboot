@@ -11,14 +11,14 @@ public class Tip {
     private int id;
     private String title;
     private String text;
-    private String image;
+    private byte[] image;
     private int likes;
     private int dislikes;
 
     public Tip() {
     }
 
-    public Tip(String title, String text, String image, int likes, int dislikes) {
+    public Tip(String title, String text, byte[] image, int likes, int dislikes) {
         this.title = title;
         this.text = text;
         this.image = image;
@@ -58,11 +58,11 @@ public class Tip {
 
     @Basic
     @Column(name = "image")
-    public String getImage() {
+    public byte[] getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(byte[] image) {
         this.image = image;
     }
 

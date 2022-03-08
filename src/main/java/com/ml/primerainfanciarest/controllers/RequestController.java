@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/requests")
+@CrossOrigin
 public class RequestController {
     @Autowired
     @Qualifier("RequestService")
@@ -19,7 +20,6 @@ public class RequestController {
 
     @GetMapping
     public List<RequestModel> get() {
-        //TODO: verificar login
         return this.service.get();
     }
 
@@ -30,7 +30,6 @@ public class RequestController {
 
     @PutMapping(value = "{id}")
     public boolean put(@PathVariable ("id") int id) {
-        //TODO: verificar login
         return this.service.checkRelpied(id);
     }
 }

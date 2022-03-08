@@ -10,13 +10,13 @@ import java.util.Objects;
 public class Podcast {
     private int id;
     private String title;
-    private String audio;
-    private String image;
+    private byte[] audio;
+    private byte[] image;
 
     public Podcast() {
     }
 
-    public Podcast(String title, String audio, String image) {
+    public Podcast(String title, byte[] audio, byte[] image) {
         this.title = title;
         this.audio = audio;
         this.image = image;
@@ -44,21 +44,21 @@ public class Podcast {
 
     @Basic
     @Column(name = "audio")
-    public String getAudio() {
+    public byte[] getAudio() {
         return audio;
     }
 
-    public void setAudio(String audio) {
+    public void setAudio(byte[] audio) {
         this.audio = audio;
     }
 
     @Basic
     @Column(name = "image")
-    public String getImage() {
+    public byte[] getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(byte[] image) {
         this.image = image;
     }
 

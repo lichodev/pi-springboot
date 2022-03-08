@@ -12,6 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/questions")
+@CrossOrigin
 public class QuestionController {
     @Autowired
     @Qualifier("QuestionService")
@@ -19,7 +20,6 @@ public class QuestionController {
 
     @GetMapping
     public List<QuestionModel> get() {
-        //TODO: verificar login
         return this.service.get();
     }
 

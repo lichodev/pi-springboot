@@ -10,13 +10,13 @@ import java.util.Objects;
 public class Experience {
     private int id;
     private String text;
-    private String image;
+    private byte[] image;
     private boolean status;
 
     public Experience() {
     }
 
-    public Experience(String text, String image, boolean status) {
+    public Experience(String text, byte[] image, boolean status) {
         this.text = text;
         this.image = image;
         this.status = status;
@@ -44,11 +44,11 @@ public class Experience {
 
     @Basic
     @Column(name = "image")
-    public String getImage() {
+    public byte[] getImage() {
         return image;
     }
 
-    public void setImage(String image) {
+    public void setImage(byte[] image) {
         this.image = image;
     }
 
