@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.util.List;
 
 @Service("DailyTipService")
 public class DailyTipService {
@@ -34,7 +35,7 @@ public class DailyTipService {
             if (this.repository.countAll() == tipQuantity) {
                 this.repository.emptyTable();
             }
-            tipId = this.getRandomTipId(tipQuantity);
+            tipId = this.getRandomTipId();
             this.post(new DailyTip(today, tipId));
         } else
             tipId = dailyTip.getTipId();
@@ -42,18 +43,9 @@ public class DailyTipService {
         return this.tipService.getById(tipId);
     }
 
-    private int getRandomTipId(int tipQuatity) {
-        int tipId = 0;
-        while (this.isSavedTip(tipId)) {
-            tipId = (int) (Math.random()*tipQuatity+1);
-        }   //I'll get tip-id when it isn't saved it daily-tip table
-        return tipId;
-    }
-
-    public boolean isSavedTip(int tipId) {
-        if (tipId == 0) return true;
-        DailyTip dailyTip = this.repository.getByTipId(tipId);
-        return dailyTip != null;
+    private int getRandomTipId() {
+        List<Integer> tips= this.tipService.getNotSelected();
+        return (int) (Math.random()*tips.size()+1);
     }
 
     public boolean post(DailyTip dailyTip) {

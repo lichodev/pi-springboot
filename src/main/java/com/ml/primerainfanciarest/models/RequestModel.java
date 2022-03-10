@@ -2,7 +2,7 @@ package com.ml.primerainfanciarest.models;
 
 import com.ml.primerainfanciarest.entities.Request;
 
-public class RequestModel {
+public class RequestModel implements Comparable{
     private int id;
     private String name;
     private String lastname;
@@ -95,5 +95,13 @@ public class RequestModel {
 
     public void setReplied(boolean replied) {
         this.replied = replied;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        RequestModel r = (RequestModel) o;
+        if (this.replied && !r.replied) return 1;
+        if (!this.replied && r.replied) return -1;
+        return 0;
     }
 }

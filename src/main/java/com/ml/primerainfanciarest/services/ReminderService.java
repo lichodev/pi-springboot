@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Service("ReminderService")
@@ -30,6 +31,7 @@ public class ReminderService {
             r.setImage(FileHelper.decompressBytes(r.getImage()));
             reminders.add(this.converter.convert(r));
         }
+        Collections.sort(reminders);
         return reminders;
     }
 

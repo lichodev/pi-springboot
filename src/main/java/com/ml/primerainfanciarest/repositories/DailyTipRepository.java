@@ -19,4 +19,6 @@ public interface DailyTipRepository extends JpaRepository<DailyTip, Serializable
 
     @Query("DELETE FROM DailyTip")
     public abstract void emptyTable();
+
+
 }

@@ -2,7 +2,7 @@ package com.ml.primerainfanciarest.models;
 
 import com.ml.primerainfanciarest.entities.Question;
 
-public class QuestionModel {
+public class QuestionModel implements Comparable{
     private int id;
     private String name;
     private String lastname;
@@ -84,5 +84,13 @@ public class QuestionModel {
 
     public void setReplied(boolean replied) {
         this.replied = replied;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        QuestionModel q = (QuestionModel) o;
+        if (this.replied && !q.replied) return 1;
+        if (!this.replied && q.replied) return -1;
+        return 0;
     }
 }

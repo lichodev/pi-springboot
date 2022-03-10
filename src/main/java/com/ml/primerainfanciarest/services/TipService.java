@@ -68,4 +68,8 @@ public class TipService {
     public int getQuantity() {
         return this.repository.countAll();
     }
+
+    public List<Integer> getNotSelected() {
+        return this.repository.findAllNotSelected();
+    }
 }

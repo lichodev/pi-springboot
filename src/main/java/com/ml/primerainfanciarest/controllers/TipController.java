@@ -53,4 +53,5 @@ public class TipController {
     public boolean put(@PathVariable("id") int id, @RequestBody int value) {
         return this.service.put(id, value);
     }
+
 }

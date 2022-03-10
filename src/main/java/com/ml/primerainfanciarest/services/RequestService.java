@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Service("RequestService")
@@ -26,6 +27,7 @@ public class RequestService {
         for (Request r: this.repository.findAll()) {
             requests.add(this.converter.convert(r));
         }
+        Collections.sort(requests);
         return requests;
     }
 

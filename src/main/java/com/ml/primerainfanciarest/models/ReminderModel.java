@@ -2,7 +2,7 @@ package com.ml.primerainfanciarest.models;
 
 import com.ml.primerainfanciarest.entities.Reminder;
 
-public class ReminderModel {
+public class ReminderModel implements Comparable{
     private int id;
     private int since;
     private int until;
@@ -73,5 +73,13 @@ public class ReminderModel {
 
     public void setDislikes(int dislikes) {
         this.dislikes = dislikes;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        ReminderModel r = (ReminderModel) o;
+        int result = this.since - r.since;
+        if (result == 0) return this.until - r.until;
+        return result;
     }
 }

@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 @Service("QuestionService")
@@ -25,8 +27,10 @@ public class QuestionService {
         for (Question q : this.repository.findAll()) {
             questions.add(this.converter.convert(q));
         }
+        Collections.sort(questions);
         return questions;
     }
+
 
     public boolean post(Question question) {
         try {
