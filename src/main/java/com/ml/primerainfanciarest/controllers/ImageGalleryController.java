@@ -35,6 +35,11 @@ public class ImageGalleryController {
         return images;
     }
 
+    @GetMapping(value = "/{id}")
+    public ImageGalleryModel getById(@PathVariable ("id") int id) {
+        return this.service.getById(id);
+    }
+
         @PostMapping()
         public boolean post(@RequestParam("description") String description, @RequestParam("file") MultipartFile image) {
             if (image.isEmpty()) return false;

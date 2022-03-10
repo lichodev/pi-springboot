@@ -35,7 +35,9 @@ public class ReminderService {
 
     public ReminderModel getById(int id) {
         try {
-            return this.converter.convert(this.repository.findById(id));
+            Reminder reminder = this.repository.findById(id);
+            reminder.setImage(FileHelper.decompressBytes(reminder.getImage()));
+            return this.converter.convert(reminder);
         } catch (Exception e) {
             return null;
         }

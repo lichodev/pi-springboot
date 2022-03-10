@@ -2,6 +2,7 @@ package com.ml.primerainfanciarest.services;
 
 import com.ml.primerainfanciarest.converters.ImageGalleryConverter;
 import com.ml.primerainfanciarest.entities.ImageGallery;
+import com.ml.primerainfanciarest.helpers.FileHelper;
 import com.ml.primerainfanciarest.models.ImageGalleryModel;
 import com.ml.primerainfanciarest.repositories.ImageGalleryRepository;
 import org.apache.catalina.LifecycleState;
@@ -28,6 +29,12 @@ public class ImageGalleryService {
             images.add(this.converter.convert(i));
         }
         return images;
+    }
+
+    public ImageGalleryModel getById(int id) {
+        ImageGallery ig = this.repository.getById(id);
+        ig.setImage(FileHelper.decompressBytes(ig.getImage()));
+        return this.converter.convert(ig);
     }
 
     public boolean post(ImageGallery imageGallery) {

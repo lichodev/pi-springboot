@@ -64,4 +64,8 @@ public class TipService {
         }
         return false;
     }
+
+    public int getQuantity() {
+        return this.repository.countAll();
+    }
 }

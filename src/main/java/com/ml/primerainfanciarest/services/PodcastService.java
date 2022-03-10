@@ -31,6 +31,7 @@ public class PodcastService {
         List<PodcastModel> podcasts = new ArrayList<>();
         for (Podcast p : this.repository.findAll()) {
             p.setImage(FileHelper.decompressBytes(p.getImage()));
+            p.setAudio(FileHelper.decompressBytes(p.getAudio()));
             podcasts.add(this.converter.convert(p));
         }
         return podcasts;
