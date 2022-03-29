@@ -6,6 +6,13 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.Objects;
 
+/**
+ * Entidad que representa la tabla 'question'
+ * Posee un id, datos del usuario que realizó la pregunta
+ * (nombre, apellido, e-mail y teléfono),
+ * el texto que representa la pregunta en sí,
+ * y un booleano que indica si ya fue respondida
+ */
 @Entity
 public class Question {
     private int id;

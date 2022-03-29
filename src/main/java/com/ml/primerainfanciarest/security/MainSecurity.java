@@ -56,12 +56,18 @@ public class MainSecurity extends WebSecurityConfigurerAdapter {
         return super.authenticationManager();
     }
 
+    /**
+     * Se configuran los endpoints accesibles por todos los usuarios,
+     * los que no se encuentran listados, necesitan una autenticación mediante token
+     * @param http
+     * @throws Exception
+     */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.cors().and().csrf().disable()
                 .authorizeRequests()
                 .antMatchers("/auth/**").permitAll()
-                .antMatchers(HttpMethod.GET, "/experiences", "/gallery/**", "/podcast", "/reminder/**", "/tips/**", "/workshops", "/daily-tip/**").permitAll()
+                .antMatchers(HttpMethod.GET, "/experiences", "/gallery/**", "/podcast", "/reminder/**", "/tips/**", "/workshops", "/daily-tip/**", "/response").permitAll()
                 .antMatchers(HttpMethod.POST, "/experiences", "/questions", "/requests", "/login", "/workshops").permitAll()
                 .antMatchers(HttpMethod.PUT, "/tips/**", "/reminder/**").permitAll()
                 .anyRequest().authenticated()

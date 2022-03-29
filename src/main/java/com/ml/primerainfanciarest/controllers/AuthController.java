@@ -17,23 +17,33 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * Clase accesible con el path "/auth"
+ */
 @RestController
 @RequestMapping("/auth")
 @CrossOrigin
 public class AuthController {
 
     @Autowired
-    PasswordEncoder passwordEncoder;
+    private PasswordEncoder passwordEncoder;
 
     @Autowired
-    AuthenticationManager authenticationManager;
+    private AuthenticationManager authenticationManager;
 
     @Autowired
-    UserService service;
+    private UserService service;
 
     @Autowired
-    JwtProvider jwtProvider;
+    private JwtProvider jwtProvider;
 
+    /**
+     * Inicia la sesión del usuario si coinciden usuario y contraseña
+     * Se accede mediante método POST
+     * @param user
+     * @param bindingResult
+     * @return
+     */
     @PostMapping("/login")
     public ResponseEntity<JwtResponse> login(@RequestBody @Validated UserPi user, BindingResult bindingResult) {
         if (bindingResult.hasErrors())

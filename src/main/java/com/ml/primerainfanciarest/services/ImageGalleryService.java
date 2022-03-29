@@ -17,12 +17,16 @@ import java.util.List;
 public class ImageGalleryService {
     @Autowired
     @Qualifier("ImageGalleryRepository")
-    ImageGalleryRepository repository;
+    private ImageGalleryRepository repository;
 
     @Autowired
     @Qualifier("ImageGalleryConverter")
-    ImageGalleryConverter converter;
+    private ImageGalleryConverter converter;
 
+    /**
+     * Obtiene el listado de imágenes
+     * @return
+     */
     public List<ImageGalleryModel> get() {
         List<ImageGalleryModel> images = new ArrayList<>();
         for (ImageGallery i : this.repository.findAll()) {
@@ -31,12 +35,22 @@ public class ImageGalleryService {
         return images;
     }
 
+    /**
+     * Obtiene una imagen coincidente con el id recibido por parámetro
+     * @param id
+     * @return
+     */
     public ImageGalleryModel getById(int id) {
         ImageGallery ig = this.repository.getById(id);
         ig.setImage(FileHelper.decompressBytes(ig.getImage()));
         return this.converter.convert(ig);
     }
 
+    /**
+     * Guarda la imagen en la BDD
+     * @param imageGallery
+     * @return
+     */
     public boolean post(ImageGallery imageGallery) {
         try {
             this.repository.save(imageGallery);

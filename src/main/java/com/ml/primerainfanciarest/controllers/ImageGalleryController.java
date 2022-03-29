@@ -16,6 +16,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
+/**
+ * Controlador accesible con el path "/gallery"
+ * Controla todas las peticiones que respectan a la tabla 'image_gallery'
+ */
 @RestController
 @RequestMapping("/gallery")
 @CrossOrigin
@@ -25,6 +29,11 @@ public class ImageGalleryController {
     @Qualifier("ImageGalleryService")
     private ImageGalleryService service;
 
+    /**
+     * Obtiene el listado de todas las imágenes de la gallería
+     * Se accede con el método GET
+     * @return
+     */
     @GetMapping
     public List<ImageGalleryModel> get() {
         List<ImageGalleryModel> images = this.service.get();
@@ -35,21 +44,36 @@ public class ImageGalleryController {
         return images;
     }
 
+    /**
+     * Obtiene la imagen correspondiente al id recibido en el path
+     * Se accede mediante el método GET y al path original se
+     * le agrega el id de la imagen solicitada
+     * @param id
+     * @return
+     */
     @GetMapping(value = "/{id}")
     public ImageGalleryModel getById(@PathVariable ("id") int id) {
         return this.service.getById(id);
     }
 
-        @PostMapping()
-        public boolean post(@RequestParam("description") String description, @RequestParam("file") MultipartFile image) {
-            if (image.isEmpty()) return false;
-            byte[] byteImage = FileHelper.saveFile(image, "images/gallery");
-            if (byteImage != null) {
-                ImageGallery img = new ImageGallery(FileHelper.compressBytes(byteImage), description);
-                return this.service.post(img);
-            }
-            return false;
+    /**
+     * Recibe una imagen y la guarda
+     * Se accede con el método POST
+     * Solo es accesible para el usuario logueado
+     * @param description
+     * @param image
+     * @return
+     */
+    @PostMapping()
+    public boolean post(@RequestParam("description") String description, @RequestParam("file") MultipartFile image) {
+        if (image.isEmpty()) return false;
+        byte[] byteImage = FileHelper.saveFile(image, "images/gallery");
+        if (byteImage != null) {
+            ImageGallery img = new ImageGallery(FileHelper.compressBytes(byteImage), description);
+            return this.service.post(img);
         }
+        return false;
+    }
 
 
 }

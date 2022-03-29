@@ -17,6 +17,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
+/**
+ * Controlador accesible con el path "/workshops"
+ * Se encarga de todas las peticiones asociadas a la tabla 'workshop'
+ */
 @RestController
 @RequestMapping("/workshops")
 @CrossOrigin
@@ -25,11 +29,24 @@ public class WorkshopController {
     @Qualifier("WorkshopService")
     private WorkshopService service;
 
+    /**
+     * Obtiene el listado de todos los talleres
+     * Se accede mediante el método GET
+     * @return
+     */
     @GetMapping
     public List<WorkshopModel> get() {
         return this.service.get();
     }
 
+    /**
+     * Recibe y guarda un nuevo taller
+     * Se accede mediante el método POST y
+     * solo es accesible por el usuario logueado
+     * @param title
+     * @param video
+     * @return
+     */
     @PostMapping
     public boolean post(@RequestParam("title") String title, @RequestParam("video") MultipartFile video) {
         if (video.isEmpty()) return false;

@@ -26,6 +26,12 @@ public class DailyTipService {
     @Qualifier("TipService")
     private TipService tipService;
 
+    /**
+     * Si existe un tip asociado a la fecha actual, lo devuelve
+     * Si no existe, toma un tip que no esté asociado a ninguna fecha y lo asocia a la fecha actual
+     * Si todos los tips tienen una fecha asociada, borra todas las asociaciones y empieza de nuevo
+     * @return el tip que resulta asociado con la fecha actual
+     */
     public TipModel getDayTip() {
         LocalDate today = LocalDate.now(); //get a daily-tip with current date
         DailyTip dailyTip = this.repository.getByDate(today);
@@ -43,11 +49,22 @@ public class DailyTipService {
         return this.tipService.getById(tipId);
     }
 
+    /**
+     * Obtiene el listado de ids de tips que no tienen una fecha asociada
+     * y elige un id al azar
+     * @return
+     */
     private int getRandomTipId() {
         List<Integer> tips= this.tipService.getNotSelected();
-        return (int) (Math.random()*tips.size()+1);
+        int i = (int) (Math.random()*tips.size()+1);
+        return tips.get(i-1);
     }
 
+    /**
+     * Guarda en la BDD una asociación de un tip y la fecha actual
+     * @param dailyTip
+     * @return
+     */
     public boolean post(DailyTip dailyTip) {
         try {
             this.repository.save(dailyTip);

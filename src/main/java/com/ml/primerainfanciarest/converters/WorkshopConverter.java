@@ -6,6 +6,12 @@ import org.springframework.stereotype.Component;
 
 @Component("WorkshopConverter")
 public class WorkshopConverter {
+
+    /**
+     * Crea un WorkshopModel a partir del taller recibido
+     * @param workshop
+     * @return
+     */
     public WorkshopModel convert(Workshop workshop) {
         return new WorkshopModel(workshop);
     }

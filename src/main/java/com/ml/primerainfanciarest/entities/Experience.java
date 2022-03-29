@@ -6,6 +6,11 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.Objects;
 
+/**
+ * Entidad que representa la tabla 'experience'
+ * Posee un id, un texto, una imagen (NO obligatoria)
+ * y un estado que indica si puede ser expuesta para todos los usuarios
+ */
 @Entity
 public class Experience {
     private int id;

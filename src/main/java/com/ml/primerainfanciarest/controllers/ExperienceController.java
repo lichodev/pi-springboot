@@ -18,6 +18,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
+/**
+ * Controlador accesible con el path "/experiences"
+ * Se encarga de todas las peticiones para la tabla 'experience'
+ */
 @RestController
 @RequestMapping("/experiences")
 @CrossOrigin
@@ -27,16 +31,34 @@ public class ExperienceController {
     @Qualifier("ExperienceService")
     private ExperienceService service;
 
+    /**
+     * Obtiene el listado de experiencias visibles para el usuario sin iniciar sesión
+     * Se accede mediante el método GET
+     * @return
+     */
     @GetMapping
     public List<ExperienceModel> getAccept() {
         return this.service.getByStatus(true);
     }
 
+    /**
+     * Obtiene el listado de experiencias visibles para el usuario logueado
+     * Se accede mediante el método GET y el path "/admin"
+     * Solo es accesible si existe una sesión de usuario iniciada
+     * @return
+     */
     @GetMapping("/admin")
     public List<ExperienceModel> getPending() {
         return this.service.getByStatus(false);
     }
 
+    /**
+     * Crea y guarda una nueva experiencia
+     * Se accede con el método POST
+     * @param text
+     * @param image
+     * @return
+     */
     @PostMapping()
     public boolean post(@RequestParam("text") String text, @RequestParam(value = "file", required=false) MultipartFile image) {
         if (!image.isEmpty()) {
@@ -50,11 +72,25 @@ public class ExperienceController {
         return this.service.post(experience);
     }
 
+    /**
+     * Permite que la experiencia con el id recibido por parámetro sea visible para todos los usuarios
+     * Se accede con el método PUT
+     * Solo es accesible si existe una sesión de usuario iniciada
+     * @param id
+     * @return
+     */
     @PutMapping(value = "{id}")
     public boolean accept(@PathVariable ("id") int id) {
         return this.service.accept(id);
     }
 
+    /**
+     * Elimina una experiencia guardada
+     * Se accede con el método DELETE
+     * Solo es accesible si existe una sesión de usuario iniciada
+     * @param id
+     * @return
+     */
     @DeleteMapping(value = "{id}")
     public boolean delete(@PathVariable ("id") int id) {
         return this.service.delete(id);

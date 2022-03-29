@@ -22,6 +22,12 @@ public class RequestService {
     @Qualifier("RequestConverter")
     private RequestConverter converter;
 
+    /**
+     * Obtiene el listado de solicitudes
+     * y las devuelve ordenadas, dejando en primer lugar
+     * aquellas solicitudes que aún no fueron respondidas
+     * @return
+     */
     public List<RequestModel> get() {
         List<RequestModel> requests = new ArrayList<>();
         for (Request r: this.repository.findAll()) {
@@ -31,6 +37,11 @@ public class RequestService {
         return requests;
     }
 
+    /**
+     * Guarda e la BDD la solicitud recibida
+     * @param request
+     * @return
+     */
     public boolean post(Request request) {
         try {
             this.repository.save(request);
@@ -40,7 +51,12 @@ public class RequestService {
         }
     }
 
-    public boolean checkRelpied(int id) {
+    /**
+     * Cambia el campo 'replied' de la solicitud de 'false' a 'true'
+     * @param id
+     * @return
+     */
+    public boolean checkReplied(int id) {
         Request request = this.repository.getById(id);
         if (request != null) {
             request.setReplied(true);

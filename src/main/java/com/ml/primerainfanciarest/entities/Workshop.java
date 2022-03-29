@@ -6,6 +6,10 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.Objects;
 
+/**
+ * Entidad que representa la tabla 'workshop'
+ * Posee un id, un título y un video
+ */
 @Entity
 public class Workshop {
     private int id;

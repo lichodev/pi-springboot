@@ -3,6 +3,10 @@ package com.ml.primerainfanciarest.entities;
 import javax.persistence.*;
 import java.util.Objects;
 
+/**
+ * Entidad que representa la tabla 'user-pi'
+ * posee un id, un nombre de usuario y una contraseña
+ */
 @Table(name = "userPi")
 @Entity
 public class UserPi {

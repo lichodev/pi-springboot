@@ -22,6 +22,12 @@ public class QuestionService {
     @Qualifier("QuestionConverter")
     private QuestionConverter converter;
 
+    /**
+     * obtiene el listado de preguntas guardadas
+     * y las devuelve ordenadas, haciendo que se encuentren en primer lugar
+     * aquellas preguntas que aún no fueron respondidas
+     * @return
+     */
     public List<QuestionModel> get() {
         List<QuestionModel> questions = new ArrayList<>();
         for (Question q : this.repository.findAll()) {
@@ -31,7 +37,11 @@ public class QuestionService {
         return questions;
     }
 
-
+    /**
+     * Guarda en la BDD la pregunta recibida
+     * @param question
+     * @return
+     */
     public boolean post(Question question) {
         try {
             this.repository.save(question);
@@ -41,7 +51,12 @@ public class QuestionService {
         }
     }
 
-    public boolean checkRelpied(int id) {
+    /**
+     * Cambia el estado de la pregunta de 'no respondida' a 'respondida'
+     * @param id
+     * @return
+     */
+    public boolean checkReplied(int id) {
         Question q = this.repository.getById(id);
         if (q != null) {
             q.setReplied(true);

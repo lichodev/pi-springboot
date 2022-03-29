@@ -1,0 +1,1628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>/home/sole/Sole/PrimeraInfancia/primeraInfanciaRest/src/main/java/com/ml/primerainfanciarest</OriginalElement>
+  <nodes>
+    <node x="452.25010137875006" y="689.0">com.ml.primerainfanciarest.models.ExperienceModel</node>
+    <node x="1680.2501013787496" y="617.0">com.ml.primerainfanciarest.models.ReminderModel</node>
+    <node x="981.875" y="3846.0">com.ml.primerainfanciarest.services.QuestionService</node>
+    <node x="1291.0" y="1256.5">com.ml.primerainfanciarest.repositories.ImageGalleryRepository</node>
+    <node x="1613.75" y="1256.5">com.ml.primerainfanciarest.converters.ReminderConverter</node>
+    <node x="1106.0636363636363" y="3625.5">com.ml.primerainfanciarest.converters.QuestionConverter</node>
+    <node x="214.16251013787632" y="1896.0">com.ml.primerainfanciarest.controllers.ExperienceController</node>
+    <node x="2852.422343876722" y="701.0">com.ml.primerainfanciarest.models.PodcastModel</node>
+    <node x="2435.8334347120826" y="1220.0">com.ml.primerainfanciarest.helpers.FileHelper</node>
+    <node x="2455.8619696969695" y="3890.0">com.ml.primerainfanciarest.security.MainSecurity</node>
+    <node x="5227.547343876722" y="737.0">com.ml.primerainfanciarest.models.WorkshopModel</node>
+    <node x="1533.8136363636363" y="3675.0">com.ml.primerainfanciarest.converters.RequestConverter</node>
+    <node x="2540.328636363636" y="3408.0">com.ml.primerainfanciarest.security.service.UserDetailsServiceImpl</node>
+    <node x="3365.840303030303" y="2919.0">com.ml.primerainfanciarest.security.models.UserPrincipal</node>
+    <node x="5076.297343876722" y="1561.0">com.ml.primerainfanciarest.services.WorkshopService</node>
+    <node x="3437.340303030303" y="3681.0">com.ml.primerainfanciarest.controllers.AuthController</node>
+    <node x="2089.3136363636363" y="3717.0">com.ml.primerainfanciarest.security.jwt.JwtEntryPoint</node>
+    <node x="1920.75" y="1244.5">com.ml.primerainfanciarest.repositories.ReminderRepository</node>
+    <node x="2213.662510137877" y="1932.0">com.ml.primerainfanciarest.controllers.PodcastController</node>
+    <node x="481.75" y="3565.0">com.ml.primerainfanciarest.models.ResponseJoinModel</node>
+    <node x="4903.412510137876" y="1932.0">com.ml.primerainfanciarest.controllers.WorkshopController</node>
+    <node x="1626.2004288164665" y="3811.0">com.ml.primerainfanciarest.services.RequestService</node>
+    <node x="4266.986969696969" y="2259.0">com.ml.primerainfanciarest.PrimeraInfanciaRestApplication</node>
+    <node x="2855.8136363636363" y="3681.0">com.ml.primerainfanciarest.security.jwt.JwtTokenFilter</node>
+    <node x="891.875" y="2900.0">com.ml.primerainfanciarest.models.QuestionModel</node>
+    <node x="3776.4584347120826" y="1220.5">com.ml.primerainfanciarest.repositories.TipRepository</node>
+    <node x="4438.708434712083" y="1597.5">com.ml.primerainfanciarest.converters.DailyTipConverter</node>
+    <node x="321.25" y="3894.5">com.ml.primerainfanciarest.repositories.ResponseRepository</node>
+    <node x="4522.958434712083" y="1184.0">com.ml.primerainfanciarest.models.DailyTipModel</node>
+    <node x="4140.912510137877" y="1896.0">com.ml.primerainfanciarest.services.DailyTipService</node>
+    <node x="3284.6886363636363" y="3360.0">com.ml.primerainfanciarest.security.jwt.JwtProvider</node>
+    <node x="4548.547343876722" y="713.0">com.ml.primerainfanciarest.entities.DailyTip</node>
+    <node x="3412.9386363636363" y="2259.0">com.ml.primerainfanciarest.entities.UserPi</node>
+    <node x="13.0" y="1220.5">com.ml.primerainfanciarest.repositories.ExperienceRepository</node>
+    <node x="2856.422343876722" y="1256.5">com.ml.primerainfanciarest.converters.PodcastConverter</node>
+    <node x="862.0636363636364" y="3613.5">com.ml.primerainfanciarest.repositories.QuestionRepository</node>
+    <node x="163.68863636363642" y="4067.0">com.ml.primerainfanciarest.services.ResponseService</node>
+    <node x="3727.537510137877" y="2129.0">com.ml.primerainfanciarest.controllers.DailyTipController</node>
+    <node x="4001.9869696969695" y="2612.0">com.ml.primerainfanciarest.models.UserPiModel</node>
+    <node x="1819.8136363636363" y="3663.0">com.ml.primerainfanciarest.repositories.RequestRepository</node>
+    <node x="0.0" y="3529.0">com.ml.primerainfanciarest.models.ResponseModel</node>
+    <node x="621.25" y="2259.0">com.ml.primerainfanciarest.entities.Question</node>
+    <node x="1603.9504288164665" y="4020.0">com.ml.primerainfanciarest.controllers.RequestController</node>
+    <node x="4983.12925790754" y="132.0">com.ml.primerainfanciarest.entities.Workshop</node>
+    <node x="2911.162510137877" y="1908.0">com.ml.primerainfanciarest.controllers.TipController</node>
+    <node x="3674.047343876722" y="629.0">com.ml.primerainfanciarest.models.TipModel</node>
+    <node x="161.83901054338912" y="1537.0">com.ml.primerainfanciarest.services.ExperienceService</node>
+    <node x="4164.708434712083" y="1561.5">com.ml.primerainfanciarest.repositories.DailyTipRepository</node>
+    <node x="1783.5001013787496" y="1537.0">com.ml.primerainfanciarest.services.ReminderService</node>
+    <node x="1449.422126929674" y="2259.0">com.ml.primerainfanciarest.entities.Request</node>
+    <node x="5065.9584347120835" y="1256.5">com.ml.primerainfanciarest.converters.WorkshopConverter</node>
+    <node x="1143.0" y="737.0">com.ml.primerainfanciarest.models.ImageGalleryModel</node>
+    <node x="3112.00425790754" y="1561.0">com.ml.primerainfanciarest.services.PodcastService</node>
+    <node x="1450.0636363636363" y="2972.0">com.ml.primerainfanciarest.models.RequestModel</node>
+    <node x="897.0001013787498" y="132.0">com.ml.primerainfanciarest.entities.ImageGallery</node>
+    <node x="952.075" y="4067.0">com.ml.primerainfanciarest.controllers.QuestionController</node>
+    <node x="4814.9584347120835" y="1256.5">com.ml.primerainfanciarest.repositories.WorkshopRepository</node>
+    <node x="417.25" y="1256.5">com.ml.primerainfanciarest.converters.ExperienceConverter</node>
+    <node x="289.75" y="2996.0">com.ml.primerainfanciarest.entities.Response</node>
+    <node x="3142.422343876722" y="1256.5">com.ml.primerainfanciarest.repositories.PodcastRepository</node>
+    <node x="15.25" y="3894.5">com.ml.primerainfanciarest.converters.ResponseConverter</node>
+    <node x="4001.9869696969695" y="3324.0">com.ml.primerainfanciarest.security.models.JwtResponse</node>
+    <node x="790.0" y="1256.5">com.ml.primerainfanciarest.converters.ImageGalleryConverter</node>
+    <node x="3220.422343876722" y="96.0">com.ml.primerainfanciarest.entities.Podcast</node>
+    <node x="1752.1625101378766" y="1908.0">com.ml.primerainfanciarest.controllers.ReminderController</node>
+    <node x="3498.4584347120826" y="1513.0">com.ml.primerainfanciarest.services.TipService</node>
+    <node x="1035.2875101378766" y="1920.0">com.ml.primerainfanciarest.controllers.ImageGalleryController</node>
+    <node x="4076.4584347120826" y="1256.5">com.ml.primerainfanciarest.converters.TipConverter</node>
+    <node x="3089.340303030303" y="2708.5">com.ml.primerainfanciarest.repositories.UserRepository</node>
+    <node x="3090.840303030303" y="3027.0">com.ml.primerainfanciarest.services.UserService</node>
+    <node x="4251.37925790754" y="0.0">com.ml.primerainfanciarest.entities.Tip</node>
+    <node x="213.50010137875006" y="96.0">com.ml.primerainfanciarest.entities.Experience</node>
+    <node x="1672.7501013787496" y="0.0">com.ml.primerainfanciarest.entities.Reminder</node>
+    <node x="904.1251013787498" y="1549.0">com.ml.primerainfanciarest.services.ImageGalleryService</node>
+    <node x="202.18863636363642" y="4252.0">com.ml.primerainfanciarest.controllers.ResponseController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.ml.primerainfanciarest.services.UserService" target="com.ml.primerainfanciarest.repositories.UserRepository" relationship="TO_ONE">
+      <point x="63.75" y="-42.5" />
+      <point x="64.25" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.DailyTipService" target="com.ml.primerainfanciarest.converters.DailyTipConverter" relationship="TO_ONE">
+      <point x="0.0" y="-90.5" />
+      <point x="4266.412510137877" y="1864.0" />
+      <point x="4636.708434712083" y="1864.0" />
+      <point x="66.0" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.DailyTipService" target="com.ml.primerainfanciarest.services.TipService" relationship="TO_ONE">
+      <point x="0.0" y="-90.5" />
+      <point x="4266.412510137877" y="1804.0" />
+      <point x="3203.4527575020275" y="1804.0" />
+      <point x="3203.4527575020275" y="1764.0" />
+      <point x="3691.2084347120826" y="1764.0" />
+      <point x="64.25" y="114.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ImageGalleryService" target="com.ml.primerainfanciarest.repositories.ImageGalleryRepository" relationship="TO_ONE">
+      <point x="-71.25" y="-78.5" />
+      <point x="975.3751013787498" y="1491.0" />
+      <point x="944.2501013787498" y="1491.0" />
+      <point x="944.2501013787498" y="1451.0" />
+      <point x="1354.75" y="1451.0" />
+      <point x="-63.75" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.ExperienceConverter" target="com.ml.primerainfanciarest.entities.Experience" relationship="DEPENDENCY">
+      <point x="76.0" y="-30.0" />
+      <point x="645.25" y="1152.0" />
+      <point x="768.5" y="1152.0" />
+      <point x="768.5" y="596.0" />
+      <point x="410.25010137875006" y="596.0" />
+      <point x="410.25010137875006" y="586.0" />
+      <point x="371.00010137875006" y="586.0" />
+      <point x="52.5" y="186.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.TipService" target="com.ml.primerainfanciarest.helpers.FileHelper" relationship="DEPENDENCY">
+      <point x="-64.25" y="-114.5" />
+      <point x="3562.7084347120826" y="1441.0" />
+      <point x="2584.3334347120826" y="1441.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.TipConverter" target="com.ml.primerainfanciarest.entities.Tip" relationship="DEPENDENCY">
+      <point x="49.5" y="-30.0" />
+      <point x="4224.958434712083" y="596.0" />
+      <point x="4354.37925790754" y="596.0" />
+      <point x="0.0" y="282.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.security.jwt.JwtTokenFilter" target="com.ml.primerainfanciarest.security.service.UserDetailsServiceImpl" relationship="TO_ONE">
+      <point x="-140.0" y="-78.5" />
+      <point x="2995.8136363636363" y="3659.0" />
+      <point x="2957.090303030303" y="3659.0" />
+      <point x="2957.090303030303" y="3639.0" />
+      <point x="2381.828636363636" y="3639.0" />
+      <point x="2381.828636363636" y="3629.0" />
+      <point x="2621.578636363636" y="3629.0" />
+      <point x="-81.25" y="42.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.models.TipModel" target="com.ml.primerainfanciarest.entities.Tip" relationship="DEPENDENCY">
+      <point x="0.0" y="-234.5" />
+      <point x="3770.547343876722" y="596.0" />
+      <point x="4354.37925790754" y="596.0" />
+      <point x="0.0" y="282.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.repositories.ReminderRepository" target="com.ml.primerainfanciarest.entities.Reminder" relationship="DEPENDENCY">
+      <point x="0.0" y="-42.0" />
+      <point x="2033.75" y="596.0" />
+      <point x="1781.2501013787496" y="596.0" />
+      <point x="1781.2501013787496" y="586.0" />
+      <point x="1827.2501013787496" y="586.0" />
+      <point x="51.5" y="282.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.RequestController" target="com.ml.primerainfanciarest.models.RequestModel" relationship="DEPENDENCY">
+      <point x="-55.75" y="-66.5" />
+      <point x="1659.7004288164665" y="3999.0" />
+      <point x="1487.5919382504287" y="3999.0" />
+      <point x="1487.5919382504287" y="3989.0" />
+      <point x="1486.5636363636363" y="3989.0" />
+      <point x="1486.5636363636363" y="3631.0" />
+      <point x="1504.5636363636363" y="3631.0" />
+      <point x="-54.5" y="318.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.DailyTipService" target="com.ml.primerainfanciarest.models.TipModel" relationship="DEPENDENCY">
+      <point x="-83.66666666666674" y="-90.5" />
+      <point x="4182.74584347121" y="1874.0" />
+      <point x="4021.912510137877" y="1874.0" />
+      <point x="4021.912510137877" y="1774.0" />
+      <point x="3765.9584347120826" y="1774.0" />
+      <point x="3765.9584347120826" y="1162.0" />
+      <point x="3625.422343876722" y="1162.0" />
+      <point x="3625.422343876722" y="1152.0" />
+      <point x="3722.297343876722" y="1152.0" />
+      <point x="-48.25" y="234.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.PodcastController" target="com.ml.primerainfanciarest.services.PodcastService" relationship="DEPENDENCY">
+      <point x="-126.0" y="-54.5" />
+      <point x="2276.662510137877" y="1874.0" />
+      <point x="2381.662510137877" y="1874.0" />
+      <point x="2381.662510137877" y="1814.0" />
+      <point x="3175.00425790754" y="1814.0" />
+      <point x="-63.0" y="66.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.entities.DailyTip" target="com.ml.primerainfanciarest.entities.Tip" relationship="TO_ONE">
+      <point x="53.0" y="-150.5" />
+      <point x="4707.547343876722" y="596.0" />
+      <point x="4695.833333333334" y="596.0" />
+      <point x="4695.833333333334" y="586.0" />
+      <point x="4423.045924574207" y="586.0" />
+      <point x="68.66666666666674" y="282.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.RequestService" target="com.ml.primerainfanciarest.converters.RequestConverter" relationship="TO_ONE">
+      <point x="63.0" y="-78.5" />
+      <point x="1815.2004288164665" y="3789.0" />
+      <point x="1795.7004288164665" y="3789.0" />
+      <point x="1795.7004288164665" y="3769.0" />
+      <point x="1733.3136363636363" y="3769.0" />
+      <point x="66.5" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.ExperienceController" target="com.ml.primerainfanciarest.models.ExperienceModel" relationship="DEPENDENCY">
+      <point x="98.66666666666663" y="-90.5" />
+      <point x="460.82917680454284" y="1874.0" />
+      <point x="860.1625101378766" y="1874.0" />
+      <point x="860.1625101378766" y="1844.0" />
+      <point x="731.75" y="1844.0" />
+      <point x="731.75" y="1162.0" />
+      <point x="562.5001013787501" y="1162.0" />
+      <point x="562.5001013787501" y="1152.0" />
+      <point x="609.7501013787501" y="1152.0" />
+      <point x="52.5" y="174.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.DailyTipConverter" target="com.ml.primerainfanciarest.entities.DailyTip" relationship="DEPENDENCY">
+      <point x="-66.0" y="-30.0" />
+      <point x="4504.708434712083" y="1491.0" />
+      <point x="4512.458434712083" y="1491.0" />
+      <point x="4512.458434712083" y="1162.0" />
+      <point x="4375.662510137877" y="1162.0" />
+      <point x="4375.662510137877" y="1132.0" />
+      <point x="4601.547343876722" y="1132.0" />
+      <point x="-53.0" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.RequestService" target="com.ml.primerainfanciarest.repositories.RequestRepository" relationship="DEPENDENCY">
+      <point x="-63.0" y="-78.5" />
+      <point x="1689.2004288164665" y="3789.0" />
+      <point x="1624.3419382504287" y="3789.0" />
+      <point x="1624.3419382504287" y="3779.0" />
+      <point x="1873.3136363636363" y="3779.0" />
+      <point x="-53.5" y="42.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.models.ResponseModel" target="com.ml.primerainfanciarest.entities.Response" relationship="DEPENDENCY">
+      <point x="0.0" y="-126.5" />
+      <point x="102.0" y="3507.0" />
+      <point x="451.75" y="3507.0" />
+      <point x="0.0" y="186.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.UserService" target="com.ml.primerainfanciarest.entities.UserPi" relationship="DEPENDENCY">
+      <point x="-63.75" y="-42.5" />
+      <point x="3154.590303030303" y="2897.0" />
+      <point x="3272.090303030303" y="2897.0" />
+      <point x="3272.090303030303" y="2887.0" />
+      <point x="3078.840303030303" y="2887.0" />
+      <point x="3078.840303030303" y="2586.0" />
+      <point x="3522.9386363636363" y="2586.0" />
+      <point x="0.0" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.repositories.UserRepository" target="com.ml.primerainfanciarest.entities.UserPi" relationship="DEPENDENCY">
+      <point x="0.0" y="-30.0" />
+      <point x="3217.840303030303" y="2586.0" />
+      <point x="3522.9386363636363" y="2586.0" />
+      <point x="0.0" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.ResponseController" target="com.ml.primerainfanciarest.services.ResponseService" relationship="DEPENDENCY">
+      <point x="65.25" y="-54.5" />
+      <point x="397.9386363636364" y="4231.0" />
+      <point x="585.6886363636364" y="4231.0" />
+      <point x="585.6886363636364" y="4221.0" />
+      <point x="360.1886363636364" y="4221.0" />
+      <point x="65.5" y="66.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.RequestController" target="com.ml.primerainfanciarest.entities.Request" relationship="DEPENDENCY">
+      <point x="-55.75" y="-66.5" />
+      <point x="1659.7004288164665" y="3999.0" />
+      <point x="1487.5919382504287" y="3999.0" />
+      <point x="1487.5919382504287" y="3989.0" />
+      <point x="1439.5636363636363" y="3989.0" />
+      <point x="1439.5636363636363" y="2946.0" />
+      <point x="1558.422126929674" y="2946.0" />
+      <point x="0.0" y="330.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.repositories.PodcastRepository" target="com.ml.primerainfanciarest.entities.Podcast" relationship="DEPENDENCY">
+      <point x="0.0" y="-30.0" />
+      <point x="3248.422343876722" y="596.0" />
+      <point x="3152.172343876722" y="596.0" />
+      <point x="3152.172343876722" y="586.0" />
+      <point x="3271.922343876722" y="586.0" />
+      <point x="-51.5" y="186.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.AuthController" target="com.ml.primerainfanciarest.security.models.JwtResponse" relationship="CREATE">
+      <point x="149.0" y="-78.5" />
+      <point x="3809.840303030303" y="3659.0" />
+      <point x="4111.986969696969" y="3659.0" />
+      <point x="0.0" y="126.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.repositories.TipRepository" target="com.ml.primerainfanciarest.entities.Tip" relationship="DEPENDENCY">
+      <point x="0.0" y="-66.0" />
+      <point x="3916.4584347120826" y="596.0" />
+      <point x="4354.37925790754" y="596.0" />
+      <point x="0.0" y="282.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.DailyTipController" target="com.ml.primerainfanciarest.services.DailyTipService" relationship="DEPENDENCY">
+      <point x="-52.0" y="-42.5" />
+      <point x="3779.537510137877" y="2108.0" />
+      <point x="3826.537510137877" y="2108.0" />
+      <point x="3826.537510137877" y="2098.0" />
+      <point x="4203.662510137877" y="2098.0" />
+      <point x="-62.75" y="90.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ResponseService" target="com.ml.primerainfanciarest.converters.ResponseConverter" relationship="DEPENDENCY">
+      <point x="65.5" y="-66.5" />
+      <point x="360.1886363636364" y="4045.0" />
+      <point x="449.5636363636364" y="4045.0" />
+      <point x="449.5636363636364" y="4025.0" />
+      <point x="229.75" y="4025.0" />
+      <point x="71.5" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ResponseService" target="com.ml.primerainfanciarest.repositories.ResponseRepository" relationship="TO_ONE">
+      <point x="-65.5" y="-66.5" />
+      <point x="229.18863636363642" y="4045.0" />
+      <point x="251.81363636363642" y="4045.0" />
+      <point x="251.81363636363642" y="4035.0" />
+      <point x="386.5" y="4035.0" />
+      <point x="-65.25" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.repositories.ImageGalleryRepository" target="com.ml.primerainfanciarest.entities.ImageGallery" relationship="DEPENDENCY">
+      <point x="0.0" y="-30.0" />
+      <point x="1418.5" y="596.0" />
+      <point x="1060.411090835361" y="596.0" />
+      <point x="1060.411090835361" y="586.0" />
+      <point x="1069.5001013787498" y="586.0" />
+      <point x="57.5" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ReminderService" target="com.ml.primerainfanciarest.converters.ReminderConverter" relationship="TO_ONE">
+      <point x="-65.5" y="-90.5" />
+      <point x="1849.0001013787496" y="1491.0" />
+      <point x="1876.0001013787496" y="1491.0" />
+      <point x="1876.0001013787496" y="1451.0" />
+      <point x="1685.25" y="1451.0" />
+      <point x="-71.5" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.repositories.ExperienceRepository" target="com.ml.primerainfanciarest.entities.Experience" relationship="DEPENDENCY">
+      <point x="0.0" y="-66.0" />
+      <point x="181.0" y="596.0" />
+      <point x="410.25010137875006" y="596.0" />
+      <point x="410.25010137875006" y="586.0" />
+      <point x="371.00010137875006" y="586.0" />
+      <point x="52.5" y="186.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.security.MainSecurity" target="com.ml.primerainfanciarest.security.service.UserDetailsServiceImpl" relationship="DEPENDENCY">
+      <point x="0.0" y="-114.5" />
+      <point x="2661.3619696969695" y="3869.0" />
+      <point x="2720.8136363636363" y="3869.0" />
+      <point x="2720.8136363636363" y="3659.0" />
+      <point x="2921.465303030303" y="3659.0" />
+      <point x="2921.465303030303" y="3619.0" />
+      <point x="2784.078636363636" y="3619.0" />
+      <point x="81.25" y="42.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.QuestionService" target="com.ml.primerainfanciarest.repositories.QuestionRepository" relationship="DEPENDENCY">
+      <point x="64.5" y="-78.5" />
+      <point x="1175.375" y="3824.0" />
+      <point x="1192.95" y="3824.0" />
+      <point x="1192.95" y="3804.0" />
+      <point x="1029.3136363636363" y="3804.0" />
+      <point x="55.75" y="42.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.models.ReminderModel" target="com.ml.primerainfanciarest.entities.Reminder" relationship="DEPENDENCY">
+      <point x="0.0" y="-246.5" />
+      <point x="1781.2501013787496" y="586.0" />
+      <point x="1827.2501013787496" y="586.0" />
+      <point x="51.5" y="282.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.QuestionService" target="com.ml.primerainfanciarest.entities.Question" relationship="DEPENDENCY">
+      <point x="64.5" y="-78.5" />
+      <point x="1175.375" y="3824.0" />
+      <point x="1192.95" y="3824.0" />
+      <point x="1192.95" y="3804.0" />
+      <point x="1394.5636363636363" y="3804.0" />
+      <point x="1394.5636363636363" y="2879.0" />
+      <point x="941.125" y="2879.0" />
+      <point x="941.125" y="2869.0" />
+      <point x="784.75" y="2869.0" />
+      <point x="54.5" y="294.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.security.models.UserPrincipal" target="com.ml.primerainfanciarest.entities.UserPi" relationship="DEPENDENCY">
+      <point x="0.0" y="-150.5" />
+      <point x="3580.340303030303" y="2586.0" />
+      <point x="3522.9386363636363" y="2586.0" />
+      <point x="0.0" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.AuthController" target="com.ml.primerainfanciarest.security.jwt.JwtProvider" relationship="TO_ONE">
+      <point x="-149.0" y="-78.5" />
+      <point x="3511.840303030303" y="3659.0" />
+      <point x="3445.960303030303" y="3659.0" />
+      <point x="3445.960303030303" y="3619.0" />
+      <point x="3002.715303030303" y="3619.0" />
+      <point x="3002.715303030303" y="3599.0" />
+      <point x="3360.4386363636363" y="3599.0" />
+      <point x="-75.75" y="90.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ExperienceService" target="com.ml.primerainfanciarest.helpers.FileHelper" relationship="DEPENDENCY">
+      <point x="89.0" y="-90.5" />
+      <point x="428.8390105433891" y="1461.0" />
+      <point x="2584.3334347120826" y="1461.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.PodcastService" target="com.ml.primerainfanciarest.converters.PodcastConverter" relationship="DEPENDENCY">
+      <point x="-63.0" y="-66.5" />
+      <point x="3175.00425790754" y="1491.0" />
+      <point x="3021.0833333333335" y="1491.0" />
+      <point x="3021.0833333333335" y="1421.0" />
+      <point x="2922.922343876722" y="1421.0" />
+      <point x="-66.5" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.PodcastService" target="com.ml.primerainfanciarest.models.PodcastModel" relationship="DEPENDENCY">
+      <point x="-63.0" y="-66.5" />
+      <point x="3175.00425790754" y="1491.0" />
+      <point x="3021.0833333333335" y="1491.0" />
+      <point x="3021.0833333333335" y="1421.0" />
+      <point x="2845.922343876722" y="1421.0" />
+      <point x="2845.922343876722" y="1152.0" />
+      <point x="2900.672343876722" y="1152.0" />
+      <point x="-48.25" y="162.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.ImageGalleryConverter" target="com.ml.primerainfanciarest.entities.ImageGallery" relationship="DEPENDENCY">
+      <point x="-83.0" y="-30.0" />
+      <point x="873.0" y="596.0" />
+      <point x="1060.411090835361" y="596.0" />
+      <point x="1060.411090835361" y="586.0" />
+      <point x="1069.5001013787498" y="586.0" />
+      <point x="57.5" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.QuestionController" target="com.ml.primerainfanciarest.services.QuestionService" relationship="TO_ONE">
+      <point x="57.25" y="-66.5" />
+      <point x="1123.825" y="4045.0" />
+      <point x="1175.375" y="4045.0" />
+      <point x="64.5" y="78.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ReminderService" target="com.ml.primerainfanciarest.repositories.ReminderRepository" relationship="TO_ONE">
+      <point x="-65.5" y="-90.5" />
+      <point x="1849.0001013787496" y="1491.0" />
+      <point x="1876.0001013787496" y="1491.0" />
+      <point x="1876.0001013787496" y="1451.0" />
+      <point x="1977.25" y="1451.0" />
+      <point x="-56.5" y="42.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.ResponseController" target="com.ml.primerainfanciarest.entities.Response" relationship="DEPENDENCY">
+      <point x="65.25" y="-54.5" />
+      <point x="397.9386363636364" y="4231.0" />
+      <point x="585.6886363636364" y="4231.0" />
+      <point x="585.6886363636364" y="4221.0" />
+      <point x="714.25" y="4221.0" />
+      <point x="714.25" y="3507.0" />
+      <point x="451.75" y="3507.0" />
+      <point x="0.0" y="186.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.RequestService" target="com.ml.primerainfanciarest.converters.RequestConverter" relationship="DEPENDENCY">
+      <point x="-63.0" y="-78.5" />
+      <point x="1689.2004288164665" y="3789.0" />
+      <point x="1624.3419382504287" y="3789.0" />
+      <point x="1624.3419382504287" y="3779.0" />
+      <point x="1600.3136363636363" y="3779.0" />
+      <point x="-66.5" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.repositories.ResponseRepository" target="com.ml.primerainfanciarest.models.ResponseJoinModel" relationship="DEPENDENCY">
+      <point x="0.0" y="-30.0" />
+      <point x="451.75" y="3824.0" />
+      <point x="592.75" y="3824.0" />
+      <point x="0.0" y="90.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ImageGalleryService" target="com.ml.primerainfanciarest.helpers.FileHelper" relationship="DEPENDENCY">
+      <point x="71.25" y="-78.5" />
+      <point x="1117.8751013787498" y="1491.0" />
+      <point x="1169.3390105433891" y="1491.0" />
+      <point x="1169.3390105433891" y="1471.0" />
+      <point x="2584.3334347120826" y="1471.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.AuthController" target="com.ml.primerainfanciarest.services.UserService" relationship="DEPENDENCY">
+      <point x="0.0" y="-78.5" />
+      <point x="3660.840303030303" y="3659.0" />
+      <point x="3717.9386363636363" y="3659.0" />
+      <point x="3717.9386363636363" y="3649.0" />
+      <point x="3755.8136363636363" y="3649.0" />
+      <point x="3755.8136363636363" y="3252.0" />
+      <point x="3282.090303030303" y="3252.0" />
+      <point x="63.75" y="42.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.PodcastService" target="com.ml.primerainfanciarest.converters.PodcastConverter" relationship="TO_ONE">
+      <point x="63.0" y="-66.5" />
+      <point x="3301.422343876722" y="1481.0" />
+      <point x="3055.922343876722" y="1481.0" />
+      <point x="66.5" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.ResponseController" target="com.ml.primerainfanciarest.models.ResponseJoinModel" relationship="DEPENDENCY">
+      <point x="65.25" y="-54.5" />
+      <point x="397.9386363636364" y="4231.0" />
+      <point x="585.6886363636364" y="4231.0" />
+      <point x="585.6886363636364" y="4221.0" />
+      <point x="644.7193181818182" y="4221.0" />
+      <point x="644.7193181818182" y="3814.0" />
+      <point x="592.75" y="3814.0" />
+      <point x="0.0" y="90.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.models.QuestionModel" target="com.ml.primerainfanciarest.entities.Question" relationship="DEPENDENCY">
+      <point x="0.0" y="-282.5" />
+      <point x="1000.875" y="2879.0" />
+      <point x="941.125" y="2879.0" />
+      <point x="941.125" y="2869.0" />
+      <point x="784.75" y="2869.0" />
+      <point x="54.5" y="294.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.TipService" target="com.ml.primerainfanciarest.converters.TipConverter" relationship="DEPENDENCY">
+      <point x="-64.25" y="-114.5" />
+      <point x="3562.7084347120826" y="1421.0" />
+      <point x="4125.958434712083" y="1421.0" />
+      <point x="-49.5" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.models.WorkshopModel" target="com.ml.primerainfanciarest.entities.Workshop" relationship="DEPENDENCY">
+      <point x="0.0" y="-126.5" />
+      <point x="5323.547343876722" y="596.0" />
+      <point x="5178.547343876722" y="596.0" />
+      <point x="5178.547343876722" y="586.0" />
+      <point x="5137.62925790754" y="586.0" />
+      <point x="51.5" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.models.ImageGalleryModel" target="com.ml.primerainfanciarest.entities.ImageGallery" relationship="DEPENDENCY">
+      <point x="0.0" y="-126.5" />
+      <point x="1258.0" y="596.0" />
+      <point x="1060.411090835361" y="596.0" />
+      <point x="1060.411090835361" y="586.0" />
+      <point x="1069.5001013787498" y="586.0" />
+      <point x="57.5" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.TipService" target="com.ml.primerainfanciarest.models.TipModel" relationship="DEPENDENCY">
+      <point x="-64.25" y="-114.5" />
+      <point x="3562.7084347120826" y="1162.0" />
+      <point x="3625.422343876722" y="1162.0" />
+      <point x="3625.422343876722" y="1152.0" />
+      <point x="3722.297343876722" y="1152.0" />
+      <point x="-48.25" y="234.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.WorkshopService" target="com.ml.primerainfanciarest.entities.Workshop" relationship="DEPENDENCY">
+      <point x="-66.75" y="-66.5" />
+      <point x="5143.047343876722" y="1491.0" />
+      <point x="5060.708333333334" y="1491.0" />
+      <point x="5060.708333333334" y="1421.0" />
+      <point x="4804.4584347120835" y="1421.0" />
+      <point x="4804.4584347120835" y="596.0" />
+      <point x="5178.547343876722" y="596.0" />
+      <point x="5178.547343876722" y="586.0" />
+      <point x="5137.62925790754" y="586.0" />
+      <point x="51.5" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.RequestService" target="com.ml.primerainfanciarest.repositories.RequestRepository" relationship="TO_ONE">
+      <point x="63.0" y="-78.5" />
+      <point x="1815.2004288164665" y="3789.0" />
+      <point x="1795.7004288164665" y="3789.0" />
+      <point x="1795.7004288164665" y="3769.0" />
+      <point x="1980.3136363636363" y="3769.0" />
+      <point x="53.5" y="42.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.DailyTipService" target="com.ml.primerainfanciarest.services.TipService" relationship="DEPENDENCY">
+      <point x="-83.66666666666674" y="-90.5" />
+      <point x="4182.74584347121" y="1874.0" />
+      <point x="4021.912510137877" y="1874.0" />
+      <point x="4021.912510137877" y="1814.0" />
+      <point x="3193.4527575020275" y="1814.0" />
+      <point x="3193.4527575020275" y="1774.0" />
+      <point x="3562.7084347120826" y="1774.0" />
+      <point x="-64.25" y="114.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.repositories.WorkshopRepository" target="com.ml.primerainfanciarest.entities.Workshop" relationship="DEPENDENCY">
+      <point x="0.0" y="-30.0" />
+      <point x="4929.9584347120835" y="596.0" />
+      <point x="5178.547343876722" y="596.0" />
+      <point x="5178.547343876722" y="586.0" />
+      <point x="5137.62925790754" y="586.0" />
+      <point x="51.5" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.DailyTipService" target="com.ml.primerainfanciarest.converters.DailyTipConverter" relationship="DEPENDENCY">
+      <point x="-83.66666666666674" y="-90.5" />
+      <point x="4182.74584347121" y="1874.0" />
+      <point x="4021.912510137877" y="1874.0" />
+      <point x="4021.912510137877" y="1774.0" />
+      <point x="4504.708434712083" y="1774.0" />
+      <point x="-66.0" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.WorkshopController" target="com.ml.primerainfanciarest.services.WorkshopService" relationship="DEPENDENCY">
+      <point x="94.33333333333326" y="-54.5" />
+      <point x="5139.24584347121" y="1874.0" />
+      <point x="5054.912510137876" y="1874.0" />
+      <point x="5054.912510137876" y="1784.0" />
+      <point x="5276.547343876722" y="1784.0" />
+      <point x="66.75" y="66.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.models.DailyTipModel" target="com.ml.primerainfanciarest.entities.Tip" relationship="TO_ONE">
+      <point x="53.0" y="-102.5" />
+      <point x="4681.958434712083" y="1162.0" />
+      <point x="4782.458434712083" y="1162.0" />
+      <point x="4782.458434712083" y="596.0" />
+      <point x="4695.833333333334" y="596.0" />
+      <point x="4695.833333333334" y="586.0" />
+      <point x="4423.045924574207" y="586.0" />
+      <point x="68.66666666666674" y="282.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.QuestionController" target="com.ml.primerainfanciarest.models.QuestionModel" relationship="DEPENDENCY">
+      <point x="-57.25" y="-66.5" />
+      <point x="1009.325" y="4045.0" />
+      <point x="847.1886363636364" y="4045.0" />
+      <point x="847.1886363636364" y="3507.0" />
+      <point x="923.875" y="3507.0" />
+      <point x="923.875" y="3487.0" />
+      <point x="946.375" y="3487.0" />
+      <point x="-54.5" y="282.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.security.service.UserDetailsServiceImpl" target="com.ml.primerainfanciarest.security.models.UserPrincipal" relationship="DEPENDENCY">
+      <point x="81.25" y="-42.5" />
+      <point x="2784.078636363636" y="3292.0" />
+      <point x="3266.3469696969696" y="3292.0" />
+      <point x="3266.3469696969696" y="3272.0" />
+      <point x="3408.335303030303" y="3272.0" />
+      <point x="3408.335303030303" y="3242.0" />
+      <point x="3580.340303030303" y="3242.0" />
+      <point x="0.0" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ImageGalleryService" target="com.ml.primerainfanciarest.converters.ImageGalleryConverter" relationship="TO_ONE">
+      <point x="-71.25" y="-78.5" />
+      <point x="975.3751013787498" y="1491.0" />
+      <point x="944.2501013787498" y="1491.0" />
+      <point x="944.2501013787498" y="1451.0" />
+      <point x="873.0" y="1451.0" />
+      <point x="-83.0" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.WorkshopController" target="com.ml.primerainfanciarest.services.WorkshopService" relationship="TO_ONE">
+      <point x="0.0" y="-54.5" />
+      <point x="5044.912510137876" y="1864.0" />
+      <point x="5143.047343876722" y="1864.0" />
+      <point x="-66.75" y="66.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.ExperienceController" target="com.ml.primerainfanciarest.entities.Experience" relationship="CREATE">
+      <point x="-98.66666666666674" y="-90.5" />
+      <point x="263.49584347120935" y="1874.0" />
+      <point x="0.0" y="1874.0" />
+      <point x="0.0" y="586.0" />
+      <point x="266.00010137875006" y="586.0" />
+      <point x="-52.5" y="186.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.models.PodcastModel" target="com.ml.primerainfanciarest.entities.Podcast" relationship="DEPENDENCY">
+      <point x="0.0" y="-162.5" />
+      <point x="2948.922343876722" y="596.0" />
+      <point x="3152.172343876722" y="596.0" />
+      <point x="3152.172343876722" y="586.0" />
+      <point x="3271.922343876722" y="586.0" />
+      <point x="-51.5" y="186.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.WorkshopService" target="com.ml.primerainfanciarest.repositories.WorkshopRepository" relationship="TO_ONE">
+      <point x="66.75" y="-66.5" />
+      <point x="5276.547343876722" y="1491.0" />
+      <point x="5254.958333333334" y="1491.0" />
+      <point x="5254.958333333334" y="1411.0" />
+      <point x="4987.4584347120835" y="1411.0" />
+      <point x="57.5" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.security.jwt.JwtTokenFilter" target="com.ml.primerainfanciarest.security.jwt.JwtProvider" relationship="TO_ONE">
+      <point x="-140.0" y="-78.5" />
+      <point x="2995.8136363636363" y="3659.0" />
+      <point x="2957.090303030303" y="3659.0" />
+      <point x="2957.090303030303" y="3649.0" />
+      <point x="3002.715303030303" y="3649.0" />
+      <point x="3002.715303030303" y="3599.0" />
+      <point x="3360.4386363636363" y="3599.0" />
+      <point x="-75.75" y="90.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.models.UserPiModel" target="com.ml.primerainfanciarest.entities.UserPi" relationship="DEPENDENCY">
+      <point x="0.0" y="-126.5" />
+      <point x="4111.986969696969" y="2586.0" />
+      <point x="3522.9386363636363" y="2586.0" />
+      <point x="0.0" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.DailyTipService" target="com.ml.primerainfanciarest.entities.DailyTip" relationship="CREATE">
+      <point x="83.66666666666674" y="-90.5" />
+      <point x="4350.079176804544" y="1874.0" />
+      <point x="4745.458434712083" y="1874.0" />
+      <point x="4745.458434712083" y="1152.0" />
+      <point x="4707.547343876722" y="1152.0" />
+      <point x="53.0" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ReminderService" target="com.ml.primerainfanciarest.entities.Reminder" relationship="DEPENDENCY">
+      <point x="65.5" y="-90.5" />
+      <point x="1980.0001013787496" y="1491.0" />
+      <point x="2065.5001013787496" y="1491.0" />
+      <point x="2065.5001013787496" y="1441.0" />
+      <point x="2157.25" y="1441.0" />
+      <point x="2157.25" y="596.0" />
+      <point x="1781.2501013787496" y="596.0" />
+      <point x="1781.2501013787496" y="586.0" />
+      <point x="1827.2501013787496" y="586.0" />
+      <point x="51.5" y="282.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.WorkshopController" target="com.ml.primerainfanciarest.entities.Workshop" relationship="CREATE">
+      <point x="-94.33333333333326" y="-54.5" />
+      <point x="4950.579176804544" y="1874.0" />
+      <point x="4793.458434712083" y="1874.0" />
+      <point x="4793.458434712083" y="586.0" />
+      <point x="5034.62925790754" y="586.0" />
+      <point x="-51.5" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.ImageGalleryConverter" target="com.ml.primerainfanciarest.models.ImageGalleryModel" relationship="CREATE">
+      <point x="83.0" y="-30.0" />
+      <point x="1039.0" y="1162.0" />
+      <point x="1200.5" y="1162.0" />
+      <point x="-57.5" y="126.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.DailyTipService" target="com.ml.primerainfanciarest.repositories.DailyTipRepository" relationship="TO_ONE">
+      <point x="0.0" y="-90.5" />
+      <point x="4266.412510137877" y="1864.0" />
+      <point x="4355.208434712083" y="1864.0" />
+      <point x="63.5" y="66.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.DailyTipController" target="com.ml.primerainfanciarest.models.TipModel" relationship="DEPENDENCY">
+      <point x="-52.0" y="-42.5" />
+      <point x="3779.537510137877" y="2108.0" />
+      <point x="3826.537510137877" y="2108.0" />
+      <point x="3826.537510137877" y="2098.0" />
+      <point x="2900.662510137877" y="2098.0" />
+      <point x="2900.662510137877" y="1874.0" />
+      <point x="3407.922343876722" y="1874.0" />
+      <point x="3407.922343876722" y="1162.0" />
+      <point x="3625.422343876722" y="1162.0" />
+      <point x="3625.422343876722" y="1152.0" />
+      <point x="3722.297343876722" y="1152.0" />
+      <point x="-48.25" y="234.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.QuestionConverter" target="com.ml.primerainfanciarest.entities.Question" relationship="DEPENDENCY">
+      <point x="69.5" y="-30.0" />
+      <point x="1314.5636363636363" y="3507.0" />
+      <point x="1224.3443181818182" y="3507.0" />
+      <point x="1224.3443181818182" y="2879.0" />
+      <point x="941.125" y="2879.0" />
+      <point x="941.125" y="2869.0" />
+      <point x="784.75" y="2869.0" />
+      <point x="54.5" y="294.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.QuestionService" target="com.ml.primerainfanciarest.converters.QuestionConverter" relationship="DEPENDENCY">
+      <point x="64.5" y="-78.5" />
+      <point x="1175.375" y="3824.0" />
+      <point x="1192.95" y="3824.0" />
+      <point x="1192.95" y="3804.0" />
+      <point x="1314.5636363636363" y="3804.0" />
+      <point x="69.5" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ResponseService" target="com.ml.primerainfanciarest.converters.ResponseConverter" relationship="TO_ONE">
+      <point x="-65.5" y="-66.5" />
+      <point x="229.18863636363642" y="4045.0" />
+      <point x="251.81363636363642" y="4045.0" />
+      <point x="251.81363636363642" y="4035.0" />
+      <point x="86.75" y="4035.0" />
+      <point x="-71.5" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.RequestService" target="com.ml.primerainfanciarest.entities.Request" relationship="DEPENDENCY">
+      <point x="-63.0" y="-78.5" />
+      <point x="1689.2004288164665" y="3789.0" />
+      <point x="1624.3419382504287" y="3789.0" />
+      <point x="1624.3419382504287" y="3779.0" />
+      <point x="1439.5636363636363" y="3779.0" />
+      <point x="1439.5636363636363" y="2946.0" />
+      <point x="1558.422126929674" y="2946.0" />
+      <point x="0.0" y="330.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.AuthController" target="com.ml.primerainfanciarest.entities.UserPi" relationship="DEPENDENCY">
+      <point x="0.0" y="-78.5" />
+      <point x="3660.840303030303" y="3659.0" />
+      <point x="3717.9386363636363" y="3659.0" />
+      <point x="3717.9386363636363" y="3649.0" />
+      <point x="3991.4869696969695" y="3649.0" />
+      <point x="3991.4869696969695" y="2586.0" />
+      <point x="3522.9386363636363" y="2586.0" />
+      <point x="0.0" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.RequestConverter" target="com.ml.primerainfanciarest.models.RequestModel" relationship="CREATE">
+      <point x="-66.5" y="-30.0" />
+      <point x="1600.3136363636363" y="3641.0" />
+      <point x="1613.5636363636363" y="3641.0" />
+      <point x="54.5" y="318.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.ReminderController" target="com.ml.primerainfanciarest.services.ReminderService" relationship="DEPENDENCY">
+      <point x="95.33333333333326" y="-78.5" />
+      <point x="1990.4958434712098" y="1874.0" />
+      <point x="2021.1625101378766" y="1874.0" />
+      <point x="2021.1625101378766" y="1824.0" />
+      <point x="1980.0001013787496" y="1824.0" />
+      <point x="65.5" y="90.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.security.MainSecurity" target="com.ml.primerainfanciarest.security.jwt.JwtEntryPoint" relationship="TO_ONE">
+      <point x="-137.0" y="-114.5" />
+      <point x="2524.3619696969695" y="3869.0" />
+      <point x="2485.6119696969695" y="3869.0" />
+      <point x="2485.6119696969695" y="3859.0" />
+      <point x="2244.5636363636363" y="3859.0" />
+      <point x="-155.25" y="42.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ExperienceService" target="com.ml.primerainfanciarest.repositories.ExperienceRepository" relationship="TO_ONE">
+      <point x="-89.0" y="-90.5" />
+      <point x="250.83901054338912" y="1491.0" />
+      <point x="304.4125101378763" y="1491.0" />
+      <point x="304.4125101378763" y="1451.0" />
+      <point x="97.0" y="1451.0" />
+      <point x="-84.0" y="66.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.ExperienceController" target="com.ml.primerainfanciarest.helpers.FileHelper" relationship="DEPENDENCY">
+      <point x="98.66666666666663" y="-90.5" />
+      <point x="460.82917680454284" y="1874.0" />
+      <point x="860.1625101378766" y="1874.0" />
+      <point x="860.1625101378766" y="1844.0" />
+      <point x="2179.25" y="1844.0" />
+      <point x="2179.25" y="1491.0" />
+      <point x="2584.3334347120826" y="1491.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.PodcastController" target="com.ml.primerainfanciarest.helpers.FileHelper" relationship="DEPENDENCY">
+      <point x="-126.0" y="-54.5" />
+      <point x="2276.662510137877" y="1874.0" />
+      <point x="2381.662510137877" y="1874.0" />
+      <point x="2381.662510137877" y="1491.0" />
+      <point x="2584.3334347120826" y="1491.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.ExperienceController" target="com.ml.primerainfanciarest.services.ExperienceService" relationship="TO_ONE">
+      <point x="0.0" y="-90.5" />
+      <point x="362.1625101378763" y="1864.0" />
+      <point x="250.83901054338912" y="1864.0" />
+      <point x="-89.0" y="90.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.PodcastService" target="com.ml.primerainfanciarest.entities.Podcast" relationship="DEPENDENCY">
+      <point x="-63.0" y="-66.5" />
+      <point x="3175.00425790754" y="1491.0" />
+      <point x="3021.0833333333335" y="1491.0" />
+      <point x="3021.0833333333335" y="1421.0" />
+      <point x="2834.922343876722" y="1421.0" />
+      <point x="2834.922343876722" y="596.0" />
+      <point x="3152.172343876722" y="596.0" />
+      <point x="3152.172343876722" y="586.0" />
+      <point x="3271.922343876722" y="586.0" />
+      <point x="-51.5" y="186.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.TipController" target="com.ml.primerainfanciarest.services.TipService" relationship="TO_ONE">
+      <point x="110.0" y="-78.5" />
+      <point x="3186.162510137877" y="1834.0" />
+      <point x="3203.4527575020275" y="1834.0" />
+      <point x="3203.4527575020275" y="1764.0" />
+      <point x="3691.2084347120826" y="1764.0" />
+      <point x="64.25" y="114.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.QuestionService" target="com.ml.primerainfanciarest.models.QuestionModel" relationship="DEPENDENCY">
+      <point x="64.5" y="-78.5" />
+      <point x="1175.375" y="3824.0" />
+      <point x="1192.95" y="3824.0" />
+      <point x="1192.95" y="3804.0" />
+      <point x="1095.5636363636363" y="3804.0" />
+      <point x="1095.5636363636363" y="3507.0" />
+      <point x="923.875" y="3507.0" />
+      <point x="923.875" y="3487.0" />
+      <point x="946.375" y="3487.0" />
+      <point x="-54.5" y="282.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.models.RequestModel" target="com.ml.primerainfanciarest.entities.Request" relationship="DEPENDENCY">
+      <point x="0.0" y="-318.5" />
+      <point x="0.0" y="330.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ImageGalleryService" target="com.ml.primerainfanciarest.models.ImageGalleryModel" relationship="DEPENDENCY">
+      <point x="71.25" y="-78.5" />
+      <point x="1117.8751013787498" y="1491.0" />
+      <point x="1169.3390105433891" y="1491.0" />
+      <point x="1169.3390105433891" y="1441.0" />
+      <point x="1222.375" y="1441.0" />
+      <point x="1222.375" y="1162.0" />
+      <point x="1263.25" y="1162.0" />
+      <point x="1263.25" y="1152.0" />
+      <point x="1315.5" y="1152.0" />
+      <point x="57.5" y="126.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.ImageGalleryController" target="com.ml.primerainfanciarest.entities.ImageGallery" relationship="CREATE">
+      <point x="-94.33333333333326" y="-66.5" />
+      <point x="1082.4541768045433" y="1864.0" />
+      <point x="779.5" y="1864.0" />
+      <point x="779.5" y="586.0" />
+      <point x="954.5001013787498" y="586.0" />
+      <point x="-57.5" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.WorkshopConverter" target="com.ml.primerainfanciarest.entities.Workshop" relationship="DEPENDENCY">
+      <point x="-74.0" y="-30.0" />
+      <point x="5139.9584347120835" y="1152.0" />
+      <point x="5033.547343876722" y="1152.0" />
+      <point x="5033.547343876722" y="596.0" />
+      <point x="5178.547343876722" y="596.0" />
+      <point x="5178.547343876722" y="586.0" />
+      <point x="5137.62925790754" y="586.0" />
+      <point x="51.5" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.WorkshopService" target="com.ml.primerainfanciarest.helpers.FileHelper" relationship="DEPENDENCY">
+      <point x="-66.75" y="-66.5" />
+      <point x="5143.047343876722" y="1491.0" />
+      <point x="5060.708333333334" y="1491.0" />
+      <point x="5060.708333333334" y="1431.0" />
+      <point x="2584.3334347120826" y="1431.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.WorkshopController" target="com.ml.primerainfanciarest.helpers.FileHelper" relationship="DEPENDENCY">
+      <point x="94.33333333333326" y="-54.5" />
+      <point x="5139.24584347121" y="1874.0" />
+      <point x="5054.912510137876" y="1874.0" />
+      <point x="5054.912510137876" y="1784.0" />
+      <point x="2888.922343876722" y="1784.0" />
+      <point x="2888.922343876722" y="1491.0" />
+      <point x="2584.3334347120826" y="1491.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.PodcastController" target="com.ml.primerainfanciarest.entities.Podcast" relationship="CREATE">
+      <point x="126.0" y="-54.5" />
+      <point x="2528.662510137877" y="1854.0" />
+      <point x="3374.922343876722" y="1854.0" />
+      <point x="51.5" y="186.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.ImageGalleryController" target="com.ml.primerainfanciarest.models.ImageGalleryModel" relationship="DEPENDENCY">
+      <point x="94.33333333333337" y="-66.5" />
+      <point x="1271.1208434712098" y="1874.0" />
+      <point x="1396.9125101378766" y="1874.0" />
+      <point x="1396.9125101378766" y="1834.0" />
+      <point x="1263.25" y="1834.0" />
+      <point x="1263.25" y="1152.0" />
+      <point x="1315.5" y="1152.0" />
+      <point x="57.5" y="126.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ExperienceService" target="com.ml.primerainfanciarest.repositories.ExperienceRepository" relationship="DEPENDENCY">
+      <point x="89.0" y="-90.5" />
+      <point x="428.8390105433891" y="1441.0" />
+      <point x="265.0" y="1441.0" />
+      <point x="84.0" y="66.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.PodcastService" target="com.ml.primerainfanciarest.repositories.PodcastRepository" relationship="DEPENDENCY">
+      <point x="-63.0" y="-66.5" />
+      <point x="3175.00425790754" y="1491.0" />
+      <point x="3021.0833333333335" y="1491.0" />
+      <point x="3021.0833333333335" y="1421.0" />
+      <point x="3195.422343876722" y="1421.0" />
+      <point x="-53.0" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.DailyTipService" target="com.ml.primerainfanciarest.repositories.DailyTipRepository" relationship="DEPENDENCY">
+      <point x="-83.66666666666674" y="-90.5" />
+      <point x="4182.74584347121" y="1874.0" />
+      <point x="4021.912510137877" y="1874.0" />
+      <point x="4021.912510137877" y="1774.0" />
+      <point x="4228.208434712083" y="1774.0" />
+      <point x="-63.5" y="66.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.PodcastConverter" target="com.ml.primerainfanciarest.entities.Podcast" relationship="DEPENDENCY">
+      <point x="66.5" y="-30.0" />
+      <point x="3055.922343876722" y="596.0" />
+      <point x="3152.172343876722" y="596.0" />
+      <point x="3152.172343876722" y="586.0" />
+      <point x="3271.922343876722" y="586.0" />
+      <point x="-51.5" y="186.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.TipService" target="com.ml.primerainfanciarest.repositories.TipRepository" relationship="TO_ONE">
+      <point x="64.25" y="-114.5" />
+      <point x="3691.2084347120826" y="1491.0" />
+      <point x="4184.083333333334" y="1491.0" />
+      <point x="4184.083333333334" y="1411.0" />
+      <point x="3986.4584347120826" y="1411.0" />
+      <point x="70.0" y="66.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.security.MainSecurity" target="com.ml.primerainfanciarest.security.service.UserDetailsServiceImpl" relationship="TO_ONE">
+      <point x="-137.0" y="-114.5" />
+      <point x="2524.3619696969695" y="3869.0" />
+      <point x="2485.6119696969695" y="3869.0" />
+      <point x="2485.6119696969695" y="3859.0" />
+      <point x="2078.8136363636363" y="3859.0" />
+      <point x="2078.8136363636363" y="3659.0" />
+      <point x="2381.828636363636" y="3659.0" />
+      <point x="2381.828636363636" y="3629.0" />
+      <point x="2621.578636363636" y="3629.0" />
+      <point x="-81.25" y="42.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.TipConverter" target="com.ml.primerainfanciarest.models.TipModel" relationship="CREATE">
+      <point x="-49.5" y="-30.0" />
+      <point x="4125.958434712083" y="1162.0" />
+      <point x="3818.797343876722" y="1162.0" />
+      <point x="48.25" y="234.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ImageGalleryService" target="com.ml.primerainfanciarest.converters.ImageGalleryConverter" relationship="DEPENDENCY">
+      <point x="71.25" y="-78.5" />
+      <point x="1117.8751013787498" y="1491.0" />
+      <point x="1169.3390105433891" y="1491.0" />
+      <point x="1169.3390105433891" y="1441.0" />
+      <point x="1039.0" y="1441.0" />
+      <point x="83.0" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ResponseService" target="com.ml.primerainfanciarest.repositories.ResponseRepository" relationship="DEPENDENCY">
+      <point x="65.5" y="-66.5" />
+      <point x="360.1886363636364" y="4045.0" />
+      <point x="449.5636363636364" y="4045.0" />
+      <point x="449.5636363636364" y="4025.0" />
+      <point x="517.0" y="4025.0" />
+      <point x="65.25" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.QuestionConverter" target="com.ml.primerainfanciarest.models.QuestionModel" relationship="CREATE">
+      <point x="-69.5" y="-30.0" />
+      <point x="1175.5636363636363" y="3497.0" />
+      <point x="1055.375" y="3497.0" />
+      <point x="54.5" y="282.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.TipService" target="com.ml.primerainfanciarest.converters.TipConverter" relationship="TO_ONE">
+      <point x="64.25" y="-114.5" />
+      <point x="3691.2084347120826" y="1491.0" />
+      <point x="4184.083333333334" y="1491.0" />
+      <point x="4184.083333333334" y="1411.0" />
+      <point x="4224.958434712083" y="1411.0" />
+      <point x="49.5" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.PodcastService" target="com.ml.primerainfanciarest.helpers.FileHelper" relationship="DEPENDENCY">
+      <point x="-63.0" y="-66.5" />
+      <point x="3175.00425790754" y="1491.0" />
+      <point x="3021.0833333333335" y="1491.0" />
+      <point x="3021.0833333333335" y="1451.0" />
+      <point x="2584.3334347120826" y="1451.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.models.DailyTipModel" target="com.ml.primerainfanciarest.entities.Tip" relationship="DEPENDENCY">
+      <point x="-53.0" y="-102.5" />
+      <point x="4575.958434712083" y="1152.0" />
+      <point x="4254.708434712083" y="1152.0" />
+      <point x="4254.708434712083" y="596.0" />
+      <point x="4354.37925790754" y="596.0" />
+      <point x="0.0" y="282.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.repositories.RequestRepository" target="com.ml.primerainfanciarest.entities.Request" relationship="DEPENDENCY">
+      <point x="0.0" y="-42.0" />
+      <point x="1926.8136363636363" y="2946.0" />
+      <point x="1558.422126929674" y="2946.0" />
+      <point x="0.0" y="330.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.RequestConverter" target="com.ml.primerainfanciarest.entities.Request" relationship="DEPENDENCY">
+      <point x="66.5" y="-30.0" />
+      <point x="1733.3136363636363" y="3641.0" />
+      <point x="1678.5636363636363" y="3641.0" />
+      <point x="1678.5636363636363" y="2946.0" />
+      <point x="1558.422126929674" y="2946.0" />
+      <point x="0.0" y="330.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.ResponseController" target="com.ml.primerainfanciarest.services.ResponseService" relationship="TO_ONE">
+      <point x="-65.25" y="-54.5" />
+      <point x="267.4386363636364" y="4231.0" />
+      <point x="229.18863636363642" y="4231.0" />
+      <point x="-65.5" y="66.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.security.MainSecurity" target="com.ml.primerainfanciarest.security.jwt.JwtTokenFilter" relationship="CREATE">
+      <point x="137.0" y="-114.5" />
+      <point x="2798.3619696969695" y="3869.0" />
+      <point x="3135.8136363636363" y="3869.0" />
+      <point x="0.0" y="78.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.DailyTipController" target="com.ml.primerainfanciarest.services.DailyTipService" relationship="TO_ONE">
+      <point x="52.0" y="-42.5" />
+      <point x="3883.537510137877" y="2108.0" />
+      <point x="4329.162510137877" y="2108.0" />
+      <point x="62.75" y="90.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ResponseService" target="com.ml.primerainfanciarest.models.ResponseJoinModel" relationship="DEPENDENCY">
+      <point x="65.5" y="-66.5" />
+      <point x="360.1886363636364" y="4045.0" />
+      <point x="449.5636363636364" y="4045.0" />
+      <point x="449.5636363636364" y="4025.0" />
+      <point x="592.75" y="4025.0" />
+      <point x="0.0" y="90.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.ExperienceConverter" target="com.ml.primerainfanciarest.models.ExperienceModel" relationship="CREATE">
+      <point x="-76.0" y="-30.0" />
+      <point x="493.25" y="1152.0" />
+      <point x="504.75010137875006" y="1152.0" />
+      <point x="-52.5" y="174.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.models.ExperienceModel" target="com.ml.primerainfanciarest.entities.Experience" relationship="DEPENDENCY">
+      <point x="0.0" y="-174.5" />
+      <point x="557.2501013787501" y="596.0" />
+      <point x="410.25010137875006" y="596.0" />
+      <point x="410.25010137875006" y="586.0" />
+      <point x="371.00010137875006" y="586.0" />
+      <point x="52.5" y="186.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ResponseService" target="com.ml.primerainfanciarest.entities.Response" relationship="DEPENDENCY">
+      <point x="65.5" y="-66.5" />
+      <point x="360.1886363636364" y="4045.0" />
+      <point x="449.5636363636364" y="4045.0" />
+      <point x="449.5636363636364" y="4025.0" />
+      <point x="714.25" y="4025.0" />
+      <point x="714.25" y="3507.0" />
+      <point x="451.75" y="3507.0" />
+      <point x="0.0" y="186.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.WorkshopController" target="com.ml.primerainfanciarest.models.WorkshopModel" relationship="DEPENDENCY">
+      <point x="94.33333333333326" y="-54.5" />
+      <point x="5139.24584347121" y="1874.0" />
+      <point x="5054.912510137876" y="1874.0" />
+      <point x="5054.912510137876" y="1784.0" />
+      <point x="5372.4584347120835" y="1784.0" />
+      <point x="5372.4584347120835" y="1162.0" />
+      <point x="5361.047343876722" y="1162.0" />
+      <point x="5361.047343876722" y="1142.0" />
+      <point x="5275.547343876722" y="1142.0" />
+      <point x="-48.0" y="126.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.TipService" target="com.ml.primerainfanciarest.entities.Tip" relationship="DEPENDENCY">
+      <point x="-64.25" y="-114.5" />
+      <point x="3562.7084347120826" y="1421.0" />
+      <point x="3396.922343876722" y="1421.0" />
+      <point x="3396.922343876722" y="596.0" />
+      <point x="4354.37925790754" y="596.0" />
+      <point x="0.0" y="282.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.QuestionService" target="com.ml.primerainfanciarest.converters.QuestionConverter" relationship="TO_ONE">
+      <point x="-64.5" y="-78.5" />
+      <point x="1046.375" y="3824.0" />
+      <point x="956.0943181818182" y="3824.0" />
+      <point x="956.0943181818182" y="3814.0" />
+      <point x="1175.5636363636363" y="3814.0" />
+      <point x="-69.5" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ExperienceService" target="com.ml.primerainfanciarest.converters.ExperienceConverter" relationship="DEPENDENCY">
+      <point x="89.0" y="-90.5" />
+      <point x="428.8390105433891" y="1441.0" />
+      <point x="645.25" y="1441.0" />
+      <point x="76.0" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.WorkshopConverter" target="com.ml.primerainfanciarest.models.WorkshopModel" relationship="CREATE">
+      <point x="74.0" y="-30.0" />
+      <point x="5287.9584347120835" y="1152.0" />
+      <point x="5371.547343876722" y="1152.0" />
+      <point x="48.0" y="126.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.RequestController" target="com.ml.primerainfanciarest.services.RequestService" relationship="DEPENDENCY">
+      <point x="-55.75" y="-66.5" />
+      <point x="1659.7004288164665" y="3999.0" />
+      <point x="1487.5919382504287" y="3999.0" />
+      <point x="1487.5919382504287" y="3989.0" />
+      <point x="1689.2004288164665" y="3989.0" />
+      <point x="-63.0" y="78.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.security.jwt.JwtTokenFilter" target="com.ml.primerainfanciarest.security.jwt.JwtProvider" relationship="DEPENDENCY">
+      <point x="140.0" y="-78.5" />
+      <point x="3275.8136363636363" y="3659.0" />
+      <point x="3261.215303030303" y="3659.0" />
+      <point x="3261.215303030303" y="3649.0" />
+      <point x="3511.9386363636363" y="3649.0" />
+      <point x="75.75" y="90.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.repositories.QuestionRepository" target="com.ml.primerainfanciarest.entities.Question" relationship="DEPENDENCY">
+      <point x="0.0" y="-42.0" />
+      <point x="973.5636363636364" y="3497.0" />
+      <point x="809.4386363636364" y="3497.0" />
+      <point x="809.4386363636364" y="2879.0" />
+      <point x="941.125" y="2879.0" />
+      <point x="941.125" y="2869.0" />
+      <point x="784.75" y="2869.0" />
+      <point x="54.5" y="294.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.ImageGalleryController" target="com.ml.primerainfanciarest.services.ImageGalleryService" relationship="DEPENDENCY">
+      <point x="94.33333333333337" y="-66.5" />
+      <point x="1271.1208434712098" y="1874.0" />
+      <point x="1396.9125101378766" y="1874.0" />
+      <point x="1396.9125101378766" y="1834.0" />
+      <point x="1117.8751013787498" y="1834.0" />
+      <point x="71.25" y="78.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.ReminderController" target="com.ml.primerainfanciarest.models.ReminderModel" relationship="DEPENDENCY">
+      <point x="95.33333333333326" y="-78.5" />
+      <point x="1990.4958434712098" y="1874.0" />
+      <point x="2021.1625101378766" y="1874.0" />
+      <point x="2021.1625101378766" y="1824.0" />
+      <point x="1603.25" y="1824.0" />
+      <point x="1603.25" y="1162.0" />
+      <point x="1750.0001013787496" y="1162.0" />
+      <point x="1750.0001013787496" y="1152.0" />
+      <point x="1730.7501013787496" y="1152.0" />
+      <point x="-50.5" y="246.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ImageGalleryService" target="com.ml.primerainfanciarest.entities.ImageGallery" relationship="DEPENDENCY">
+      <point x="71.25" y="-78.5" />
+      <point x="1117.8751013787498" y="1491.0" />
+      <point x="1169.3390105433891" y="1491.0" />
+      <point x="1169.3390105433891" y="1441.0" />
+      <point x="1132.5" y="1441.0" />
+      <point x="1132.5" y="596.0" />
+      <point x="1060.411090835361" y="596.0" />
+      <point x="1060.411090835361" y="586.0" />
+      <point x="1069.5001013787498" y="586.0" />
+      <point x="57.5" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.WorkshopService" target="com.ml.primerainfanciarest.converters.WorkshopConverter" relationship="TO_ONE">
+      <point x="66.75" y="-66.5" />
+      <point x="5276.547343876722" y="1491.0" />
+      <point x="5254.958333333334" y="1491.0" />
+      <point x="5254.958333333334" y="1411.0" />
+      <point x="5287.9584347120835" y="1411.0" />
+      <point x="74.0" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ReminderService" target="com.ml.primerainfanciarest.repositories.ReminderRepository" relationship="DEPENDENCY">
+      <point x="65.5" y="-90.5" />
+      <point x="1980.0001013787496" y="1491.0" />
+      <point x="2065.5001013787496" y="1491.0" />
+      <point x="2065.5001013787496" y="1441.0" />
+      <point x="2090.25" y="1441.0" />
+      <point x="56.5" y="42.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ReminderService" target="com.ml.primerainfanciarest.models.ReminderModel" relationship="DEPENDENCY">
+      <point x="65.5" y="-90.5" />
+      <point x="1980.0001013787496" y="1491.0" />
+      <point x="2065.5001013787496" y="1491.0" />
+      <point x="2065.5001013787496" y="1441.0" />
+      <point x="1910.25" y="1441.0" />
+      <point x="1910.25" y="1162.0" />
+      <point x="1750.0001013787496" y="1162.0" />
+      <point x="1750.0001013787496" y="1152.0" />
+      <point x="1730.7501013787496" y="1152.0" />
+      <point x="-50.5" y="246.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ImageGalleryService" target="com.ml.primerainfanciarest.repositories.ImageGalleryRepository" relationship="DEPENDENCY">
+      <point x="71.25" y="-78.5" />
+      <point x="1117.8751013787498" y="1491.0" />
+      <point x="1169.3390105433891" y="1491.0" />
+      <point x="1169.3390105433891" y="1441.0" />
+      <point x="1482.25" y="1441.0" />
+      <point x="63.75" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.UserService" target="com.ml.primerainfanciarest.repositories.UserRepository" relationship="DEPENDENCY">
+      <point x="-63.75" y="-42.5" />
+      <point x="3154.590303030303" y="2897.0" />
+      <point x="3272.090303030303" y="2897.0" />
+      <point x="3272.090303030303" y="2887.0" />
+      <point x="3153.590303030303" y="2887.0" />
+      <point x="-64.25" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.security.jwt.JwtTokenFilter" target="com.ml.primerainfanciarest.security.service.UserDetailsServiceImpl" relationship="DEPENDENCY">
+      <point x="140.0" y="-78.5" />
+      <point x="3275.8136363636363" y="3659.0" />
+      <point x="3261.215303030303" y="3659.0" />
+      <point x="3261.215303030303" y="3629.0" />
+      <point x="2921.465303030303" y="3629.0" />
+      <point x="2921.465303030303" y="3619.0" />
+      <point x="2784.078636363636" y="3619.0" />
+      <point x="81.25" y="42.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.TipController" target="com.ml.primerainfanciarest.helpers.FileHelper" relationship="DEPENDENCY">
+      <point x="0.0" y="-78.5" />
+      <point x="3076.162510137877" y="1794.0" />
+      <point x="2392.162510137877" y="1794.0" />
+      <point x="2392.162510137877" y="1491.0" />
+      <point x="2584.3334347120826" y="1491.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.ExperienceController" target="com.ml.primerainfanciarest.services.ExperienceService" relationship="DEPENDENCY">
+      <point x="98.66666666666663" y="-90.5" />
+      <point x="460.82917680454284" y="1874.0" />
+      <point x="860.1625101378766" y="1874.0" />
+      <point x="860.1625101378766" y="1844.0" />
+      <point x="428.8390105433891" y="1844.0" />
+      <point x="89.0" y="90.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.entities.Response" target="com.ml.primerainfanciarest.entities.Question" relationship="TO_ONE">
+      <point x="-81.0" y="-186.5" />
+      <point x="370.75" y="2869.0" />
+      <point x="675.75" y="2869.0" />
+      <point x="-54.5" y="294.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.ReminderController" target="com.ml.primerainfanciarest.helpers.FileHelper" relationship="DEPENDENCY">
+      <point x="95.33333333333326" y="-78.5" />
+      <point x="1990.4958434712098" y="1874.0" />
+      <point x="2021.1625101378766" y="1874.0" />
+      <point x="2021.1625101378766" y="1824.0" />
+      <point x="2381.662510137877" y="1824.0" />
+      <point x="2381.662510137877" y="1491.0" />
+      <point x="2584.3334347120826" y="1491.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.security.service.UserDetailsServiceImpl" target="com.ml.primerainfanciarest.services.UserService" relationship="TO_ONE">
+      <point x="-81.25" y="-42.5" />
+      <point x="2621.578636363636" y="3302.0" />
+      <point x="2748.703636363636" y="3302.0" />
+      <point x="2748.703636363636" y="3252.0" />
+      <point x="3154.590303030303" y="3252.0" />
+      <point x="-63.75" y="42.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.ReminderController" target="com.ml.primerainfanciarest.services.ReminderService" relationship="TO_ONE">
+      <point x="0.0" y="-78.5" />
+      <point x="1895.1625101378766" y="1874.0" />
+      <point x="1849.0001013787496" y="1874.0" />
+      <point x="-65.5" y="90.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.TipController" target="com.ml.primerainfanciarest.models.TipModel" relationship="DEPENDENCY">
+      <point x="0.0" y="-78.5" />
+      <point x="3076.162510137877" y="1794.0" />
+      <point x="3487.9584347120826" y="1794.0" />
+      <point x="3487.9584347120826" y="1162.0" />
+      <point x="3625.422343876722" y="1162.0" />
+      <point x="3625.422343876722" y="1152.0" />
+      <point x="3722.297343876722" y="1152.0" />
+      <point x="-48.25" y="234.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.security.MainSecurity" target="com.ml.primerainfanciarest.security.jwt.JwtEntryPoint" relationship="DEPENDENCY">
+      <point x="0.0" y="-114.5" />
+      <point x="2661.3619696969695" y="3869.0" />
+      <point x="2555.0636363636363" y="3869.0" />
+      <point x="155.25" y="42.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ReminderService" target="com.ml.primerainfanciarest.helpers.FileHelper" relationship="DEPENDENCY">
+      <point x="65.5" y="-90.5" />
+      <point x="1980.0001013787496" y="1491.0" />
+      <point x="2065.5001013787496" y="1491.0" />
+      <point x="2065.5001013787496" y="1481.0" />
+      <point x="2584.3334347120826" y="1481.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.security.jwt.JwtProvider" target="com.ml.primerainfanciarest.security.models.UserPrincipal" relationship="DEPENDENCY">
+      <point x="0.0" y="-90.5" />
+      <point x="3436.1886363636363" y="3262.0" />
+      <point x="3408.335303030303" y="3262.0" />
+      <point x="3408.335303030303" y="3242.0" />
+      <point x="3580.340303030303" y="3242.0" />
+      <point x="0.0" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ExperienceService" target="com.ml.primerainfanciarest.models.ExperienceModel" relationship="DEPENDENCY">
+      <point x="89.0" y="-90.5" />
+      <point x="428.8390105433891" y="1441.0" />
+      <point x="406.75" y="1441.0" />
+      <point x="406.75" y="1162.0" />
+      <point x="562.5001013787501" y="1162.0" />
+      <point x="562.5001013787501" y="1152.0" />
+      <point x="609.7501013787501" y="1152.0" />
+      <point x="52.5" y="174.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.ImageGalleryController" target="com.ml.primerainfanciarest.helpers.FileHelper" relationship="DEPENDENCY">
+      <point x="94.33333333333337" y="-66.5" />
+      <point x="1271.1208434712098" y="1874.0" />
+      <point x="1396.9125101378766" y="1874.0" />
+      <point x="1396.9125101378766" y="1834.0" />
+      <point x="2309.672343876722" y="1834.0" />
+      <point x="2309.672343876722" y="1491.0" />
+      <point x="2584.3334347120826" y="1491.0" />
+      <point x="0.0" y="66.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.QuestionService" target="com.ml.primerainfanciarest.repositories.QuestionRepository" relationship="TO_ONE">
+      <point x="-64.5" y="-78.5" />
+      <point x="1046.375" y="3824.0" />
+      <point x="956.0943181818182" y="3824.0" />
+      <point x="956.0943181818182" y="3814.0" />
+      <point x="917.8136363636364" y="3814.0" />
+      <point x="-55.75" y="42.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.RequestController" target="com.ml.primerainfanciarest.services.RequestService" relationship="TO_ONE">
+      <point x="55.75" y="-66.5" />
+      <point x="1771.2004288164665" y="3999.0" />
+      <point x="1815.2004288164665" y="3999.0" />
+      <point x="63.0" y="78.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.repositories.ResponseRepository" target="com.ml.primerainfanciarest.entities.Response" relationship="DEPENDENCY">
+      <point x="0.0" y="-30.0" />
+      <point x="0.0" y="186.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.security.service.UserDetailsServiceImpl" target="com.ml.primerainfanciarest.entities.UserPi" relationship="DEPENDENCY">
+      <point x="81.25" y="-42.5" />
+      <point x="2784.078636363636" y="3292.0" />
+      <point x="3266.3469696969696" y="3292.0" />
+      <point x="3266.3469696969696" y="3262.0" />
+      <point x="3078.840303030303" y="3262.0" />
+      <point x="3078.840303030303" y="2586.0" />
+      <point x="3522.9386363636363" y="2586.0" />
+      <point x="0.0" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.QuestionController" target="com.ml.primerainfanciarest.entities.Question" relationship="DEPENDENCY">
+      <point x="-57.25" y="-66.5" />
+      <point x="1009.325" y="4045.0" />
+      <point x="847.1886363636364" y="4045.0" />
+      <point x="847.1886363636364" y="4035.0" />
+      <point x="798.9386363636364" y="4035.0" />
+      <point x="798.9386363636364" y="2879.0" />
+      <point x="941.125" y="2879.0" />
+      <point x="941.125" y="2869.0" />
+      <point x="784.75" y="2869.0" />
+      <point x="54.5" y="294.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.WorkshopService" target="com.ml.primerainfanciarest.repositories.WorkshopRepository" relationship="DEPENDENCY">
+      <point x="-66.75" y="-66.5" />
+      <point x="5143.047343876722" y="1491.0" />
+      <point x="5060.708333333334" y="1491.0" />
+      <point x="5060.708333333334" y="1421.0" />
+      <point x="4872.4584347120835" y="1421.0" />
+      <point x="-57.5" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.ImageGalleryController" target="com.ml.primerainfanciarest.services.ImageGalleryService" relationship="TO_ONE">
+      <point x="0.0" y="-66.5" />
+      <point x="1176.7875101378766" y="1854.0" />
+      <point x="975.3751013787498" y="1854.0" />
+      <point x="-71.25" y="78.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.TipService" target="com.ml.primerainfanciarest.repositories.TipRepository" relationship="DEPENDENCY">
+      <point x="-64.25" y="-114.5" />
+      <point x="3562.7084347120826" y="1421.0" />
+      <point x="3846.4584347120826" y="1421.0" />
+      <point x="-70.0" y="66.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.TipController" target="com.ml.primerainfanciarest.services.TipService" relationship="DEPENDENCY">
+      <point x="0.0" y="-78.5" />
+      <point x="3076.162510137877" y="1824.0" />
+      <point x="3193.4527575020275" y="1824.0" />
+      <point x="3193.4527575020275" y="1774.0" />
+      <point x="3562.7084347120826" y="1774.0" />
+      <point x="-64.25" y="114.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ExperienceService" target="com.ml.primerainfanciarest.converters.ExperienceConverter" relationship="TO_ONE">
+      <point x="-89.0" y="-90.5" />
+      <point x="250.83901054338912" y="1491.0" />
+      <point x="304.4125101378763" y="1491.0" />
+      <point x="304.4125101378763" y="1451.0" />
+      <point x="493.25" y="1451.0" />
+      <point x="-76.0" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.PodcastController" target="com.ml.primerainfanciarest.services.PodcastService" relationship="TO_ONE">
+      <point x="0.0" y="-54.5" />
+      <point x="2402.662510137877" y="1844.0" />
+      <point x="3301.00425790754" y="1844.0" />
+      <point x="63.0" y="66.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.models.DailyTipModel" target="com.ml.primerainfanciarest.entities.DailyTip" relationship="DEPENDENCY">
+      <point x="-53.0" y="-102.5" />
+      <point x="4575.958434712083" y="1152.0" />
+      <point x="4254.708434712083" y="1152.0" />
+      <point x="4254.708434712083" y="1142.0" />
+      <point x="4375.662510137877" y="1142.0" />
+      <point x="4375.662510137877" y="1132.0" />
+      <point x="4601.547343876722" y="1132.0" />
+      <point x="-53.0" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.PodcastService" target="com.ml.primerainfanciarest.repositories.PodcastRepository" relationship="TO_ONE">
+      <point x="63.0" y="-66.5" />
+      <point x="53.0" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.repositories.DailyTipRepository" target="com.ml.primerainfanciarest.entities.DailyTip" relationship="DEPENDENCY">
+      <point x="0.0" y="-66.0" />
+      <point x="4291.708434712083" y="1162.0" />
+      <point x="4375.662510137877" y="1162.0" />
+      <point x="4375.662510137877" y="1132.0" />
+      <point x="4601.547343876722" y="1132.0" />
+      <point x="-53.0" y="150.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.PodcastController" target="com.ml.primerainfanciarest.models.PodcastModel" relationship="DEPENDENCY">
+      <point x="-126.0" y="-54.5" />
+      <point x="2276.662510137877" y="1874.0" />
+      <point x="2381.662510137877" y="1874.0" />
+      <point x="2381.662510137877" y="1814.0" />
+      <point x="2168.25" y="1814.0" />
+      <point x="2168.25" y="1162.0" />
+      <point x="2845.922343876722" y="1162.0" />
+      <point x="2845.922343876722" y="1152.0" />
+      <point x="2900.672343876722" y="1152.0" />
+      <point x="-48.25" y="162.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.WorkshopService" target="com.ml.primerainfanciarest.models.WorkshopModel" relationship="DEPENDENCY">
+      <point x="-66.75" y="-66.5" />
+      <point x="5143.047343876722" y="1491.0" />
+      <point x="5060.708333333334" y="1491.0" />
+      <point x="5060.708333333334" y="1421.0" />
+      <point x="5055.4584347120835" y="1421.0" />
+      <point x="5055.4584347120835" y="1162.0" />
+      <point x="5361.047343876722" y="1162.0" />
+      <point x="5361.047343876722" y="1142.0" />
+      <point x="5275.547343876722" y="1142.0" />
+      <point x="-48.0" y="126.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.ResponseConverter" target="com.ml.primerainfanciarest.models.ResponseModel" relationship="CREATE">
+      <point x="-71.5" y="-30.0" />
+      <point x="86.75" y="3824.0" />
+      <point x="102.0" y="3824.0" />
+      <point x="0.0" y="126.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.WorkshopService" target="com.ml.primerainfanciarest.converters.WorkshopConverter" relationship="DEPENDENCY">
+      <point x="-66.75" y="-66.5" />
+      <point x="5143.047343876722" y="1491.0" />
+      <point x="5060.708333333334" y="1491.0" />
+      <point x="5060.708333333334" y="1421.0" />
+      <point x="5139.9584347120835" y="1421.0" />
+      <point x="-74.0" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.entities.DailyTip" target="com.ml.primerainfanciarest.entities.Tip" relationship="DEPENDENCY">
+      <point x="-53.0" y="-150.5" />
+      <point x="4601.547343876722" y="596.0" />
+      <point x="4354.37925790754" y="596.0" />
+      <point x="0.0" y="282.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.DailyTipConverter" target="com.ml.primerainfanciarest.models.DailyTipModel" relationship="CREATE">
+      <point x="66.0" y="-30.0" />
+      <point x="4636.708434712083" y="1491.0" />
+      <point x="4628.958434712083" y="1491.0" />
+      <point x="0.0" y="102.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.ReminderConverter" target="com.ml.primerainfanciarest.entities.Reminder" relationship="DEPENDENCY">
+      <point x="-71.5" y="-30.0" />
+      <point x="1685.25" y="1152.0" />
+      <point x="1567.5" y="1152.0" />
+      <point x="1567.5" y="596.0" />
+      <point x="1781.2501013787496" y="596.0" />
+      <point x="1781.2501013787496" y="586.0" />
+      <point x="1827.2501013787496" y="586.0" />
+      <point x="51.5" y="282.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.TipController" target="com.ml.primerainfanciarest.entities.Tip" relationship="CREATE">
+      <point x="-110.0" y="-78.5" />
+      <point x="2966.162510137877" y="1864.0" />
+      <point x="3385.922343876722" y="1864.0" />
+      <point x="3385.922343876722" y="586.0" />
+      <point x="4285.712591240873" y="586.0" />
+      <point x="-68.66666666666674" y="282.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.RequestService" target="com.ml.primerainfanciarest.models.RequestModel" relationship="DEPENDENCY">
+      <point x="-63.0" y="-78.5" />
+      <point x="1689.2004288164665" y="3789.0" />
+      <point x="1624.3419382504287" y="3789.0" />
+      <point x="1624.3419382504287" y="3779.0" />
+      <point x="1523.3136363636363" y="3779.0" />
+      <point x="1523.3136363636363" y="3641.0" />
+      <point x="1486.5636363636363" y="3641.0" />
+      <point x="1486.5636363636363" y="3631.0" />
+      <point x="1504.5636363636363" y="3631.0" />
+      <point x="-54.5" y="318.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.ReminderController" target="com.ml.primerainfanciarest.entities.Reminder" relationship="CREATE">
+      <point x="-95.33333333333326" y="-78.5" />
+      <point x="1799.8291768045433" y="1874.0" />
+      <point x="1556.5" y="1874.0" />
+      <point x="1556.5" y="586.0" />
+      <point x="1724.2501013787496" y="586.0" />
+      <point x="-51.5" y="282.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.AuthController" target="com.ml.primerainfanciarest.services.UserService" relationship="TO_ONE">
+      <point x="-149.0" y="-78.5" />
+      <point x="3511.840303030303" y="3659.0" />
+      <point x="3445.960303030303" y="3659.0" />
+      <point x="3445.960303030303" y="3609.0" />
+      <point x="3185.0969696969696" y="3609.0" />
+      <point x="3185.0969696969696" y="3302.0" />
+      <point x="2748.703636363636" y="3302.0" />
+      <point x="2748.703636363636" y="3252.0" />
+      <point x="3154.590303030303" y="3252.0" />
+      <point x="-63.75" y="42.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.security.service.UserDetailsServiceImpl" target="com.ml.primerainfanciarest.services.UserService" relationship="DEPENDENCY">
+      <point x="81.25" y="-42.5" />
+      <point x="2784.078636363636" y="3292.0" />
+      <point x="3266.3469696969696" y="3292.0" />
+      <point x="3266.3469696969696" y="3282.0" />
+      <point x="3755.8136363636363" y="3282.0" />
+      <point x="3755.8136363636363" y="3252.0" />
+      <point x="3282.090303030303" y="3252.0" />
+      <point x="63.75" y="42.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ReminderService" target="com.ml.primerainfanciarest.converters.ReminderConverter" relationship="DEPENDENCY">
+      <point x="65.5" y="-90.5" />
+      <point x="1980.0001013787496" y="1491.0" />
+      <point x="2065.5001013787496" y="1491.0" />
+      <point x="2065.5001013787496" y="1441.0" />
+      <point x="1828.25" y="1441.0" />
+      <point x="71.5" y="30.0" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.services.ExperienceService" target="com.ml.primerainfanciarest.entities.Experience" relationship="DEPENDENCY">
+      <point x="89.0" y="-90.5" />
+      <point x="428.8390105433891" y="1441.0" />
+      <point x="359.5" y="1441.0" />
+      <point x="359.5" y="596.0" />
+      <point x="410.25010137875006" y="596.0" />
+      <point x="410.25010137875006" y="586.0" />
+      <point x="371.00010137875006" y="586.0" />
+      <point x="52.5" y="186.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.ResponseConverter" target="com.ml.primerainfanciarest.entities.Response" relationship="DEPENDENCY">
+      <point x="71.5" y="-30.0" />
+      <point x="229.75" y="3824.0" />
+      <point x="214.5" y="3824.0" />
+      <point x="214.5" y="3507.0" />
+      <point x="451.75" y="3507.0" />
+      <point x="0.0" y="186.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.ReminderConverter" target="com.ml.primerainfanciarest.models.ReminderModel" relationship="CREATE">
+      <point x="71.5" y="-30.0" />
+      <point x="1828.25" y="1152.0" />
+      <point x="1831.7501013787496" y="1152.0" />
+      <point x="50.5" y="246.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.AuthController" target="com.ml.primerainfanciarest.security.jwt.JwtProvider" relationship="DEPENDENCY">
+      <point x="0.0" y="-78.5" />
+      <point x="3660.840303030303" y="3659.0" />
+      <point x="3717.9386363636363" y="3659.0" />
+      <point x="3717.9386363636363" y="3639.0" />
+      <point x="3511.9386363636363" y="3639.0" />
+      <point x="75.75" y="90.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.entities.Response" target="com.ml.primerainfanciarest.entities.Question" relationship="DEPENDENCY">
+      <point x="81.0" y="-186.5" />
+      <point x="532.75" y="2879.0" />
+      <point x="941.125" y="2879.0" />
+      <point x="941.125" y="2869.0" />
+      <point x="784.75" y="2869.0" />
+      <point x="54.5" y="294.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.controllers.QuestionController" target="com.ml.primerainfanciarest.services.QuestionService" relationship="DEPENDENCY">
+      <point x="-57.25" y="-66.5" />
+      <point x="1009.325" y="4045.0" />
+      <point x="847.1886363636364" y="4045.0" />
+      <point x="847.1886363636364" y="4035.0" />
+      <point x="1046.375" y="4035.0" />
+      <point x="-64.5" y="78.5" />
+    </edge>
+    <edge source="com.ml.primerainfanciarest.converters.PodcastConverter" target="com.ml.primerainfanciarest.models.PodcastModel" relationship="CREATE">
+      <point x="-66.5" y="-30.0" />
+      <point x="2922.922343876722" y="1162.0" />
+      <point x="2997.172343876722" y="1162.0" />
+      <point x="48.25" y="162.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.19790002282583888" showDependencies="true" x="2714.0" y="2180.4999999999995" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

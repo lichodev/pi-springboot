@@ -6,6 +6,14 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.Objects;
 
+/**
+ * Entidad que representa la tabla 'reminder'
+ * Es un recordatorio de consejos útiles para familias con niños
+ * en un rango de edad determinado
+ * Se guarda un id, el rango de edad para el que está indicado (desde - hasta)
+ * una imagen, y la cantidad de veces que los usuarios indicaron si les fue útil o no
+ * la información
+ */
 @Entity
 public class Reminder {
     private int id;

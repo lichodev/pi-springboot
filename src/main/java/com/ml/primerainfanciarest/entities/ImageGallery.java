@@ -3,6 +3,10 @@ package com.ml.primerainfanciarest.entities;
 import javax.persistence.*;
 import java.util.Objects;
 
+/**
+ * Entidad que representa la tabla 'image-gallery'
+ * Posee un id, una imagen y una descripción
+ */
 @Entity
 public class ImageGallery {
     private int id;

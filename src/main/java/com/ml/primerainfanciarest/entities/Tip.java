@@ -6,6 +6,11 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.util.Objects;
 
+/**
+ * Entidad que representa la tabla 'tip'
+ * Posee un id, un título, un texto, una imagen
+ * y la cantidad de veces que los usuarios indicaron si les fue útil o no la información
+ */
 @Entity
 public class Tip {
     private int id;

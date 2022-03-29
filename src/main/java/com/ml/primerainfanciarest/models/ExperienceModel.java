@@ -2,7 +2,7 @@ package com.ml.primerainfanciarest.models;
 
 import com.ml.primerainfanciarest.entities.Experience;
 
-public class ExperienceModel {
+public class ExperienceModel implements Comparable{
     private int id;
     private String text;
     private byte[] image;
@@ -51,5 +51,11 @@ public class ExperienceModel {
 
     public void setStatus(boolean status) {
         this.status = status;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        ExperienceModel e = (ExperienceModel) o;
+        return e.getId()-this.getId();
     }
 }

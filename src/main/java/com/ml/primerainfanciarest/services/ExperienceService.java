@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 @Service("ExperienceService")
@@ -26,6 +27,11 @@ public class ExperienceService {
     @Qualifier("ExperienceConverter")
     private ExperienceConverter converter;
 
+    /**
+     * Obtiene el listado de todas las experiencias, cuyo estado sea igual al recibido por parámetro
+     * @param status
+     * @return
+     */
     public List<ExperienceModel> getByStatus(boolean status) {
         List<ExperienceModel> experiences = new ArrayList<>();
         for (Experience e: this.repository.findAllByStatus(status)) {
@@ -33,9 +39,15 @@ public class ExperienceService {
                 e.setImage(FileHelper.decompressBytes(e.getImage()));
             experiences.add(this.converter.convert(e));
         }
+        Collections.sort(experiences);
         return experiences;
     }
 
+    /**
+     * Recibe una experiencia y la guarda en la base de datos
+     * @param experience
+     * @return
+     */
     public boolean post(Experience experience) {
         try {
             repository.save(experience);
@@ -45,6 +57,13 @@ public class ExperienceService {
         }
     }
 
+    /**
+     * Obtiene la experiencia coincidente con el id recibido por parámetro
+     * Cambia el estado a verdadero haciendo que sea visible para los usuarios no logueados
+     * Guarda los cambios en la BDD
+     * @param id
+     * @return
+     */
     public boolean accept(int id) {
         Experience e = this.repository.findById(id);
         e.setStatus(true);
@@ -56,7 +75,11 @@ public class ExperienceService {
         }
     }
 
-    //TODO: mejorar (retorna true, pero no elimina)
+    /**
+     * Si existe una experiencia con el id recibido por parámetro la elimina de la base de datos
+     * @param id
+     * @return
+     */
     public boolean delete(int id) {
         try {
             if (this.repository.existsById(id)) {

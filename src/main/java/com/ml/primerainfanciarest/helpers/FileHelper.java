@@ -11,10 +11,21 @@ import java.util.zip.DataFormatException;
 import java.util.zip.Deflater;
 import java.util.zip.Inflater;
 
+/**
+ * Interfaz que se encarga del manejo de multimedia (imágenes, audios y videos)
+ */
 public interface FileHelper {
+    final String MAIN_PATH = "src//main//resources//static/";
 
+    /**
+     * Guarda el File recibido en el path indicado
+     * Devuelve la imagen/audio/video como un conjunto de bytes
+     * @param file
+     * @param path
+     * @return
+     */
     public static byte[] saveFile(MultipartFile file, String path) {
-        Path directory = Paths.get("src//main//resources//static/" + path);
+        Path directory = Paths.get(MAIN_PATH + path);
         String absolutePath = directory.toFile().getAbsolutePath();
         try {
             byte[] byteFile = file.getBytes();
@@ -27,6 +38,11 @@ public interface FileHelper {
         return null;
     }
 
+    /**
+     * Comprime la imagen/audio/video para ser guardada en la BDD
+     * @param data
+     * @return
+     */
     public static byte[] compressBytes(byte[] data) {
         Deflater deflater = new Deflater();
         deflater.setInput(data);
@@ -45,6 +61,11 @@ public interface FileHelper {
         return outputStream.toByteArray();
     }
 
+    /**
+     * descomprime la imagen/audio/video para ser enviada al cliente
+     * @param data
+     * @return
+     */
     public static byte[] decompressBytes(byte[] data) {
         Inflater inflater = new Inflater();
         inflater.setInput(data);

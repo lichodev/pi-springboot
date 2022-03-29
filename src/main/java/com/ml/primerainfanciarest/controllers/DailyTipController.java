@@ -11,6 +11,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.time.LocalDate;
 
+/**
+ * Controlador accesible con el path "/daily-tip"
+ * Se encarga de todas las peticiones para la tabla 'daily_tip'
+ */
 @RestController
 @RequestMapping("/daily-tip")
 @CrossOrigin
@@ -20,6 +24,11 @@ public class DailyTipController {
     @Qualifier("DailyTipService")
     private DailyTipService service;
 
+    /**
+     * Obtiene un tip asociado a la fecha actual
+     * Se accede mediante método GET
+     * @return TipModel
+     */
     @GetMapping
     public TipModel get() {
         return this.service.getDayTip();

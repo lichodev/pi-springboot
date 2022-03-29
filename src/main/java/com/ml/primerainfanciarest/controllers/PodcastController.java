@@ -17,6 +17,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
+/**
+ * Controlador accesible con el path "/podcast"
+ * Se encarga de resolver todas las peticiones a la tabla 'podcast'
+ */
 @RestController
 @RequestMapping("/podcast")
 @CrossOrigin
@@ -26,11 +30,26 @@ public class PodcastController {
     @Qualifier("PodcastService")
     private PodcastService service;
 
+    /**
+     * Obtiene el listado completo de podcasts
+     * Se accede mediante el método GET
+     * @return
+     */
     @GetMapping
     public List<PodcastModel> get() {
         return this.service.get();
     }
 
+    /**
+     * Recibe el audio, la imagen y el título de un podcast
+     * Crea el podcast y lo guarda
+     * Se accede mediante el método POST
+     * Solo es accesible para el usuario logueado
+     * @param title
+     * @param audio
+     * @param image
+     * @return
+     */
     @PostMapping()
     public boolean post(@RequestParam("title") String title, @RequestParam("audio") MultipartFile audio, @RequestParam("file") MultipartFile image) {
         if (audio.isEmpty() || image.isEmpty()) return false;

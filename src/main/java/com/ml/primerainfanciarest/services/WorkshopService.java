@@ -22,6 +22,10 @@ public class WorkshopService {
     @Qualifier("WorkshopConverter")
     private WorkshopConverter converter;
 
+    /**
+     * Obtiene el listado de todos los talleres
+     * @return
+     */
     public List<WorkshopModel> get() {
         List<WorkshopModel> workshops = new ArrayList<>();
         for (Workshop w: this.repository.findAll()) {
@@ -31,6 +35,11 @@ public class WorkshopService {
         return workshops;
     }
 
+    /**
+     * Guarda en la BDD el taller recibido
+     * @param workshop
+     * @return
+     */
     public boolean post(Workshop workshop) {
         try {
             this.repository.save(workshop);

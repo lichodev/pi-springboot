@@ -25,6 +25,11 @@ public class ReminderService {
     @Qualifier("ReminderConverter")
     private ReminderConverter converter;
 
+    /**
+     * Obtiene el listado de todos los recordatorios
+     * y los devuelve ordenados según la columna 'since' en orden ascendente
+     * @return
+     */
     public List<ReminderModel> get() {
         List<ReminderModel> reminders = new ArrayList<>();
         for (Reminder r: this.repository.findAll()) {
@@ -35,6 +40,11 @@ public class ReminderService {
         return reminders;
     }
 
+    /**
+     * Obtiene el recordatorio asociado al id recibido por parámetro
+     * @param id
+     * @return
+     */
     public ReminderModel getById(int id) {
         try {
             Reminder reminder = this.repository.findById(id);
@@ -45,6 +55,11 @@ public class ReminderService {
         }
     }
 
+    /**
+     * Guarda en la BDD el recordatorio recibido
+     * @param reminder
+     * @return
+     */
     public boolean post(Reminder reminder) {
         try {
             this.repository.save(reminder);
@@ -54,6 +69,12 @@ public class ReminderService {
         }
     }
 
+    /**
+     * Suma un like o un dislike al recordatorio cuyo id coincide con el recibido
+     * @param id
+     * @param value
+     * @return
+     */
     public boolean put(int id, int value) {
         Reminder reminder = this.repository.findById(id);
         if (reminder != null) {

@@ -27,6 +27,10 @@ public class PodcastService {
     @Qualifier("PodcastConverter")
     private PodcastConverter converter;
 
+    /**
+     * Obtiene el listado completo de podcasts
+     * @return
+     */
     public List<PodcastModel> get() {
         List<PodcastModel> podcasts = new ArrayList<>();
         for (Podcast p : this.repository.findAll()) {
@@ -37,6 +41,11 @@ public class PodcastService {
         return podcasts;
     }
 
+    /**
+     * Guarda en la BDD el podcast recibido
+     * @param podcast
+     * @return
+     */
     public boolean post(Podcast podcast) {
         try {
             this.repository.save(podcast);

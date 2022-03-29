@@ -4,6 +4,10 @@ import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.Objects;
 
+/**
+ * Entidad que representa la tabla 'daily-tip'
+ * Posee una fecha y el id de un tip como FK
+ */
 @Entity
 public class DailyTip {
     private LocalDate date;

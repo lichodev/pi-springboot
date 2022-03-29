@@ -6,6 +6,12 @@ import org.springframework.stereotype.Component;
 
 @Component("QuestionConverter")
 public class QuestionConverter {
+
+    /**
+     * Crea un Question Model a partir de la pregunta recibida por parámetro
+     * @param question
+     * @return
+     */
     public QuestionModel convert(Question question) {
         return new QuestionModel(question);
     }
