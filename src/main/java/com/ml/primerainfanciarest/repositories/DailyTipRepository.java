@@ -2,6 +2,7 @@ package com.ml.primerainfanciarest.repositories;
 
 import com.ml.primerainfanciarest.entities.DailyTip;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
@@ -16,9 +17,5 @@ public interface DailyTipRepository extends JpaRepository<DailyTip, Serializable
 
     @Query("SELECT COUNT (tipId) AS tips FROM DailyTip")
     public abstract int countAll();
-
-    @Query("DELETE FROM DailyTip")
-    public abstract void emptyTable();
-
-
+    public abstract void deleteAll();
 }

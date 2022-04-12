@@ -39,7 +39,7 @@ public class DailyTipService {
         if (dailyTip == null) {
             int tipQuantity = this.tipService.getQuantity();
             if (this.repository.countAll() == tipQuantity) {
-                this.repository.emptyTable();
+                this.repository.deleteAll();
             }
             tipId = this.getRandomTipId();
             this.post(new DailyTip(today, tipId));
