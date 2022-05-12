@@ -15,6 +15,11 @@ import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Servicio encargado de la lógica relacionada con los users
+ * @author sole
+ * @version 1.0
+ */
 @Service("userService")
 @Transactional
 public class UserService{
@@ -23,6 +28,12 @@ public class UserService{
     @Qualifier("UserRepository")
     private UserRepository repository;
 
+    /**
+     * Obtiene un user según su username
+     * <p>Se utiliza para autenticación</p>
+     * @param username buscado
+     * @return user encontrado
+     */
     public UserPi getByUserName(String username) {
         return this.repository.findByUsername(username);
     }

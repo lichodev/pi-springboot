@@ -1,0 +1,93 @@
+\doxysection{com.\+ml.\+primerainfanciarest.\+controllers.\+Podcast\+Controller Class Reference}
+\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_podcast_controller}\index{com.ml.primerainfanciarest.controllers.PodcastController@{com.ml.primerainfanciarest.controllers.PodcastController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \textbf{ Podcast\+Model} $>$ \textbf{ get} ()
+\item 
+boolean \textbf{ post} (@Request\+Param(\char`\"{}title\char`\"{}) String title, @Request\+Param(\char`\"{}audio\char`\"{}) Multipart\+File audio, @Request\+Param(\char`\"{}file\char`\"{}) Multipart\+File image)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controlador accesible con el path \char`\"{}/podcast\char`\"{} 
+
+Se encarga de resolver todas las peticiones a la tabla \textquotesingle{}podcast\textquotesingle{}
+
+\begin{DoxyAuthor}{Author}
+sole 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 29 of file Podcast\+Controller.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_podcast_controller_a6fdbfc97da2b0d1b1d4ff2af59047735}} 
+\index{com.ml.primerainfanciarest.controllers.PodcastController@{com.ml.primerainfanciarest.controllers.PodcastController}!get@{get}}
+\index{get@{get}!com.ml.primerainfanciarest.controllers.PodcastController@{com.ml.primerainfanciarest.controllers.PodcastController}}
+\doxysubsubsection{get()}
+{\footnotesize\ttfamily List$<$\textbf{ Podcast\+Model}$>$ com.\+ml.\+primerainfanciarest.\+controllers.\+Podcast\+Controller.\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene el listado completo de podcasts 
+
+Se accede mediante el método G\+ET
+
+\begin{DoxyReturn}{Returns}
+listado de podcasts 
+\end{DoxyReturn}
+
+
+Definition at line 41 of file Podcast\+Controller.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_podcast_controller_a6fdbfc97da2b0d1b1d4ff2af59047735_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_podcast_controller_a4024bb23366c6aa53908fad06cec2df5}} 
+\index{com.ml.primerainfanciarest.controllers.PodcastController@{com.ml.primerainfanciarest.controllers.PodcastController}!post@{post}}
+\index{post@{post}!com.ml.primerainfanciarest.controllers.PodcastController@{com.ml.primerainfanciarest.controllers.PodcastController}}
+\doxysubsubsection{post()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+controllers.\+Podcast\+Controller.\+post (\begin{DoxyParamCaption}\item[{@Request\+Param(\char`\"{}title\char`\"{}) String}]{title,  }\item[{@Request\+Param(\char`\"{}audio\char`\"{}) Multipart\+File}]{audio,  }\item[{@Request\+Param(\char`\"{}file\char`\"{}) Multipart\+File}]{image }\end{DoxyParamCaption})}
+
+Crea y guarda un podcast 
+
+Se accede mediante el método P\+O\+ST Solo es accesible para el usuario logueado
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & del podcast \\
+\hline
+{\em audio} & el propio podcast \\
+\hline
+{\em image} & que acompaña al podcast \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean que indica si se pudo guardar 
+\end{DoxyReturn}
+
+
+Definition at line 55 of file Podcast\+Controller.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_podcast_controller_a4024bb23366c6aa53908fad06cec2df5_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sole/\+Sole/\+Primera\+Infancia/primera\+Infancia\+Rest/src/main/java/com/ml/primerainfanciarest/controllers/Podcast\+Controller.\+java\end{DoxyCompactItemize}

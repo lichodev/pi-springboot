@@ -10,6 +10,12 @@ import javax.sql.rowset.serial.SerialArray;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * Repositorio encargado de las transacciones con la BBDD
+ * correspondientes a las preguntas y sus respectivas respuestas
+ * @author sole
+ * @version 1.0
+ */
 @Repository("ResponseRepository")
 public interface ResponseRepository extends JpaRepository<Response, Serializable> {
 

@@ -5,7 +5,9 @@ import java.util.Objects;
 
 /**
  * Entidad que representa la tabla 'image-gallery'
- * Posee un id, una imagen y una descripción
+ * <p>Posee un id, una imagen y una descripción</p>
+ * @author sole
+ * @version 1.0
  */
 @Entity
 public class ImageGallery {

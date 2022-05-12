@@ -10,6 +10,11 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * Servicio encargado de la lógica relacionada con las responses
+ * @author sole
+ * @version 1.0
+ */
 @Service("ResponseService")
 public class ResponseService {
 
@@ -22,17 +27,18 @@ public class ResponseService {
     private ResponseRepository repository;
 
     /**
-     * Obtiene todas las respuestas guardadas y las preguntas a las que hacen referencia
-     * @return
+     * Obtiene todas las responses guardadas y las questions a las que hacen referencia
+     * <p>Estas son exhibidas en la sección de 'preguntas frecuentes'</p>
+     * @return listado de preguntas con sus respectivas respuestas
      */
     public List<ResponseJoinModel> get() {
         return this.repository.get();
     }
 
     /**
-     * Guarda en la BDD la respuesta recibida
-     * @param response
-     * @return
+     * Guarda la response recibida
+     * @param response a guardar
+     * @return boolean indicador del éxito en la transacción
      */
     public boolean post(Response response) {
         try {

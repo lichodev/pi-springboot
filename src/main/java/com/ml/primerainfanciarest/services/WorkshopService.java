@@ -12,6 +12,11 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Servicio encargado de la lógica relacionada con los talleres
+ * @author sole
+ * @version 0.1
+ */
 @Service("WorkshopService")
 public class WorkshopService {
     @Autowired
@@ -24,7 +29,7 @@ public class WorkshopService {
 
     /**
      * Obtiene el listado de todos los talleres
-     * @return
+     * @return lista completa de talleres
      */
     public List<WorkshopModel> get() {
         List<WorkshopModel> workshops = new ArrayList<>();
@@ -37,8 +42,8 @@ public class WorkshopService {
 
     /**
      * Guarda en la BDD el taller recibido
-     * @param workshop
-     * @return
+     * @param workshop a guardar
+     * @return boolean indicador del éxito en la operación
      */
     public boolean post(Workshop workshop) {
         try {

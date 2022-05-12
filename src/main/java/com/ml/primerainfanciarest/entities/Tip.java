@@ -8,8 +8,10 @@ import java.util.Objects;
 
 /**
  * Entidad que representa la tabla 'tip'
- * Posee un id, un título, un texto, una imagen
- * y la cantidad de veces que los usuarios indicaron si les fue útil o no la información
+ * <p>Posee un id, un título, un texto, una imagen y la cantidad
+ * de veces que los usuarios indicaron si les fue útil o no la información</p>
+ * @author sole
+ * @version 1.0
  */
 @Entity
 public class Tip {

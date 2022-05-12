@@ -20,7 +20,9 @@ import java.util.List;
 
 /**
  * Controlador accesible con el path "/experiences"
- * Se encarga de todas las peticiones para la tabla 'experience'
+ * <p>Se encarga de todas las peticiones para la tabla 'experience'</p>
+ * @author sole
+ * @version 1.0
  */
 @RestController
 @RequestMapping("/experiences")
@@ -33,8 +35,8 @@ public class ExperienceController {
 
     /**
      * Obtiene el listado de experiencias visibles para el usuario sin iniciar sesión
-     * Se accede mediante el método GET
-     * @return
+     * <p>Se accede mediante el método GET</p>
+     * @return listado de experiencias visibles para el usuario sin iniciar sesión
      */
     @GetMapping
     public List<ExperienceModel> getAccept() {
@@ -43,9 +45,9 @@ public class ExperienceController {
 
     /**
      * Obtiene el listado de experiencias visibles para el usuario logueado
-     * Se accede mediante el método GET y el path "/admin"
-     * Solo es accesible si existe una sesión de usuario iniciada
-     * @return
+     * <p>Se accede mediante el método GET y el path "/admin"
+     * Solo es accesible si existe una sesión de usuario iniciada</p>
+     * @return listado de experiencias visibles para el usuario logueado
      */
     @GetMapping("/admin")
     public List<ExperienceModel> getPending() {
@@ -54,10 +56,13 @@ public class ExperienceController {
 
     /**
      * Crea y guarda una nueva experiencia
-     * Se accede con el método POST
-     * @param text
-     * @param image
-     * @return
+     * <p>Se accede con el método POST</p>
+     * <p>En un primer momento, la experiencia sólo será visible por los administradores
+     * hasta que uno de estos decida hacerla pública</p>
+     * @param text de la experiencia a guardar
+     * @param image opcional que acompaña el texto
+     * @return boolean que indica si se pudo guardar
+     * @see FileHelper
      */
     @PostMapping()
     public boolean post(@RequestParam("text") String text, @RequestParam(value = "file", required=false) MultipartFile image) {
@@ -73,11 +78,13 @@ public class ExperienceController {
     }
 
     /**
-     * Permite que la experiencia con el id recibido por parámetro sea visible para todos los usuarios
-     * Se accede con el método PUT
-     * Solo es accesible si existe una sesión de usuario iniciada
-     * @param id
-     * @return
+     * Hace visible una experiencia
+     * <p>Permite que la experiencia con el id
+     * recibido por parámetro sea visible para todos los usuarios</p>
+     * <p>Se accede con el método PUT</p>
+     * <p>Solo es accesible si existe una sesión de usuario iniciada</p>
+     * @param id de la experiencia que quiere hacerse visible
+     * @return boolean que indica si se completó correctamente la solicitud
      */
     @PutMapping(value = "{id}")
     public boolean accept(@PathVariable ("id") int id) {
@@ -86,10 +93,10 @@ public class ExperienceController {
 
     /**
      * Elimina una experiencia guardada
-     * Se accede con el método DELETE
-     * Solo es accesible si existe una sesión de usuario iniciada
-     * @param id
-     * @return
+     * <p>Se accede con el método DELETE
+     * Solo es accesible si existe una sesión de usuario iniciada</p>
+     * @param id de la experiencia que se desea eliminar
+     * @return bollean que indica si se pudo eliminar
      */
     @DeleteMapping(value = "{id}")
     public boolean delete(@PathVariable ("id") int id) {

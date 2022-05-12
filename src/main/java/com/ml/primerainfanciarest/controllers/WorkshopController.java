@@ -19,7 +19,9 @@ import java.util.List;
 
 /**
  * Controlador accesible con el path "/workshops"
- * Se encarga de todas las peticiones asociadas a la tabla 'workshop'
+ * <p>Se encarga de todas las peticiones asociadas a la tabla 'workshop'</p>
+ * @author Sole
+ * @version 1.0
  */
 @RestController
 @RequestMapping("/workshops")
@@ -31,8 +33,8 @@ public class WorkshopController {
 
     /**
      * Obtiene el listado de todos los talleres
-     * Se accede mediante el método GET
-     * @return
+     * <p>Se accede mediante el método GET</p>
+     * @return Lista de talleres
      */
     @GetMapping
     public List<WorkshopModel> get() {
@@ -40,12 +42,12 @@ public class WorkshopController {
     }
 
     /**
-     * Recibe y guarda un nuevo taller
-     * Se accede mediante el método POST y
-     * solo es accesible por el usuario logueado
-     * @param title
-     * @param video
-     * @return
+     * Guarda un nuevo taller
+     * <p>Se accede mediante el método POST y
+     * solo es accesible por el usuario logueado</p>
+     * @param title del taller que se está agregando
+     * @param video correspondiente al taller
+     * @return boolean que indica si se pudo guardar
      */
     @PostMapping
     public boolean post(@RequestParam("title") String title, @RequestParam("video") MultipartFile video) {

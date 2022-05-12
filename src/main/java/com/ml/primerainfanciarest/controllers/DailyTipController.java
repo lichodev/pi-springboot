@@ -13,7 +13,9 @@ import java.time.LocalDate;
 
 /**
  * Controlador accesible con el path "/daily-tip"
- * Se encarga de todas las peticiones para la tabla 'daily_tip'
+ * <p>Se encarga de todas las peticiones para la tabla 'daily_tip'</p>
+ * @author sole
+ * @version 1.0
  */
 @RestController
 @RequestMapping("/daily-tip")
@@ -26,8 +28,9 @@ public class DailyTipController {
 
     /**
      * Obtiene un tip asociado a la fecha actual
-     * Se accede mediante método GET
-     * @return TipModel
+     * <p>Se accede mediante método GET</p>
+     * @return TipModel asociado a la fecha actual
+     * @see DailyTipService
      */
     @GetMapping
     public TipModel get() {

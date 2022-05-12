@@ -19,7 +19,10 @@ import java.util.List;
 
 /**
  * Controlador accesible mediante el path "/reminder"
- * Se encarga de resolver todas las solicitudes relacionadas con la tabla 'reminder'
+ * <p>Se encarga de resolver todas las solicitudes relacionadas
+ * con la tabla 'reminder'</p>
+ * @author sole
+ * @version 1.0
  */
 @RestController
 @RequestMapping("/reminder")
@@ -31,8 +34,8 @@ public class ReminderController {
 
     /**
      * Obtiene el listado de recordatorios
-     * Se accede mediante el método GET
-     * @return
+     * <p>Se accede mediante el método GET</p>
+     * @return Lista de reminders
      */
     @GetMapping
     public List<ReminderModel> get() {
@@ -41,10 +44,10 @@ public class ReminderController {
 
     /**
      * Obtiene el recordatorio asociado al id recibido
-     * Se accede mediante el método GET y al path inicial se
-     * le agrega el id del recordatorio buscado
-     * @param id
-     * @return
+     * <p>Se accede mediante el método GET y al path inicial se
+     * le agrega el id del recordatorio buscado</p>
+     * @param id representa el identificador único del reminder al que se quiere acceder
+     * @return Reminder con toda la información pertinente
      */
     @GetMapping(value = "{id}")
     public ReminderModel getById(@PathVariable ("id") int id) {
@@ -52,13 +55,13 @@ public class ReminderController {
     }
 
     /**
-     * Rercibe los datos de un recordatorio, lo crea y lo envía al servicio
-     * correspondiente para que se guarde en la BDD
-     * El usuario logueado puede acceder mediante el método POST
-     * @param since
-     * @param until
-     * @param image
-     * @return
+     * Crea y guarda un recordatorio con los datos recibidos
+     * <p>El usuario logueado puede acceder mediante el método POST</p>
+     * @param since edad a partir de la cual se aplica
+     * @param until edad máxima a la cual se aplica
+     * @param image representativa
+     * @return boolean que indica si se pudo guardar
+     * @see Reminder
      */
     @PostMapping()
     public boolean post(@RequestParam("since") int since, @RequestParam("until") int until, @RequestParam("file") MultipartFile image) {
@@ -73,10 +76,12 @@ public class ReminderController {
 
     /**
      * Suma likes o dislikes al recordatorio coincidente con el id recibido
-     * Se accede mediante el método PUT
-     * @param id
-     * @param value
-     * @return
+     * <p>Se accede mediante el método PUT</p>
+     * @param id del reminder al que se quiere modificar
+     * @param value puede ser un valor positivo que indica que se debe sumar
+     *              un 'like' o un valor negativo, correspondiente a un 'dislike'
+     * @return boolean que indica si se guardaron los cambios
+     * @see ReminderService
      */
     @PutMapping(value = "{id}")
     public boolean put(@PathVariable("id") int id, @RequestBody int value) {

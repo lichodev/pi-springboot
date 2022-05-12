@@ -5,7 +5,9 @@ import java.util.Objects;
 
 /**
  * Entidad que representa la tabla 'user-pi'
- * posee un id, un nombre de usuario y una contraseña
+ * <p>posee un id, un nombre de usuario y una contraseña</p>
+ * @author sole
+ * @version 1.0
  */
 @Table(name = "userPi")
 @Entity

@@ -1,0 +1,107 @@
+\doxysection{com.\+ml.\+primerainfanciarest.\+controllers.\+Question\+Controller Class Reference}
+\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_question_controller}\index{com.ml.primerainfanciarest.controllers.QuestionController@{com.ml.primerainfanciarest.controllers.QuestionController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \textbf{ Question\+Model} $>$ \textbf{ get} ()
+\item 
+boolean \textbf{ post} (@Request\+Body @Validated \textbf{ Question} question)
+\item 
+boolean \textbf{ put} (@Path\+Variable(\char`\"{}id\char`\"{}) int id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controlador accesible con el path \char`\"{}/questions\char`\"{} 
+
+Se encarga de resolver todas las solicitudes hacia la tabla \textquotesingle{}question\textquotesingle{}
+
+\begin{DoxyAuthor}{Author}
+sole 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 22 of file Question\+Controller.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_question_controller_ac448b65f65ba0893de3498a4988be5df}} 
+\index{com.ml.primerainfanciarest.controllers.QuestionController@{com.ml.primerainfanciarest.controllers.QuestionController}!get@{get}}
+\index{get@{get}!com.ml.primerainfanciarest.controllers.QuestionController@{com.ml.primerainfanciarest.controllers.QuestionController}}
+\doxysubsubsection{get()}
+{\footnotesize\ttfamily List$<$\textbf{ Question\+Model}$>$ com.\+ml.\+primerainfanciarest.\+controllers.\+Question\+Controller.\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene el listado de preguntas 
+
+se accede mediante el método G\+ET solo es accesible para el usuario logueado
+
+\begin{DoxyReturn}{Returns}
+listado completo de las preguntas registradas 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file Question\+Controller.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_question_controller_ac448b65f65ba0893de3498a4988be5df_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_question_controller_ae4566816e81c920ba46450985678e6d6}} 
+\index{com.ml.primerainfanciarest.controllers.QuestionController@{com.ml.primerainfanciarest.controllers.QuestionController}!post@{post}}
+\index{post@{post}!com.ml.primerainfanciarest.controllers.QuestionController@{com.ml.primerainfanciarest.controllers.QuestionController}}
+\doxysubsubsection{post()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+controllers.\+Question\+Controller.\+post (\begin{DoxyParamCaption}\item[{@Request\+Body @Validated \textbf{ Question}}]{question }\end{DoxyParamCaption})}
+
+Guarda una pregunta 
+
+se accede mediante el método P\+O\+ST
+
+Al guardarse una pregunta por primera vez, siempre se encuentra como \textquotesingle{}no respondida\textquotesingle{}
+
+
+\begin{DoxyParams}{Parameters}
+{\em question} & a guardar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean que indica si se pudo guardar 
+\end{DoxyReturn}
+
+
+Definition at line 46 of file Question\+Controller.\+java.
+
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_question_controller_aaa971a5c0ec09a4da1c1868a41a56f50}} 
+\index{com.ml.primerainfanciarest.controllers.QuestionController@{com.ml.primerainfanciarest.controllers.QuestionController}!put@{put}}
+\index{put@{put}!com.ml.primerainfanciarest.controllers.QuestionController@{com.ml.primerainfanciarest.controllers.QuestionController}}
+\doxysubsubsection{put()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+controllers.\+Question\+Controller.\+put (\begin{DoxyParamCaption}\item[{@Path\+Variable(\char`\"{}id\char`\"{}) int}]{id }\end{DoxyParamCaption})}
+
+Edita una pregunta para indicar que ya fue respondida 
+
+Se accede mediante el método P\+UT Solo es accesible para el usuario logueado
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & único para la pregunta que se desea editar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean indicando si se pudo editar 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file Question\+Controller.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sole/\+Sole/\+Primera\+Infancia/primera\+Infancia\+Rest/src/main/java/com/ml/primerainfanciarest/controllers/Question\+Controller.\+java\end{DoxyCompactItemize}

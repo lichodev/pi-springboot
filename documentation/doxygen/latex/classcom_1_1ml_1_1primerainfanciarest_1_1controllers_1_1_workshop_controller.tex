@@ -1,0 +1,91 @@
+\doxysection{com.\+ml.\+primerainfanciarest.\+controllers.\+Workshop\+Controller Class Reference}
+\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_workshop_controller}\index{com.ml.primerainfanciarest.controllers.WorkshopController@{com.ml.primerainfanciarest.controllers.WorkshopController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \textbf{ Workshop\+Model} $>$ \textbf{ get} ()
+\item 
+boolean \textbf{ post} (@Request\+Param(\char`\"{}title\char`\"{}) String title, @Request\+Param(\char`\"{}video\char`\"{}) Multipart\+File video)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controlador accesible con el path \char`\"{}/workshops\char`\"{} 
+
+Se encarga de todas las peticiones asociadas a la tabla \textquotesingle{}workshop\textquotesingle{}
+
+\begin{DoxyAuthor}{Author}
+Sole 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 29 of file Workshop\+Controller.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_workshop_controller_ad448590aba451360548aba644ae3b03e}} 
+\index{com.ml.primerainfanciarest.controllers.WorkshopController@{com.ml.primerainfanciarest.controllers.WorkshopController}!get@{get}}
+\index{get@{get}!com.ml.primerainfanciarest.controllers.WorkshopController@{com.ml.primerainfanciarest.controllers.WorkshopController}}
+\doxysubsubsection{get()}
+{\footnotesize\ttfamily List$<$\textbf{ Workshop\+Model}$>$ com.\+ml.\+primerainfanciarest.\+controllers.\+Workshop\+Controller.\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene el listado de todos los talleres 
+
+Se accede mediante el método G\+ET
+
+\begin{DoxyReturn}{Returns}
+Lista de talleres 
+\end{DoxyReturn}
+
+
+Definition at line 40 of file Workshop\+Controller.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_workshop_controller_ad448590aba451360548aba644ae3b03e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_workshop_controller_aeed67c31e0586bdb30a3c6f24ce26fa5}} 
+\index{com.ml.primerainfanciarest.controllers.WorkshopController@{com.ml.primerainfanciarest.controllers.WorkshopController}!post@{post}}
+\index{post@{post}!com.ml.primerainfanciarest.controllers.WorkshopController@{com.ml.primerainfanciarest.controllers.WorkshopController}}
+\doxysubsubsection{post()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+controllers.\+Workshop\+Controller.\+post (\begin{DoxyParamCaption}\item[{@Request\+Param(\char`\"{}title\char`\"{}) String}]{title,  }\item[{@Request\+Param(\char`\"{}video\char`\"{}) Multipart\+File}]{video }\end{DoxyParamCaption})}
+
+Guarda un nuevo taller 
+
+Se accede mediante el método P\+O\+ST y solo es accesible por el usuario logueado
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & del taller que se está agregando \\
+\hline
+{\em video} & correspondiente al taller \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean que indica si se pudo guardar 
+\end{DoxyReturn}
+
+
+Definition at line 53 of file Workshop\+Controller.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_workshop_controller_aeed67c31e0586bdb30a3c6f24ce26fa5_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sole/\+Sole/\+Primera\+Infancia/primera\+Infancia\+Rest/src/main/java/com/ml/primerainfanciarest/controllers/Workshop\+Controller.\+java\end{DoxyCompactItemize}

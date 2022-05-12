@@ -1,0 +1,92 @@
+\doxysection{com.\+ml.\+primerainfanciarest.\+services.\+Request\+Service Class Reference}
+\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_request_service}\index{com.ml.primerainfanciarest.services.RequestService@{com.ml.primerainfanciarest.services.RequestService}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \textbf{ Request\+Model} $>$ \textbf{ get} ()
+\item 
+boolean \textbf{ post} (\textbf{ Request} request)
+\item 
+boolean \textbf{ check\+Replied} (int id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Servicio encargado de la lógica relacionada con las requests \begin{DoxyAuthor}{Author}
+sole 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 21 of file Request\+Service.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_request_service_a26cf5b6dd86d26b40464ef62f061a841}} 
+\index{com.ml.primerainfanciarest.services.RequestService@{com.ml.primerainfanciarest.services.RequestService}!checkReplied@{checkReplied}}
+\index{checkReplied@{checkReplied}!com.ml.primerainfanciarest.services.RequestService@{com.ml.primerainfanciarest.services.RequestService}}
+\doxysubsubsection{checkReplied()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+services.\+Request\+Service.\+check\+Replied (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Cambia el \textquotesingle{}replied\textquotesingle{} de la requests de \textquotesingle{}false\textquotesingle{} a \textquotesingle{}true\textquotesingle{} 
+
+El administrador puede indicar que ya respondió una solicitud cambiando su estado de false(no respondida) a true(respondida). Esto hará que se encuentre al final del listado para dar prioridad de respuesta a nuevas solicitudes
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & perteneciente a la request que se desea modificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean idicador del éxito de la transacción 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+this \doxyref{get()}{p.}{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_request_service_acfa9785a65cdb02fe8700d09de0406c4} 
+\end{DoxySeeAlso}
+
+
+Definition at line 68 of file Request\+Service.\+java.
+
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_request_service_acfa9785a65cdb02fe8700d09de0406c4}} 
+\index{com.ml.primerainfanciarest.services.RequestService@{com.ml.primerainfanciarest.services.RequestService}!get@{get}}
+\index{get@{get}!com.ml.primerainfanciarest.services.RequestService@{com.ml.primerainfanciarest.services.RequestService}}
+\doxysubsubsection{get()}
+{\footnotesize\ttfamily List$<$\textbf{ Request\+Model}$>$ com.\+ml.\+primerainfanciarest.\+services.\+Request\+Service.\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene el listado de requests 
+
+Obtiene el listado de requests ordenadas, haciendo que se encuentren en primer lugar aquellas requests que aún no fueron respondidas
+
+\begin{DoxyReturn}{Returns}
+listado rdenado de requests 
+\end{DoxyReturn}
+
+
+Definition at line 36 of file Request\+Service.\+java.
+
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_request_service_af2c7b143124c4873841f2060df93be10}} 
+\index{com.ml.primerainfanciarest.services.RequestService@{com.ml.primerainfanciarest.services.RequestService}!post@{post}}
+\index{post@{post}!com.ml.primerainfanciarest.services.RequestService@{com.ml.primerainfanciarest.services.RequestService}}
+\doxysubsubsection{post()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+services.\+Request\+Service.\+post (\begin{DoxyParamCaption}\item[{\textbf{ Request}}]{request }\end{DoxyParamCaption})}
+
+Guarda la requests recibida 
+\begin{DoxyParams}{Parameters}
+{\em request} & a guardar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean indicador del éxito en la transacción 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file Request\+Service.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sole/\+Sole/\+Primera\+Infancia/primera\+Infancia\+Rest/src/main/java/com/ml/primerainfanciarest/services/Request\+Service.\+java\end{DoxyCompactItemize}

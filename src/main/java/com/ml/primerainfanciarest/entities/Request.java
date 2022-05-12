@@ -8,11 +8,13 @@ import java.util.Objects;
 
 /**
  * Entidad que representa la tabla 'request'
- * Es una solicitud que puede dejar cualquier usuario para colaborar con el proyecto
+ * <p>Es una solicitud que puede dejar cualquier usuario para colaborar con el proyecto
  * De estas solicitudes se guarda un id,
  * los datos del usuario interesado (nombre, apellido, email y teléfono)
  * el motivo por el que quiere colaborar, cómo piensa que puede hacerlo
- * y un boolean que indica si algún administrador ya se puso en contacto con el usuario
+ * y un boolean que indica si algún administrador ya se puso en contacto con el usuario</p>
+ * @author sole
+ * @version 1.0
  */
 @Entity
 public class Request {

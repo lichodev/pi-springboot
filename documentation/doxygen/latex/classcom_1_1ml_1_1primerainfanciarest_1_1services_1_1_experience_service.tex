@@ -1,0 +1,136 @@
+\doxysection{com.\+ml.\+primerainfanciarest.\+services.\+Experience\+Service Class Reference}
+\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_experience_service}\index{com.ml.primerainfanciarest.services.ExperienceService@{com.ml.primerainfanciarest.services.ExperienceService}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \textbf{ Experience\+Model} $>$ \textbf{ get\+By\+Status} (boolean status)
+\item 
+boolean \textbf{ post} (\textbf{ Experience} experience)
+\item 
+boolean \textbf{ accept} (int id)
+\item 
+boolean \textbf{ delete} (int id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Servicio encargado de la lógica relacionada con las experiences \begin{DoxyAuthor}{Author}
+sole 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 25 of file Experience\+Service.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_experience_service_a241e9d1be1ee3cec54ce8cb59c3ca658}} 
+\index{com.ml.primerainfanciarest.services.ExperienceService@{com.ml.primerainfanciarest.services.ExperienceService}!accept@{accept}}
+\index{accept@{accept}!com.ml.primerainfanciarest.services.ExperienceService@{com.ml.primerainfanciarest.services.ExperienceService}}
+\doxysubsubsection{accept()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+services.\+Experience\+Service.\+accept (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Obtiene la experiencia coincidente con el id recibido 
+
+Cambia el status a true haciendo que esta sea visible para los usuarios no logueados
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & identificador de la experience que se desea modificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean indicador del éxito en la transacción 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+this \doxyref{get\+By\+Status()}{p.}{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_experience_service_add8ba153678ab6ed4eea91b78e344d72} 
+\end{DoxySeeAlso}
+
+
+Definition at line 80 of file Experience\+Service.\+java.
+
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_experience_service_a628a309a7d4a8822a4010fdb332dcda7}} 
+\index{com.ml.primerainfanciarest.services.ExperienceService@{com.ml.primerainfanciarest.services.ExperienceService}!delete@{delete}}
+\index{delete@{delete}!com.ml.primerainfanciarest.services.ExperienceService@{com.ml.primerainfanciarest.services.ExperienceService}}
+\doxysubsubsection{delete()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+services.\+Experience\+Service.\+delete (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Elimina una experience 
+
+Si existe una experiencia con el id recibido por parámetro la elimina de la base de datos
+
+El administrador tiene la posibilidad de hacer visible una experience o directamente eliminarla del sistema
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & identificador de la experience a eliminar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean indicador del éxito en la transacción 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file Experience\+Service.\+java.
+
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_experience_service_add8ba153678ab6ed4eea91b78e344d72}} 
+\index{com.ml.primerainfanciarest.services.ExperienceService@{com.ml.primerainfanciarest.services.ExperienceService}!getByStatus@{getByStatus}}
+\index{getByStatus@{getByStatus}!com.ml.primerainfanciarest.services.ExperienceService@{com.ml.primerainfanciarest.services.ExperienceService}}
+\doxysubsubsection{getByStatus()}
+{\footnotesize\ttfamily List$<$\textbf{ Experience\+Model}$>$ com.\+ml.\+primerainfanciarest.\+services.\+Experience\+Service.\+get\+By\+Status (\begin{DoxyParamCaption}\item[{boolean}]{status }\end{DoxyParamCaption})}
+
+Obtiene el listado de todas las experiences, cuyo estado sea igual al recibido 
+
+Las experiences con status = true son aquellas que ya fueron aprobadas por un administrador para ser exhibidas en la página accesible para el usuario sin loguear. Mientras que las experiences con status = false, son aquellas que aún no fueron aprobadas, por lo que sólo serán visiblespara los administradores hasta que uno de estos cambie su status a true
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & varía según el método del controllerque esté haciendo el llamado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+listado de experiences con el status correspondiente 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\doxyref{com.\+ml.\+primerainfanciarest.\+controllers.\+Experience\+Controller}{p.}{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_experience_controller} get\+Accept() 
+
+\doxyref{com.\+ml.\+primerainfanciarest.\+controllers.\+Experience\+Controller}{p.}{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_experience_controller} get\+Pending() 
+\end{DoxySeeAlso}
+
+
+Definition at line 47 of file Experience\+Service.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_experience_service_add8ba153678ab6ed4eea91b78e344d72_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_experience_service_aa8ed22bf27dd17f3c4a2d4d1d252f1d1}} 
+\index{com.ml.primerainfanciarest.services.ExperienceService@{com.ml.primerainfanciarest.services.ExperienceService}!post@{post}}
+\index{post@{post}!com.ml.primerainfanciarest.services.ExperienceService@{com.ml.primerainfanciarest.services.ExperienceService}}
+\doxysubsubsection{post()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+services.\+Experience\+Service.\+post (\begin{DoxyParamCaption}\item[{\textbf{ Experience}}]{experience }\end{DoxyParamCaption})}
+
+Guarda una experience 
+\begin{DoxyParams}{Parameters}
+{\em experience} & a guardar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean indicador del éxito e la transacción 
+\end{DoxyReturn}
+
+
+Definition at line 63 of file Experience\+Service.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sole/\+Sole/\+Primera\+Infancia/primera\+Infancia\+Rest/src/main/java/com/ml/primerainfanciarest/services/Experience\+Service.\+java\end{DoxyCompactItemize}

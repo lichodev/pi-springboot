@@ -1,0 +1,83 @@
+\doxysection{com.\+ml.\+primerainfanciarest.\+controllers.\+Response\+Controller Class Reference}
+\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_response_controller}\index{com.ml.primerainfanciarest.controllers.ResponseController@{com.ml.primerainfanciarest.controllers.ResponseController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \textbf{ Response\+Join\+Model} $>$ \textbf{ get} ()
+\item 
+boolean \textbf{ post} (@Request\+Body @Validated \textbf{ Response} response)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controlador accesible con el path \char`\"{}/response\char`\"{} 
+
+Se encarga de todas las peticiones asociadas con la tabla \textquotesingle{}response\textquotesingle{}
+
+\begin{DoxyAuthor}{Author}
+sole 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 23 of file Response\+Controller.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_response_controller_a4e14d51d87d453a9a01ba615444e8a83}} 
+\index{com.ml.primerainfanciarest.controllers.ResponseController@{com.ml.primerainfanciarest.controllers.ResponseController}!get@{get}}
+\index{get@{get}!com.ml.primerainfanciarest.controllers.ResponseController@{com.ml.primerainfanciarest.controllers.ResponseController}}
+\doxysubsubsection{get()}
+{\footnotesize\ttfamily List$<$\textbf{ Response\+Join\+Model}$>$ com.\+ml.\+primerainfanciarest.\+controllers.\+Response\+Controller.\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene el listado de preguntas que tienen una respuesta asociada y la respectiva respuesta 
+
+Se accede mediante el método G\+ET
+
+El objetivo es que sean utilizadas en la sección de \textquotesingle{}preguntas frecuentes\textquotesingle{}
+
+\begin{DoxyReturn}{Returns}
+listado de preguntas y respuestas 
+\end{DoxyReturn}
+
+
+Definition at line 37 of file Response\+Controller.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_response_controller_a4e14d51d87d453a9a01ba615444e8a83_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_response_controller_a3bc04628a9e8124264a6164c9d540022}} 
+\index{com.ml.primerainfanciarest.controllers.ResponseController@{com.ml.primerainfanciarest.controllers.ResponseController}!post@{post}}
+\index{post@{post}!com.ml.primerainfanciarest.controllers.ResponseController@{com.ml.primerainfanciarest.controllers.ResponseController}}
+\doxysubsubsection{post()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+controllers.\+Response\+Controller.\+post (\begin{DoxyParamCaption}\item[{@Request\+Body @Validated \textbf{ Response}}]{response }\end{DoxyParamCaption})}
+
+Guarda una respuesta asociada a una pregunta 
+
+Se accede mediante el método P\+O\+ST y solo es accesible para el usuario logueado
+
+
+\begin{DoxyParams}{Parameters}
+{\em response} & asociada a una question \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean que indica si la respuesta se guardó correctamente 
+\end{DoxyReturn}
+
+
+Definition at line 49 of file Response\+Controller.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sole/\+Sole/\+Primera\+Infancia/primera\+Infancia\+Rest/src/main/java/com/ml/primerainfanciarest/controllers/Response\+Controller.\+java\end{DoxyCompactItemize}

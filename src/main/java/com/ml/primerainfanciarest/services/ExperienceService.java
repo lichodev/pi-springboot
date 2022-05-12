@@ -16,6 +16,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Servicio encargado de la lógica relacionada con las experiences
+ * @author sole
+ * @version 1.0
+ */
 @Service("ExperienceService")
 public class ExperienceService {
 
@@ -28,9 +33,16 @@ public class ExperienceService {
     private ExperienceConverter converter;
 
     /**
-     * Obtiene el listado de todas las experiencias, cuyo estado sea igual al recibido por parámetro
-     * @param status
-     * @return
+     * Obtiene el listado de todas las experiences, cuyo estado sea igual al recibido
+     * <p>Las experiences con status = true son aquellas que ya fueron aprobadas por un
+     * administrador para ser exhibidas en la página accesible para el usuario sin loguear.
+     * Mientras que las experiences con status = false, son aquellas que aún no fueron
+     * aprobadas, por lo que sólo serán visiblespara los administradores hasta que uno
+     * de estos cambie su status a true</p>
+     * @param status varía según el método del controllerque esté haciendo el llamado
+     * @return listado de experiences con el status correspondiente
+     * @see com.ml.primerainfanciarest.controllers.ExperienceController getAccept()
+     * @see com.ml.primerainfanciarest.controllers.ExperienceController getPending()
      */
     public List<ExperienceModel> getByStatus(boolean status) {
         List<ExperienceModel> experiences = new ArrayList<>();
@@ -44,9 +56,9 @@ public class ExperienceService {
     }
 
     /**
-     * Recibe una experiencia y la guarda en la base de datos
-     * @param experience
-     * @return
+     * Guarda una experience
+     * @param experience a guardar
+     * @return boolean indicador del éxito e la transacción
      */
     public boolean post(Experience experience) {
         try {
@@ -58,11 +70,12 @@ public class ExperienceService {
     }
 
     /**
-     * Obtiene la experiencia coincidente con el id recibido por parámetro
-     * Cambia el estado a verdadero haciendo que sea visible para los usuarios no logueados
-     * Guarda los cambios en la BDD
-     * @param id
-     * @return
+     * Obtiene la experiencia coincidente con el id recibido
+     * <p>Cambia el status a true haciendo que esta sea visible para los usuarios
+     * no logueados</p>
+     * @param id identificador de la experience que se desea modificar
+     * @return boolean indicador del éxito en la transacción
+     * @see this getByStatus()
      */
     public boolean accept(int id) {
         Experience e = this.repository.findById(id);
@@ -76,9 +89,13 @@ public class ExperienceService {
     }
 
     /**
-     * Si existe una experiencia con el id recibido por parámetro la elimina de la base de datos
-     * @param id
-     * @return
+     * Elimina una experience
+     * <p>Si existe una experiencia con el id recibido por parámetro la elimina de la
+     * base de datos</p>
+     * <p>El administrador tiene la posibilidad de hacer visible una experience
+     * o directamente eliminarla del sistema</p>
+     * @param id identificador de la experience a eliminar
+     * @return boolean indicador del éxito en la transacción
      */
     public boolean delete(int id) {
         try {

@@ -16,6 +16,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Servicio encargado de la lógica relacionada con los podcasts
+ * @author sole
+ * @version 1.0
+ */
 @Service("PodcastService")
 public class PodcastService {
 
@@ -29,7 +34,7 @@ public class PodcastService {
 
     /**
      * Obtiene el listado completo de podcasts
-     * @return
+     * @return lista de podcasts
      */
     public List<PodcastModel> get() {
         List<PodcastModel> podcasts = new ArrayList<>();
@@ -42,9 +47,9 @@ public class PodcastService {
     }
 
     /**
-     * Guarda en la BDD el podcast recibido
-     * @param podcast
-     * @return
+     * Guarda el podcast recibido
+     * @param podcast a guardar
+     * @return boolean que indica el éxito de la transacción
      */
     public boolean post(Podcast podcast) {
         try {

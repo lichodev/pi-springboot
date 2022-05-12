@@ -12,7 +12,9 @@ import java.util.List;
 
 /**
  * Controlador accesible con el path "/requests"
- * Se encarga de todas las solicitudes que respectan a la tabla 'request'
+ * <p>Se encarga de todas las solicitudes que respectan a la tabla 'request'</p>
+ * @author sole
+ * @version 1.0
  */
 @RestController
 @RequestMapping("/requests")
@@ -24,9 +26,9 @@ public class RequestController {
 
     /**
      * Obtiene el listado de solicitudes
-     * Se accede mediante el método GET
-     * y solo es accesible para el usuario logueado
-     * @return
+     * <p>Se accede mediante el método GET
+     * y solo es accesible para el usuario logueado</p>
+     * @return listado de requests
      */
     @GetMapping
     public List<RequestModel> get() {
@@ -34,10 +36,10 @@ public class RequestController {
     }
 
     /**
-     * Recibe y guarda una solicitud
-     * Se accede mediante el método POST
-     * @param request
-     * @return
+     * Guarda una solicitud
+     * <p>Se accede mediante el método POST</p>
+     * @param request a guardar
+     * @return boolea que indica si se pudo guardar
      */
     @PostMapping
     public boolean post(@RequestBody @Validated Request request) {
@@ -45,12 +47,12 @@ public class RequestController {
     }
 
     /**
-     * Marca como respondida la solicitud que coincide con el id recibido
-     * Se accede mediante el método PUT y agregando al path inicial el id de la solicitud
-     * que se quiere editar
-     * Solo es accesible para el usuario logueado
-     * @param id
-     * @return
+     * Marca como 'respondida' la solicitud que coincide con el id recibido
+     * <p>Se accede mediante el método PUT y agregando al path inicial el id de la solicitud
+     * que se quiere editar</p>
+     * <p>Solo es accesible para el usuario logueado</p>
+     * @param id único del request que se desea editar
+     * @return boolean que indica si se realizó la edición correctamente
      */
     @PutMapping(value = "{id}")
     public boolean put(@PathVariable ("id") int id) {

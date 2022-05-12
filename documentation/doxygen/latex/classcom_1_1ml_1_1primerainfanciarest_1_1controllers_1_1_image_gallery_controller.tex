@@ -1,0 +1,121 @@
+\doxysection{com.\+ml.\+primerainfanciarest.\+controllers.\+Image\+Gallery\+Controller Class Reference}
+\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_image_gallery_controller}\index{com.ml.primerainfanciarest.controllers.ImageGalleryController@{com.ml.primerainfanciarest.controllers.ImageGalleryController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \textbf{ Image\+Gallery\+Model} $>$ \textbf{ get} ()
+\item 
+\textbf{ Image\+Gallery\+Model} \textbf{ get\+By\+Id} (@Path\+Variable(\char`\"{}id\char`\"{}) int id)
+\item 
+boolean \textbf{ post} (@Request\+Param(\char`\"{}description\char`\"{}) String description, @Request\+Param(\char`\"{}file\char`\"{}) Multipart\+File image)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controlador accesible con el path \char`\"{}/gallery\char`\"{} 
+
+Controla todas las peticiones que respectan a la tabla \textquotesingle{}image\+\_\+gallery\textquotesingle{}
+
+\begin{DoxyAuthor}{Author}
+sole 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 28 of file Image\+Gallery\+Controller.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_image_gallery_controller_a70f3465a250257fe1d20a2ddf7410581}} 
+\index{com.ml.primerainfanciarest.controllers.ImageGalleryController@{com.ml.primerainfanciarest.controllers.ImageGalleryController}!get@{get}}
+\index{get@{get}!com.ml.primerainfanciarest.controllers.ImageGalleryController@{com.ml.primerainfanciarest.controllers.ImageGalleryController}}
+\doxysubsubsection{get()}
+{\footnotesize\ttfamily List$<$\textbf{ Image\+Gallery\+Model}$>$ com.\+ml.\+primerainfanciarest.\+controllers.\+Image\+Gallery\+Controller.\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene el listado de todas las imágenes de la gallería 
+
+Se accede con el método G\+ET
+
+\begin{DoxyReturn}{Returns}
+listado de imágenes de la galería 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+File\+Helper 
+\end{DoxySeeAlso}
+
+
+Definition at line 41 of file Image\+Gallery\+Controller.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_image_gallery_controller_a70f3465a250257fe1d20a2ddf7410581_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_image_gallery_controller_a6e1bbe6d0e36196889c9aea7deba3102}} 
+\index{com.ml.primerainfanciarest.controllers.ImageGalleryController@{com.ml.primerainfanciarest.controllers.ImageGalleryController}!getById@{getById}}
+\index{getById@{getById}!com.ml.primerainfanciarest.controllers.ImageGalleryController@{com.ml.primerainfanciarest.controllers.ImageGalleryController}}
+\doxysubsubsection{getById()}
+{\footnotesize\ttfamily \textbf{ Image\+Gallery\+Model} com.\+ml.\+primerainfanciarest.\+controllers.\+Image\+Gallery\+Controller.\+get\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable(\char`\"{}id\char`\"{}) int}]{id }\end{DoxyParamCaption})}
+
+Obtiene la imagen correspondiente al id recibido 
+
+Se accede mediante el método G\+ET y al path original se le agrega el id de la imagen solicitada
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & de la imagen que se quiere obtener \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Imagen solicitada 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file Image\+Gallery\+Controller.\+java.
+
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_image_gallery_controller_a08c76daae3969ccc41b824d4d3ada23a}} 
+\index{com.ml.primerainfanciarest.controllers.ImageGalleryController@{com.ml.primerainfanciarest.controllers.ImageGalleryController}!post@{post}}
+\index{post@{post}!com.ml.primerainfanciarest.controllers.ImageGalleryController@{com.ml.primerainfanciarest.controllers.ImageGalleryController}}
+\doxysubsubsection{post()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+controllers.\+Image\+Gallery\+Controller.\+post (\begin{DoxyParamCaption}\item[{@Request\+Param(\char`\"{}description\char`\"{}) String}]{description,  }\item[{@Request\+Param(\char`\"{}file\char`\"{}) Multipart\+File}]{image }\end{DoxyParamCaption})}
+
+Guarda una imagen 
+
+Se accede con el método P\+O\+ST Solo es accesible para el usuario logueado
+
+
+\begin{DoxyParams}{Parameters}
+{\em description} & de la imagen. Pie de foto \\
+\hline
+{\em image} & la imagen en sí \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean que indica si esta se pudo guardar 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+File\+Helper 
+\end{DoxySeeAlso}
+
+
+Definition at line 72 of file Image\+Gallery\+Controller.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_image_gallery_controller_a08c76daae3969ccc41b824d4d3ada23a_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sole/\+Sole/\+Primera\+Infancia/primera\+Infancia\+Rest/src/main/java/com/ml/primerainfanciarest/controllers/Image\+Gallery\+Controller.\+java\end{DoxyCompactItemize}

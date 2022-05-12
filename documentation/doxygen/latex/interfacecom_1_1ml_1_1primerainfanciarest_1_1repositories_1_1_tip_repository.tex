@@ -1,0 +1,74 @@
+\doxysection{com.\+ml.\+primerainfanciarest.\+repositories.\+Tip\+Repository Interface Reference}
+\label{interfacecom_1_1ml_1_1primerainfanciarest_1_1repositories_1_1_tip_repository}\index{com.ml.primerainfanciarest.repositories.TipRepository@{com.ml.primerainfanciarest.repositories.TipRepository}}
+
+
+Inheritance diagram for com.\+ml.\+primerainfanciarest.\+repositories.\+Tip\+Repository\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{interfacecom_1_1ml_1_1primerainfanciarest_1_1repositories_1_1_tip_repository__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for com.\+ml.\+primerainfanciarest.\+repositories.\+Tip\+Repository\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{interfacecom_1_1ml_1_1primerainfanciarest_1_1repositories_1_1_tip_repository__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{interfacecom_1_1ml_1_1primerainfanciarest_1_1repositories_1_1_tip_repository_a856ba75311d98ed5df97f77a7ab0831d}} 
+abstract List$<$ \textbf{ Tip} $>$ {\bfseries find\+All} ()
+\item 
+\mbox{\label{interfacecom_1_1ml_1_1primerainfanciarest_1_1repositories_1_1_tip_repository_aaa088279bb933c5c8215d52779b0d3ba}} 
+abstract \textbf{ Tip} {\bfseries find\+By\+Id} (int id)
+\item 
+abstract int \textbf{ count\+All} ()
+\item 
+abstract List$<$ Integer $>$ \textbf{ find\+All\+Not\+Selected} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+repositorio encargado de las transacciones con la B\+B\+DD correspondientes a la tabla tip \begin{DoxyAuthor}{Author}
+sole 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 18 of file Tip\+Repository.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{interfacecom_1_1ml_1_1primerainfanciarest_1_1repositories_1_1_tip_repository_aa9ff02e7a28b693258dbe2c13ccc32d7}} 
+\index{com.ml.primerainfanciarest.repositories.TipRepository@{com.ml.primerainfanciarest.repositories.TipRepository}!countAll@{countAll}}
+\index{countAll@{countAll}!com.ml.primerainfanciarest.repositories.TipRepository@{com.ml.primerainfanciarest.repositories.TipRepository}}
+\doxysubsubsection{countAll()}
+{\footnotesize\ttfamily abstract int com.\+ml.\+primerainfanciarest.\+repositories.\+Tip\+Repository.\+count\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Cuenta la cantidad de tuplas en la tabla \begin{DoxyReturn}{Returns}
+int cantidad 
+\end{DoxyReturn}
+\mbox{\label{interfacecom_1_1ml_1_1primerainfanciarest_1_1repositories_1_1_tip_repository_ad7e02d8f5adeb1e48f7d7cc8d1ad1a41}} 
+\index{com.ml.primerainfanciarest.repositories.TipRepository@{com.ml.primerainfanciarest.repositories.TipRepository}!findAllNotSelected@{findAllNotSelected}}
+\index{findAllNotSelected@{findAllNotSelected}!com.ml.primerainfanciarest.repositories.TipRepository@{com.ml.primerainfanciarest.repositories.TipRepository}}
+\doxysubsubsection{findAllNotSelected()}
+{\footnotesize\ttfamily abstract List$<$Integer$>$ com.\+ml.\+primerainfanciarest.\+repositories.\+Tip\+Repository.\+find\+All\+Not\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [abstract]}}
+
+Obtiene los tips que no se han registrado como tip diario \begin{DoxyReturn}{Returns}
+Lista de tips 
+\end{DoxyReturn}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sole/\+Sole/\+Primera\+Infancia/primera\+Infancia\+Rest/src/main/java/com/ml/primerainfanciarest/repositories/Tip\+Repository.\+java\end{DoxyCompactItemize}

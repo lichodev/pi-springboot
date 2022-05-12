@@ -8,10 +8,12 @@ import java.util.Objects;
 
 /**
  * Entidad que representa la tabla 'question'
- * Posee un id, datos del usuario que realizó la pregunta
+ * <p>Posee un id, datos del usuario que realizó la pregunta
  * (nombre, apellido, e-mail y teléfono),
  * el texto que representa la pregunta en sí,
- * y un booleano que indica si ya fue respondida
+ * y un booleano que indica si ya fue respondida</p>
+ * @author sole
+ * @version 1.0
  */
 @Entity
 public class Question {

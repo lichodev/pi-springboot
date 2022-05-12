@@ -6,7 +6,9 @@ import java.util.Objects;
 
 /**
  * Entidad que representa la tabla 'daily-tip'
- * Posee una fecha y el id de un tip como FK
+ * <p>Posee una fecha y el id de un tip como FK</p>
+ * @author sole
+ * @version 1.0
  */
 @Entity
 public class DailyTip {

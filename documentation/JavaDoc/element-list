@@ -1,0 +1,12 @@
+com.ml.primerainfanciarest
+com.ml.primerainfanciarest.controllers
+com.ml.primerainfanciarest.converters
+com.ml.primerainfanciarest.entities
+com.ml.primerainfanciarest.helpers
+com.ml.primerainfanciarest.models
+com.ml.primerainfanciarest.repositories
+com.ml.primerainfanciarest.security
+com.ml.primerainfanciarest.security.jwt
+com.ml.primerainfanciarest.security.models
+com.ml.primerainfanciarest.security.service
+com.ml.primerainfanciarest.services

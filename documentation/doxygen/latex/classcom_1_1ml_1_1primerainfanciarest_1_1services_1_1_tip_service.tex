@@ -1,0 +1,155 @@
+\doxysection{com.\+ml.\+primerainfanciarest.\+services.\+Tip\+Service Class Reference}
+\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_tip_service}\index{com.ml.primerainfanciarest.services.TipService@{com.ml.primerainfanciarest.services.TipService}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \textbf{ post} (\textbf{ Tip} tip)
+\item 
+List$<$ \textbf{ Tip\+Model} $>$ \textbf{ get\+All} ()
+\item 
+\textbf{ Tip\+Model} \textbf{ get\+By\+Id} (int id)
+\item 
+boolean \textbf{ put} (int id, int value)
+\item 
+int \textbf{ get\+Quantity} ()
+\item 
+List$<$ Integer $>$ \textbf{ get\+Not\+Selected} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Servicio encargado de la lógica relacionada con los tips \begin{DoxyAuthor}{Author}
+sole 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 20 of file Tip\+Service.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_tip_service_acb50e78fffdc0a25711fb64671b570d2}} 
+\index{com.ml.primerainfanciarest.services.TipService@{com.ml.primerainfanciarest.services.TipService}!getAll@{getAll}}
+\index{getAll@{getAll}!com.ml.primerainfanciarest.services.TipService@{com.ml.primerainfanciarest.services.TipService}}
+\doxysubsubsection{getAll()}
+{\footnotesize\ttfamily List$<$\textbf{ Tip\+Model}$>$ com.\+ml.\+primerainfanciarest.\+services.\+Tip\+Service.\+get\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene el listado de todos los tips \begin{DoxyReturn}{Returns}
+Lista completa de tips 
+\end{DoxyReturn}
+
+
+Definition at line 48 of file Tip\+Service.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_tip_service_acb50e78fffdc0a25711fb64671b570d2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_tip_service_ab5a80dea798a56ade61b75663d74b301}} 
+\index{com.ml.primerainfanciarest.services.TipService@{com.ml.primerainfanciarest.services.TipService}!getById@{getById}}
+\index{getById@{getById}!com.ml.primerainfanciarest.services.TipService@{com.ml.primerainfanciarest.services.TipService}}
+\doxysubsubsection{getById()}
+{\footnotesize\ttfamily \textbf{ Tip\+Model} com.\+ml.\+primerainfanciarest.\+services.\+Tip\+Service.\+get\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Obtiene el tip cuyo id coincide con el recibido por parámetro 
+\begin{DoxyParams}{Parameters}
+{\em id} & identificador único del id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tip cuyo id es el indicado 
+\end{DoxyReturn}
+
+
+Definition at line 63 of file Tip\+Service.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_tip_service_ab5a80dea798a56ade61b75663d74b301_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_tip_service_a95727ce2192109c444adb8c393f77921}} 
+\index{com.ml.primerainfanciarest.services.TipService@{com.ml.primerainfanciarest.services.TipService}!getNotSelected@{getNotSelected}}
+\index{getNotSelected@{getNotSelected}!com.ml.primerainfanciarest.services.TipService@{com.ml.primerainfanciarest.services.TipService}}
+\doxysubsubsection{getNotSelected()}
+{\footnotesize\ttfamily List$<$Integer$>$ com.\+ml.\+primerainfanciarest.\+services.\+Tip\+Service.\+get\+Not\+Selected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene el listado de los ids de todos los tips que no están presentes en la tabla de tips diarios \begin{DoxyReturn}{Returns}
+Lista de Integer que representan los tips 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\doxyref{Daily\+Tip\+Service}{p.}{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_daily_tip_service} 
+\end{DoxySeeAlso}
+
+
+Definition at line 109 of file Tip\+Service.\+java.
+
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_tip_service_a454d3d7f39a470420a62a7c26a878c13}} 
+\index{com.ml.primerainfanciarest.services.TipService@{com.ml.primerainfanciarest.services.TipService}!getQuantity@{getQuantity}}
+\index{getQuantity@{getQuantity}!com.ml.primerainfanciarest.services.TipService@{com.ml.primerainfanciarest.services.TipService}}
+\doxysubsubsection{getQuantity()}
+{\footnotesize\ttfamily int com.\+ml.\+primerainfanciarest.\+services.\+Tip\+Service.\+get\+Quantity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene la cantidad de tips que hay guardados actualmente en la B\+DD \begin{DoxyReturn}{Returns}
+int cantidad 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\doxyref{Daily\+Tip\+Service}{p.}{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_daily_tip_service} 
+\end{DoxySeeAlso}
+
+
+Definition at line 99 of file Tip\+Service.\+java.
+
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_tip_service_a9bc0b8bc4f3fa746e059bdba3b4b6d38}} 
+\index{com.ml.primerainfanciarest.services.TipService@{com.ml.primerainfanciarest.services.TipService}!post@{post}}
+\index{post@{post}!com.ml.primerainfanciarest.services.TipService@{com.ml.primerainfanciarest.services.TipService}}
+\doxysubsubsection{post()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+services.\+Tip\+Service.\+post (\begin{DoxyParamCaption}\item[{\textbf{ Tip}}]{tip }\end{DoxyParamCaption})}
+
+Guarda en la B\+DD el tip recibido 
+\begin{DoxyParams}{Parameters}
+{\em tip} & a guardar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean indicador del éxito en la operación 
+\end{DoxyReturn}
+
+
+Definition at line 35 of file Tip\+Service.\+java.
+
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_tip_service_a6d9ecfd34592d44bfbd98c8a28fae933}} 
+\index{com.ml.primerainfanciarest.services.TipService@{com.ml.primerainfanciarest.services.TipService}!put@{put}}
+\index{put@{put}!com.ml.primerainfanciarest.services.TipService@{com.ml.primerainfanciarest.services.TipService}}
+\doxysubsubsection{put()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+services.\+Tip\+Service.\+put (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+Suma un like o un dislike al tip cuyo id coincide con el recibido 
+\begin{DoxyParams}{Parameters}
+{\em id} & representa al tip que se desa editar \\
+\hline
+{\em value} & puede ser un valor positivo que indica que se debe sumar un \textquotesingle{}like\textquotesingle{} o un valor negativo, correspondiente a un \textquotesingle{}dislike\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean indicador del éxito en la operación 
+\end{DoxyReturn}
+
+
+Definition at line 76 of file Tip\+Service.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sole/\+Sole/\+Primera\+Infancia/primera\+Infancia\+Rest/src/main/java/com/ml/primerainfanciarest/services/Tip\+Service.\+java\end{DoxyCompactItemize}

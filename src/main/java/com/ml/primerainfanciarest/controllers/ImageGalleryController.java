@@ -18,7 +18,9 @@ import java.util.List;
 
 /**
  * Controlador accesible con el path "/gallery"
- * Controla todas las peticiones que respectan a la tabla 'image_gallery'
+ * <p>Controla todas las peticiones que respectan a la tabla 'image_gallery'</p>
+ * @author sole
+ * @version 1.0
  */
 @RestController
 @RequestMapping("/gallery")
@@ -31,8 +33,9 @@ public class ImageGalleryController {
 
     /**
      * Obtiene el listado de todas las imágenes de la gallería
-     * Se accede con el método GET
-     * @return
+     * <p>Se accede con el método GET</p>
+     * @return listado de imágenes de la galería
+     * @see FileHelper
      */
     @GetMapping
     public List<ImageGalleryModel> get() {
@@ -45,11 +48,11 @@ public class ImageGalleryController {
     }
 
     /**
-     * Obtiene la imagen correspondiente al id recibido en el path
-     * Se accede mediante el método GET y al path original se
-     * le agrega el id de la imagen solicitada
-     * @param id
-     * @return
+     * Obtiene la imagen correspondiente al id recibido
+     * <p>Se accede mediante el método GET y al path original se
+     * le agrega el id de la imagen solicitada</p>
+     * @param id de la imagen que se quiere obtener
+     * @return Imagen solicitada
      */
     @GetMapping(value = "/{id}")
     public ImageGalleryModel getById(@PathVariable ("id") int id) {
@@ -57,12 +60,13 @@ public class ImageGalleryController {
     }
 
     /**
-     * Recibe una imagen y la guarda
-     * Se accede con el método POST
-     * Solo es accesible para el usuario logueado
-     * @param description
-     * @param image
-     * @return
+     * Guarda una imagen
+     * <p>Se accede con el método POST
+     * Solo es accesible para el usuario logueado</p>
+     * @param description de la imagen. Pie de foto
+     * @param image la imagen en sí
+     * @return boolean que indica si esta se pudo guardar
+     * @see FileHelper
      */
     @PostMapping()
     public boolean post(@RequestParam("description") String description, @RequestParam("file") MultipartFile image) {

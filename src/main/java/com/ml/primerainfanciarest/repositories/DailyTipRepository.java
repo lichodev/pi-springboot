@@ -9,6 +9,11 @@ import org.springframework.stereotype.Repository;
 import java.io.Serializable;
 import java.time.LocalDate;
 
+/**
+ * repositorio encargado de las transacciones con la BBDD correspondientes a la tabla daily_tip
+ * @author sole
+ * @version 1.0
+ */
 @Repository("DailyTipRepository")
 public interface DailyTipRepository extends JpaRepository<DailyTip, Serializable> {
 

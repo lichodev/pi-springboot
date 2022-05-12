@@ -19,7 +19,9 @@ import java.util.List;
 
 /**
  * Controlador accesible con el path "/podcast"
- * Se encarga de resolver todas las peticiones a la tabla 'podcast'
+ * <p>Se encarga de resolver todas las peticiones a la tabla 'podcast'</p>
+ * @author sole
+ * @version 1.0
  */
 @RestController
 @RequestMapping("/podcast")
@@ -32,8 +34,8 @@ public class PodcastController {
 
     /**
      * Obtiene el listado completo de podcasts
-     * Se accede mediante el método GET
-     * @return
+     * <p>Se accede mediante el método GET</p>
+     * @return listado de podcasts
      */
     @GetMapping
     public List<PodcastModel> get() {
@@ -41,14 +43,13 @@ public class PodcastController {
     }
 
     /**
-     * Recibe el audio, la imagen y el título de un podcast
-     * Crea el podcast y lo guarda
-     * Se accede mediante el método POST
-     * Solo es accesible para el usuario logueado
-     * @param title
-     * @param audio
-     * @param image
-     * @return
+     * Crea y guarda un podcast
+     * <p>Se accede mediante el método POST
+     * Solo es accesible para el usuario logueado</p>
+     * @param title del podcast
+     * @param audio el propio podcast
+     * @param image que acompaña al podcast
+     * @return boolean que indica si se pudo guardar
      */
     @PostMapping()
     public boolean post(@RequestParam("title") String title, @RequestParam("audio") MultipartFile audio, @RequestParam("file") MultipartFile image) {

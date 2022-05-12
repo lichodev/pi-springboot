@@ -8,6 +8,11 @@ import org.springframework.stereotype.Repository;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * repositorio encargado de las transacciones con la BBDD correspondientes a la tabla question
+ * @author sole
+ * @version 1.0
+ */
 @Repository("QuestionRepository")
 public interface QuestionRepository extends JpaRepository<Question, Serializable> {
 

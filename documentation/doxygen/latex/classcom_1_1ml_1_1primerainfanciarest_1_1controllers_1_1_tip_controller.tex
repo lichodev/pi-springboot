@@ -1,0 +1,146 @@
+\doxysection{com.\+ml.\+primerainfanciarest.\+controllers.\+Tip\+Controller Class Reference}
+\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_tip_controller}\index{com.ml.primerainfanciarest.controllers.TipController@{com.ml.primerainfanciarest.controllers.TipController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \textbf{ Tip\+Model} $>$ \textbf{ get} ()
+\item 
+\textbf{ Tip\+Model} \textbf{ get\+By\+Id} (@Path\+Variable(\char`\"{}id\char`\"{}) int id)
+\item 
+boolean \textbf{ post} (@Request\+Param(\char`\"{}title\char`\"{}) String title, @Request\+Param(\char`\"{}text\char`\"{}) String text, @Request\+Param(\char`\"{}file\char`\"{}) Multipart\+File image)
+\item 
+boolean \textbf{ put} (@Path\+Variable(\char`\"{}id\char`\"{}) int id, @Request\+Body int value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controlador accesible con el path \char`\"{}/tips\char`\"{} 
+
+Se encarga de todas las peticiones a la tabla \textquotesingle{}tip\textquotesingle{}
+
+\begin{DoxyAuthor}{Author}
+Sole 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 26 of file Tip\+Controller.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_tip_controller_a4898a73a157c5998c805b287446a3ea2}} 
+\index{com.ml.primerainfanciarest.controllers.TipController@{com.ml.primerainfanciarest.controllers.TipController}!get@{get}}
+\index{get@{get}!com.ml.primerainfanciarest.controllers.TipController@{com.ml.primerainfanciarest.controllers.TipController}}
+\doxysubsubsection{get()}
+{\footnotesize\ttfamily List$<$\textbf{ Tip\+Model}$>$ com.\+ml.\+primerainfanciarest.\+controllers.\+Tip\+Controller.\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene el listado de todos los tips 
+
+Se accede mediante el método G\+ET
+
+\begin{DoxyReturn}{Returns}
+Lista de tips 
+\end{DoxyReturn}
+
+
+Definition at line 38 of file Tip\+Controller.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_tip_controller_a4898a73a157c5998c805b287446a3ea2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_tip_controller_a1e083a386293f69fb07515c096e0eb4f}} 
+\index{com.ml.primerainfanciarest.controllers.TipController@{com.ml.primerainfanciarest.controllers.TipController}!getById@{getById}}
+\index{getById@{getById}!com.ml.primerainfanciarest.controllers.TipController@{com.ml.primerainfanciarest.controllers.TipController}}
+\doxysubsubsection{getById()}
+{\footnotesize\ttfamily \textbf{ Tip\+Model} com.\+ml.\+primerainfanciarest.\+controllers.\+Tip\+Controller.\+get\+By\+Id (\begin{DoxyParamCaption}\item[{@Path\+Variable(\char`\"{}id\char`\"{}) int}]{id }\end{DoxyParamCaption})}
+
+Obtiene el tip asociado al id recibido 
+
+Se accede mediante el método G\+ET y al path inicial se le agrega el id solicitado
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & representa el identificador único del tip al que se quiere acceder \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Tip con toda la información pertinente 
+\end{DoxyReturn}
+
+
+Definition at line 49 of file Tip\+Controller.\+java.
+
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_tip_controller_abfd23e81f231d7a90745d71db72d655a}} 
+\index{com.ml.primerainfanciarest.controllers.TipController@{com.ml.primerainfanciarest.controllers.TipController}!post@{post}}
+\index{post@{post}!com.ml.primerainfanciarest.controllers.TipController@{com.ml.primerainfanciarest.controllers.TipController}}
+\doxysubsubsection{post()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+controllers.\+Tip\+Controller.\+post (\begin{DoxyParamCaption}\item[{@Request\+Param(\char`\"{}title\char`\"{}) String}]{title,  }\item[{@Request\+Param(\char`\"{}text\char`\"{}) String}]{text,  }\item[{@Request\+Param(\char`\"{}file\char`\"{}) Multipart\+File}]{image }\end{DoxyParamCaption})}
+
+Crea y guarda un nuevo tip a partir de los datos recibidos 
+
+Se accede mediante el método P\+O\+ST y solo es accesible para el usuario logueado
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & String \\
+\hline
+{\em text} & String \\
+\hline
+{\em image} & Multipart\+File \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean que indica si este pudo ser guardado 
+\end{DoxyReturn}
+
+
+Definition at line 63 of file Tip\+Controller.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_tip_controller_abfd23e81f231d7a90745d71db72d655a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_tip_controller_a4b94ba3441b0d1b9f0b60290205a5579}} 
+\index{com.ml.primerainfanciarest.controllers.TipController@{com.ml.primerainfanciarest.controllers.TipController}!put@{put}}
+\index{put@{put}!com.ml.primerainfanciarest.controllers.TipController@{com.ml.primerainfanciarest.controllers.TipController}}
+\doxysubsubsection{put()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+controllers.\+Tip\+Controller.\+put (\begin{DoxyParamCaption}\item[{@Path\+Variable(\char`\"{}id\char`\"{}) int}]{id,  }\item[{@Request\+Body int}]{value }\end{DoxyParamCaption})}
+
+Suma likes o dislikes al tip coincidente con el id recibido 
+
+Se accede mediante el método P\+UT
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & representa el id único del tip al que se desea evaluar \\
+\hline
+{\em value} & puede ser un valor positivo que indica que se debe sumar un \textquotesingle{}like\textquotesingle{} o un valor negativo, correspondiente a un \textquotesingle{}dislike\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean que indica si se guardaron los cambios 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+Tip\+Service 
+\end{DoxySeeAlso}
+
+
+Definition at line 83 of file Tip\+Controller.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sole/\+Sole/\+Primera\+Infancia/primera\+Infancia\+Rest/src/main/java/com/ml/primerainfanciarest/controllers/Tip\+Controller.\+java\end{DoxyCompactItemize}

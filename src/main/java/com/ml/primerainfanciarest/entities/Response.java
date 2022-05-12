@@ -5,7 +5,10 @@ import java.util.Objects;
 
 /**
  * Entidad que representa la tabla 'response'
- * Posee un id, un texto y un id que referencia la pregunta a la que se está respondiendo
+ * <p>Posee un id, un texto y un id que referencia la pregunta
+ * a la que se está respondiendo</p>
+ * @author sole
+ * @version 1.0
  */
 @Entity
 public class Response {

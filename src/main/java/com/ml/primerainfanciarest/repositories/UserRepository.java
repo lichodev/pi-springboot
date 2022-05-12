@@ -7,6 +7,11 @@ import org.springframework.stereotype.Repository;
 
 import java.io.Serializable;
 
+/**
+ * repositorio encargado de las transacciones con la BBDD correspondientes a la tabla user
+ * @author sole
+ * @version 1.0
+ */
 @Repository("UserRepository")
 public interface UserRepository extends JpaRepository<UserPi, Serializable> {
 

@@ -1,0 +1,159 @@
+\doxysection{com.\+ml.\+primerainfanciarest.\+controllers.\+Experience\+Controller Class Reference}
+\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_experience_controller}\index{com.ml.primerainfanciarest.controllers.ExperienceController@{com.ml.primerainfanciarest.controllers.ExperienceController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \textbf{ Experience\+Model} $>$ \textbf{ get\+Accept} ()
+\item 
+List$<$ \textbf{ Experience\+Model} $>$ \textbf{ get\+Pending} ()
+\item 
+boolean \textbf{ post} (@Request\+Param(\char`\"{}text\char`\"{}) String text, @Request\+Param(value=\char`\"{}file\char`\"{}, required=false) Multipart\+File image)
+\item 
+boolean \textbf{ accept} (@Path\+Variable(\char`\"{}id\char`\"{}) int id)
+\item 
+boolean \textbf{ delete} (@Path\+Variable(\char`\"{}id\char`\"{}) int id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controlador accesible con el path \char`\"{}/experiences\char`\"{} 
+
+Se encarga de todas las peticiones para la tabla \textquotesingle{}experience\textquotesingle{}
+
+\begin{DoxyAuthor}{Author}
+sole 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 30 of file Experience\+Controller.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_experience_controller_aaf10b3f1c022f6ac22e450281ed2c20b}} 
+\index{com.ml.primerainfanciarest.controllers.ExperienceController@{com.ml.primerainfanciarest.controllers.ExperienceController}!accept@{accept}}
+\index{accept@{accept}!com.ml.primerainfanciarest.controllers.ExperienceController@{com.ml.primerainfanciarest.controllers.ExperienceController}}
+\doxysubsubsection{accept()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+controllers.\+Experience\+Controller.\+accept (\begin{DoxyParamCaption}\item[{@Path\+Variable(\char`\"{}id\char`\"{}) int}]{id }\end{DoxyParamCaption})}
+
+Hace visible una experiencia 
+
+Permite que la experiencia con el id recibido por parámetro sea visible para todos los usuarios
+
+Se accede con el método P\+UT
+
+Solo es accesible si existe una sesión de usuario iniciada
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & de la experiencia que quiere hacerse visible \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean que indica si se completó correctamente la solicitud 
+\end{DoxyReturn}
+
+
+Definition at line 90 of file Experience\+Controller.\+java.
+
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_experience_controller_aa8334c17cce9f2f1176587aac08e10d9}} 
+\index{com.ml.primerainfanciarest.controllers.ExperienceController@{com.ml.primerainfanciarest.controllers.ExperienceController}!delete@{delete}}
+\index{delete@{delete}!com.ml.primerainfanciarest.controllers.ExperienceController@{com.ml.primerainfanciarest.controllers.ExperienceController}}
+\doxysubsubsection{delete()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+controllers.\+Experience\+Controller.\+delete (\begin{DoxyParamCaption}\item[{@Path\+Variable(\char`\"{}id\char`\"{}) int}]{id }\end{DoxyParamCaption})}
+
+Elimina una experiencia guardada 
+
+Se accede con el método D\+E\+L\+E\+TE Solo es accesible si existe una sesión de usuario iniciada
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & de la experiencia que se desea eliminar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bollean que indica si se pudo eliminar 
+\end{DoxyReturn}
+
+
+Definition at line 102 of file Experience\+Controller.\+java.
+
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_experience_controller_a47b0328feeba42fb0d0bb081d2b69cd0}} 
+\index{com.ml.primerainfanciarest.controllers.ExperienceController@{com.ml.primerainfanciarest.controllers.ExperienceController}!getAccept@{getAccept}}
+\index{getAccept@{getAccept}!com.ml.primerainfanciarest.controllers.ExperienceController@{com.ml.primerainfanciarest.controllers.ExperienceController}}
+\doxysubsubsection{getAccept()}
+{\footnotesize\ttfamily List$<$\textbf{ Experience\+Model}$>$ com.\+ml.\+primerainfanciarest.\+controllers.\+Experience\+Controller.\+get\+Accept (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene el listado de experiencias visibles para el usuario sin iniciar sesión 
+
+Se accede mediante el método G\+ET
+
+\begin{DoxyReturn}{Returns}
+listado de experiencias visibles para el usuario sin iniciar sesión 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file Experience\+Controller.\+java.
+
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_experience_controller_af7a520d19ade300b8bc59ef6302cb2a4}} 
+\index{com.ml.primerainfanciarest.controllers.ExperienceController@{com.ml.primerainfanciarest.controllers.ExperienceController}!getPending@{getPending}}
+\index{getPending@{getPending}!com.ml.primerainfanciarest.controllers.ExperienceController@{com.ml.primerainfanciarest.controllers.ExperienceController}}
+\doxysubsubsection{getPending()}
+{\footnotesize\ttfamily List$<$\textbf{ Experience\+Model}$>$ com.\+ml.\+primerainfanciarest.\+controllers.\+Experience\+Controller.\+get\+Pending (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene el listado de experiencias visibles para el usuario logueado 
+
+Se accede mediante el método G\+ET y el path \char`\"{}/admin\char`\"{} Solo es accesible si existe una sesión de usuario iniciada
+
+\begin{DoxyReturn}{Returns}
+listado de experiencias visibles para el usuario logueado 
+\end{DoxyReturn}
+
+
+Definition at line 53 of file Experience\+Controller.\+java.
+
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_experience_controller_a2f8e70f64ead2e954f3e48d4937fb2e4}} 
+\index{com.ml.primerainfanciarest.controllers.ExperienceController@{com.ml.primerainfanciarest.controllers.ExperienceController}!post@{post}}
+\index{post@{post}!com.ml.primerainfanciarest.controllers.ExperienceController@{com.ml.primerainfanciarest.controllers.ExperienceController}}
+\doxysubsubsection{post()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+controllers.\+Experience\+Controller.\+post (\begin{DoxyParamCaption}\item[{@Request\+Param(\char`\"{}text\char`\"{}) String}]{text,  }\item[{@Request\+Param(value=\char`\"{}file\char`\"{}, required=false) Multipart\+File}]{image }\end{DoxyParamCaption})}
+
+Crea y guarda una nueva experiencia 
+
+Se accede con el método P\+O\+ST
+
+En un primer momento, la experiencia sólo será visible por los administradores hasta que uno de estos decida hacerla pública
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & de la experiencia a guardar \\
+\hline
+{\em image} & opcional que acompaña el texto \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean que indica si se pudo guardar 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+File\+Helper 
+\end{DoxySeeAlso}
+
+
+Definition at line 68 of file Experience\+Controller.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_experience_controller_a2f8e70f64ead2e954f3e48d4937fb2e4_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sole/\+Sole/\+Primera\+Infancia/primera\+Infancia\+Rest/src/main/java/com/ml/primerainfanciarest/controllers/Experience\+Controller.\+java\end{DoxyCompactItemize}

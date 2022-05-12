@@ -8,7 +8,9 @@ import java.util.Objects;
 
 /**
  * Entidad que representa la tabla 'workshop'
- * Posee un id, un título y un video
+ * <p>Posee un id, un título y un video</p>
+ * @author sole
+ * @version 1.0
  */
 @Entity
 public class Workshop {

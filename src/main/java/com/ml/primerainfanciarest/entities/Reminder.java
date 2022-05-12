@@ -8,11 +8,13 @@ import java.util.Objects;
 
 /**
  * Entidad que representa la tabla 'reminder'
- * Es un recordatorio de consejos útiles para familias con niños
- * en un rango de edad determinado
- * Se guarda un id, el rango de edad para el que está indicado (desde - hasta)
- * una imagen, y la cantidad de veces que los usuarios indicaron si les fue útil o no
- * la información
+ * <p>Es un recordatorio de consejos útiles para familias con niños
+ * en un rango de edad determinado</p>
+ * <p>Se guarda un id, el rango de edad para el que está indicado (desde - hasta)
+ * una imagen, y la cantidad de veces que los usuarios indicaron si les fue útil o no</p>
+ * la información.
+ * @author sole
+ * @version 1.0
  */
 @Entity
 public class Reminder {

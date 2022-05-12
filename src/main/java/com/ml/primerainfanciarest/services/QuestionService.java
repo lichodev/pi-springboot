@@ -12,6 +12,11 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Servicio encargado de la lógica relacionada con las questions
+ * @author sole
+ * @version 1.0
+ */
 @Service("QuestionService")
 public class QuestionService {
     @Autowired
@@ -23,10 +28,10 @@ public class QuestionService {
     private QuestionConverter converter;
 
     /**
-     * obtiene el listado de preguntas guardadas
-     * y las devuelve ordenadas, haciendo que se encuentren en primer lugar
-     * aquellas preguntas que aún no fueron respondidas
-     * @return
+     * Obtiene el listado de questions
+     * <p>Obtiene el listado de questions ordenadas, haciendo que se encuentren
+     * en primer lugar aquellas questions que aún no fueron respondidas</p>
+     * @return listado ordenado de questions
      */
     public List<QuestionModel> get() {
         List<QuestionModel> questions = new ArrayList<>();
@@ -38,9 +43,9 @@ public class QuestionService {
     }
 
     /**
-     * Guarda en la BDD la pregunta recibida
-     * @param question
-     * @return
+     * Guarda la question recibida
+     * @param question a guardar
+     * @return boolean que indica el éxito de la transacción
      */
     public boolean post(Question question) {
         try {
@@ -52,9 +57,13 @@ public class QuestionService {
     }
 
     /**
-     * Cambia el estado de la pregunta de 'no respondida' a 'respondida'
-     * @param id
-     * @return
+     * Cambia el replied de la question de 'false' a 'true'
+     * <p>El administrador puede indicar que ya respondió una pregunta cambiando su
+     * estado de false(no respondida) a true(respondida). Esto hará que se encuentre
+     * al final del listado para dar prioridad de respuesta a nuevas preguntas</p>
+     * @param id perteneciente a la question que se desea modificar
+     * @return boolean idicador del éxito de la transacción
+     * @see this get()
      */
     public boolean checkReplied(int id) {
         Question q = this.repository.getById(id);

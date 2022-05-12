@@ -16,7 +16,9 @@ import java.util.List;
 
 /**
  * Controlador accesible con el path "/tips"
- * Se encarga de todas las peticiones a la tabla 'tip'
+ * <p>Se encarga de todas las peticiones a la tabla 'tip'</p>
+ * @author Sole
+ * @version 1.0
  */
 @RestController
 @RequestMapping("/tips")
@@ -29,8 +31,8 @@ public class TipController {
 
     /**
      * Obtiene el listado de todos los tips
-     * Se accede mediante el método GET
-     * @return
+     * <p>Se accede mediante el método GET</p>
+     * @return Lista de tips
      */
     @GetMapping
     public List<TipModel> get() {
@@ -39,9 +41,9 @@ public class TipController {
 
     /**
      * Obtiene el tip asociado al id recibido
-     * Se accede mediante el método GET y al path inicial se le agrega el id solicitado
-     * @param id
-     * @return
+     * <p>Se accede mediante el método GET y al path inicial se le agrega el id solicitado</p>
+     * @param id representa el identificador único del tip al que se quiere acceder
+     * @return Tip con toda la información pertinente
      */
     @GetMapping(value = "/{id}")
     public TipModel getById(@PathVariable("id") int id) {
@@ -49,13 +51,13 @@ public class TipController {
     }
 
     /**
-     * Recibe los datos de un nuevo tip, lo crea y lo guarda
-     * Se accede mediante el método POST
-     * y solo es accesible para el usuario logueado
-     * @param title
-     * @param text
-     * @param image
-     * @return
+     * Crea y guarda un nuevo tip a partir de los datos recibidos
+     * <p>Se accede mediante el método POST
+     * y solo es accesible para el usuario logueado</p>
+     * @param title String
+     * @param text String
+     * @param image MultipartFile
+     * @return boolean que indica si este pudo ser guardado
      */
     @PostMapping()
     public boolean post(@RequestParam("title") String title, @RequestParam("text") String text, @RequestParam("file") MultipartFile image) {
@@ -70,10 +72,12 @@ public class TipController {
 
     /**
      * Suma likes o dislikes al tip coincidente con el id recibido
-     * Se accede mediante el método PUT
-     * @param id
-     * @param value
-     * @return
+     * <p>Se accede mediante el método PUT</p>
+     * @param id representa el id único del tip al que se desea evaluar
+     * @param value puede ser un valor positivo que indica que se debe sumar
+     *              un 'like' o un valor negativo, correspondiente a un 'dislike'
+     * @return boolean que indica si se guardaron los cambios
+     * @see TipService
      */
     @PutMapping(value = "{id}")
     public boolean put(@PathVariable("id") int id, @RequestBody int value) {

@@ -8,8 +8,10 @@ import java.util.Objects;
 
 /**
  * Entidad que representa la tabla 'experience'
- * Posee un id, un texto, una imagen (NO obligatoria)
- * y un estado que indica si puede ser expuesta para todos los usuarios
+ * <p>Posee un id, un texto, una imagen (NO obligatoria)
+ * y un estado que indica si puede ser expuesta para todos los usuarios</p>
+ * @author sole
+ * @version 1.0
  */
 @Entity
 public class Experience {

@@ -18,7 +18,10 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * Clase accesible con el path "/auth"
+ * Controlador accesible con el path "/auth"
+ * <p>Se encarga de realizar el login del usuario</p>
+ * @author sole
+ * @version 1.0
  */
 @RestController
 @RequestMapping("/auth")

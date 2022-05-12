@@ -11,6 +11,11 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDate;
 import java.util.List;
 
+/**
+ * Servicio encargado de la lógica relacionada con los dailyTips
+ * @author sole
+ * @version 1.0
+ */
 @Service("DailyTipService")
 public class DailyTipService {
 
@@ -27,10 +32,12 @@ public class DailyTipService {
     private TipService tipService;
 
     /**
-     * Si existe un tip asociado a la fecha actual, lo devuelve
-     * Si no existe, toma un tip que no esté asociado a ninguna fecha y lo asocia a la fecha actual
-     * Si todos los tips tienen una fecha asociada, borra todas las asociaciones y empieza de nuevo
-     * @return el tip que resulta asociado con la fecha actual
+     * Obtiene el daily tip
+     * <p>Si existe un tip asociado a la fecha actual, lo devuelve.
+     * Si no existe, toma un tip que no esté asociado a ninguna fecha y lo asocia
+     * a la fecha actual. Si todos los tips tienen una fecha asociada, borra todas
+     * las asociaciones y comienza de nuevo</p>
+     * @return tip que resulta asociado con la fecha actual
      */
     public TipModel getDayTip() {
         LocalDate today = LocalDate.now(); //get a daily-tip with current date
@@ -61,9 +68,9 @@ public class DailyTipService {
     }
 
     /**
-     * Guarda en la BDD una asociación de un tip y la fecha actual
-     * @param dailyTip
-     * @return
+     * Guarda una asociación de un tip y la fecha actual
+     * @param dailyTip a guardar
+     * @return boolean indicador del éxito en la transacción
      */
     public boolean post(DailyTip dailyTip) {
         try {

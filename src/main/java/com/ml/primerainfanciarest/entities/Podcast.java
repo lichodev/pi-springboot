@@ -8,7 +8,9 @@ import java.util.Objects;
 
 /**
  * Entidad que representa la tabla 'podcast'
- * Posee un id, un título, un audio y una imagen para mostrar
+ * <p>Posee un id, un título, un audio y una imagen para mostrar</p>
+ * @author sole
+ * @version 1.0
  */
 @Entity
 public class Podcast {

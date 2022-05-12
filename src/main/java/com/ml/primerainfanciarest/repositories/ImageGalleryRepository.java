@@ -7,6 +7,11 @@ import org.springframework.stereotype.Repository;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * repositorio encargado de las transacciones con la BBDD correspondientes a la tabla image_gallery
+ * @author sole
+ * @version 1.0
+ */
 @Repository("ImageGalleryRepository")
 public interface ImageGalleryRepository extends JpaRepository<ImageGallery, Serializable> {
 

@@ -12,6 +12,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Servicio encargado de la lógica relacionada con las requests
+ * @author sole
+ * @version 1.0
+ */
 @Service("RequestService")
 public class RequestService {
     @Autowired
@@ -23,10 +28,10 @@ public class RequestService {
     private RequestConverter converter;
 
     /**
-     * Obtiene el listado de solicitudes
-     * y las devuelve ordenadas, dejando en primer lugar
-     * aquellas solicitudes que aún no fueron respondidas
-     * @return
+     * Obtiene el listado de requests
+     * <p>Obtiene el listado de requests ordenadas, haciendo que se encuentren
+     * en primer lugar aquellas requests que aún no fueron respondidas</p>
+     * @return listado rdenado de requests
      */
     public List<RequestModel> get() {
         List<RequestModel> requests = new ArrayList<>();
@@ -38,9 +43,9 @@ public class RequestService {
     }
 
     /**
-     * Guarda e la BDD la solicitud recibida
-     * @param request
-     * @return
+     * Guarda la requests recibida
+     * @param request a guardar
+     * @return boolean indicador del éxito en la transacción
      */
     public boolean post(Request request) {
         try {
@@ -52,9 +57,13 @@ public class RequestService {
     }
 
     /**
-     * Cambia el campo 'replied' de la solicitud de 'false' a 'true'
-     * @param id
-     * @return
+     * Cambia el 'replied' de la requests de 'false' a 'true'
+     * <p>El administrador puede indicar que ya respondió una solicitud cambiando su
+     * estado de false(no respondida) a true(respondida). Esto hará que se encuentre
+     * al final del listado para dar prioridad de respuesta a nuevas solicitudes</p>
+     * @param id perteneciente a la request que se desea modificar
+     * @return boolean idicador del éxito de la transacción
+     * @see this get()
      */
     public boolean checkReplied(int id) {
         Request request = this.repository.getById(id);

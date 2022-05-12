@@ -1,0 +1,123 @@
+\doxysection{com.\+ml.\+primerainfanciarest.\+services.\+Reminder\+Service Class Reference}
+\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_reminder_service}\index{com.ml.primerainfanciarest.services.ReminderService@{com.ml.primerainfanciarest.services.ReminderService}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \textbf{ Reminder\+Model} $>$ \textbf{ get} ()
+\item 
+\textbf{ Reminder\+Model} \textbf{ get\+By\+Id} (int id)
+\item 
+boolean \textbf{ post} (\textbf{ Reminder} reminder)
+\item 
+boolean \textbf{ put} (int id, int value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Servicio encargado de la lógica relacionada con los reminders \begin{DoxyAuthor}{Author}
+sole 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 24 of file Reminder\+Service.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_reminder_service_adca4a9c54ecd48a300eb4a3671349809}} 
+\index{com.ml.primerainfanciarest.services.ReminderService@{com.ml.primerainfanciarest.services.ReminderService}!get@{get}}
+\index{get@{get}!com.ml.primerainfanciarest.services.ReminderService@{com.ml.primerainfanciarest.services.ReminderService}}
+\doxysubsubsection{get()}
+{\footnotesize\ttfamily List$<$\textbf{ Reminder\+Model}$>$ com.\+ml.\+primerainfanciarest.\+services.\+Reminder\+Service.\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene el listado de todos los recordatorios 
+
+Los recordatorios se devuelven ordenados según la columna \textquotesingle{}since\textquotesingle{} en orden ascendente
+
+\begin{DoxyReturn}{Returns}
+Lista ordenada de reminders 
+\end{DoxyReturn}
+
+
+Definition at line 39 of file Reminder\+Service.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_reminder_service_adca4a9c54ecd48a300eb4a3671349809_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_reminder_service_aa351b67920d89e951e71e057cf803205}} 
+\index{com.ml.primerainfanciarest.services.ReminderService@{com.ml.primerainfanciarest.services.ReminderService}!getById@{getById}}
+\index{getById@{getById}!com.ml.primerainfanciarest.services.ReminderService@{com.ml.primerainfanciarest.services.ReminderService}}
+\doxysubsubsection{getById()}
+{\footnotesize\ttfamily \textbf{ Reminder\+Model} com.\+ml.\+primerainfanciarest.\+services.\+Reminder\+Service.\+get\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Obtiene el recordatorio asociado al id recibido 
+\begin{DoxyParams}{Parameters}
+{\em id} & único de reminder que se busca \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reminder solicitado 
+\end{DoxyReturn}
+
+
+Definition at line 54 of file Reminder\+Service.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_reminder_service_aa351b67920d89e951e71e057cf803205_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_reminder_service_a1a65be3cc6a5315b8d5c686f9e0af7c2}} 
+\index{com.ml.primerainfanciarest.services.ReminderService@{com.ml.primerainfanciarest.services.ReminderService}!post@{post}}
+\index{post@{post}!com.ml.primerainfanciarest.services.ReminderService@{com.ml.primerainfanciarest.services.ReminderService}}
+\doxysubsubsection{post()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+services.\+Reminder\+Service.\+post (\begin{DoxyParamCaption}\item[{\textbf{ Reminder}}]{reminder }\end{DoxyParamCaption})}
+
+Guarda en la B\+DD el recordatorio recibido 
+\begin{DoxyParams}{Parameters}
+{\em reminder} & a guardar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean que indica el éxito de la operación 
+\end{DoxyReturn}
+
+
+Definition at line 69 of file Reminder\+Service.\+java.
+
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_reminder_service_aa1cebcc177a25bf35f2ad5dfdea3a747}} 
+\index{com.ml.primerainfanciarest.services.ReminderService@{com.ml.primerainfanciarest.services.ReminderService}!put@{put}}
+\index{put@{put}!com.ml.primerainfanciarest.services.ReminderService@{com.ml.primerainfanciarest.services.ReminderService}}
+\doxysubsubsection{put()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+services.\+Reminder\+Service.\+put (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+Suma un like o un dislike al recordatorio cuyo id coincide con el recibido 
+\begin{DoxyParams}{Parameters}
+{\em id} & representa al tip que se desa editar \\
+\hline
+{\em value} & puede ser un valor positivo que indica que se debe sumar un \textquotesingle{}like\textquotesingle{} o un valor negativo, correspondiente a un \textquotesingle{}dislike\textquotesingle{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean indicador del éxito en la operación 
+\end{DoxyReturn}
+
+
+Definition at line 85 of file Reminder\+Service.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sole/\+Sole/\+Primera\+Infancia/primera\+Infancia\+Rest/src/main/java/com/ml/primerainfanciarest/services/Reminder\+Service.\+java\end{DoxyCompactItemize}

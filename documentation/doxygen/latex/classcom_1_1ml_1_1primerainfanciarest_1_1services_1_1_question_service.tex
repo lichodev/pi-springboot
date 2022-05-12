@@ -1,0 +1,92 @@
+\doxysection{com.\+ml.\+primerainfanciarest.\+services.\+Question\+Service Class Reference}
+\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_question_service}\index{com.ml.primerainfanciarest.services.QuestionService@{com.ml.primerainfanciarest.services.QuestionService}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \textbf{ Question\+Model} $>$ \textbf{ get} ()
+\item 
+boolean \textbf{ post} (\textbf{ Question} question)
+\item 
+boolean \textbf{ check\+Replied} (int id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Servicio encargado de la lógica relacionada con las questions \begin{DoxyAuthor}{Author}
+sole 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 21 of file Question\+Service.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_question_service_a3daac56acb94636d65d6e4b3733f14f6}} 
+\index{com.ml.primerainfanciarest.services.QuestionService@{com.ml.primerainfanciarest.services.QuestionService}!checkReplied@{checkReplied}}
+\index{checkReplied@{checkReplied}!com.ml.primerainfanciarest.services.QuestionService@{com.ml.primerainfanciarest.services.QuestionService}}
+\doxysubsubsection{checkReplied()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+services.\+Question\+Service.\+check\+Replied (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+Cambia el replied de la question de \textquotesingle{}false\textquotesingle{} a \textquotesingle{}true\textquotesingle{} 
+
+El administrador puede indicar que ya respondió una pregunta cambiando su estado de false(no respondida) a true(respondida). Esto hará que se encuentre al final del listado para dar prioridad de respuesta a nuevas preguntas
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & perteneciente a la question que se desea modificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean idicador del éxito de la transacción 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+this \doxyref{get()}{p.}{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_question_service_a5b4456eeb7054bc3183ff4b1a3330d44} 
+\end{DoxySeeAlso}
+
+
+Definition at line 68 of file Question\+Service.\+java.
+
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_question_service_a5b4456eeb7054bc3183ff4b1a3330d44}} 
+\index{com.ml.primerainfanciarest.services.QuestionService@{com.ml.primerainfanciarest.services.QuestionService}!get@{get}}
+\index{get@{get}!com.ml.primerainfanciarest.services.QuestionService@{com.ml.primerainfanciarest.services.QuestionService}}
+\doxysubsubsection{get()}
+{\footnotesize\ttfamily List$<$\textbf{ Question\+Model}$>$ com.\+ml.\+primerainfanciarest.\+services.\+Question\+Service.\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene el listado de questions 
+
+Obtiene el listado de questions ordenadas, haciendo que se encuentren en primer lugar aquellas questions que aún no fueron respondidas
+
+\begin{DoxyReturn}{Returns}
+listado ordenado de questions 
+\end{DoxyReturn}
+
+
+Definition at line 36 of file Question\+Service.\+java.
+
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1services_1_1_question_service_aa5665a5c16bcfec2cb2cf29d00d4ffbf}} 
+\index{com.ml.primerainfanciarest.services.QuestionService@{com.ml.primerainfanciarest.services.QuestionService}!post@{post}}
+\index{post@{post}!com.ml.primerainfanciarest.services.QuestionService@{com.ml.primerainfanciarest.services.QuestionService}}
+\doxysubsubsection{post()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+services.\+Question\+Service.\+post (\begin{DoxyParamCaption}\item[{\textbf{ Question}}]{question }\end{DoxyParamCaption})}
+
+Guarda la question recibida 
+\begin{DoxyParams}{Parameters}
+{\em question} & a guardar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean que indica el éxito de la transacción 
+\end{DoxyReturn}
+
+
+Definition at line 50 of file Question\+Service.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sole/\+Sole/\+Primera\+Infancia/primera\+Infancia\+Rest/src/main/java/com/ml/primerainfanciarest/services/Question\+Service.\+java\end{DoxyCompactItemize}

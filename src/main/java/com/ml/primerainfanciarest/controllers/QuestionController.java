@@ -12,7 +12,9 @@ import java.util.List;
 
 /**
  * Controlador accesible con el path "/questions"
- * Se encarga de resolver todas las solicitudes hacia la tabla 'question'
+ * <p>Se encarga de resolver todas las solicitudes hacia la tabla 'question'</p>
+ * @author sole
+ * @version 1.0
  */
 @RestController
 @RequestMapping("/questions")
@@ -23,10 +25,10 @@ public class QuestionController {
     private QuestionService service;
 
     /**
-     * obtiene el listado de preguntas
-     * se accede mediante el método GET
-     * solo es accesible para el usuario logueado
-     * @return
+     * Obtiene el listado de preguntas
+     * <p>se accede mediante el método GET
+     * solo es accesible para el usuario logueado</p>
+     * @return listado completo de las preguntas registradas
      */
     @GetMapping
     public List<QuestionModel> get() {
@@ -34,10 +36,11 @@ public class QuestionController {
     }
 
     /**
-     * recibe una pregunta y la guarda
-     * se accede mediante el método POST
-     * @param question
-     * @return
+     * Guarda una pregunta
+     * <p>se accede mediante el método POST</p>
+     * <p>Al guardarse una pregunta por primera vez, siempre se encuentra como 'no respondida'</p>
+     * @param question a guardar
+     * @return boolean que indica si se pudo guardar
      */
     @PostMapping
     public boolean post(@RequestBody @Validated Question question) {
@@ -46,10 +49,10 @@ public class QuestionController {
 
     /**
      * Edita una pregunta para indicar que ya fue respondida
-     * Se accede mediante el método PUT
-     * Solo es accesible para el usuario logueado
-     * @param id
-     * @return
+     * <p>Se accede mediante el método PUT
+     * Solo es accesible para el usuario logueado</p>
+     * @param id único para la pregunta que se desea editar
+     * @return boolean indicando si se pudo editar
      */
     @PutMapping(value = "{id}")
     public boolean put(@PathVariable ("id") int id) {

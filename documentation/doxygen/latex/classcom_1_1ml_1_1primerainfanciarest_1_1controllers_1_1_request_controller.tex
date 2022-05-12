@@ -1,0 +1,107 @@
+\doxysection{com.\+ml.\+primerainfanciarest.\+controllers.\+Request\+Controller Class Reference}
+\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_request_controller}\index{com.ml.primerainfanciarest.controllers.RequestController@{com.ml.primerainfanciarest.controllers.RequestController}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \textbf{ Request\+Model} $>$ \textbf{ get} ()
+\item 
+boolean \textbf{ post} (@Request\+Body @Validated \textbf{ Request} request)
+\item 
+boolean \textbf{ put} (@Path\+Variable(\char`\"{}id\char`\"{}) int id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Controlador accesible con el path \char`\"{}/requests\char`\"{} 
+
+Se encarga de todas las solicitudes que respectan a la tabla \textquotesingle{}request\textquotesingle{}
+
+\begin{DoxyAuthor}{Author}
+sole 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+
+
+Definition at line 22 of file Request\+Controller.\+java.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_request_controller_ab86b5a4891fdad3faf7f8dd6bf42f8b2}} 
+\index{com.ml.primerainfanciarest.controllers.RequestController@{com.ml.primerainfanciarest.controllers.RequestController}!get@{get}}
+\index{get@{get}!com.ml.primerainfanciarest.controllers.RequestController@{com.ml.primerainfanciarest.controllers.RequestController}}
+\doxysubsubsection{get()}
+{\footnotesize\ttfamily List$<$\textbf{ Request\+Model}$>$ com.\+ml.\+primerainfanciarest.\+controllers.\+Request\+Controller.\+get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Obtiene el listado de solicitudes 
+
+Se accede mediante el método G\+ET y solo es accesible para el usuario logueado
+
+\begin{DoxyReturn}{Returns}
+listado de requests 
+\end{DoxyReturn}
+
+
+Definition at line 34 of file Request\+Controller.\+java.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_request_controller_ab86b5a4891fdad3faf7f8dd6bf42f8b2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_request_controller_ace8a488180ba9bc2a65cbf90f628cc86}} 
+\index{com.ml.primerainfanciarest.controllers.RequestController@{com.ml.primerainfanciarest.controllers.RequestController}!post@{post}}
+\index{post@{post}!com.ml.primerainfanciarest.controllers.RequestController@{com.ml.primerainfanciarest.controllers.RequestController}}
+\doxysubsubsection{post()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+controllers.\+Request\+Controller.\+post (\begin{DoxyParamCaption}\item[{@Request\+Body @Validated \textbf{ Request}}]{request }\end{DoxyParamCaption})}
+
+Guarda una solicitud 
+
+Se accede mediante el método P\+O\+ST
+
+
+\begin{DoxyParams}{Parameters}
+{\em request} & a guardar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolea que indica si se pudo guardar 
+\end{DoxyReturn}
+
+
+Definition at line 45 of file Request\+Controller.\+java.
+
+\mbox{\label{classcom_1_1ml_1_1primerainfanciarest_1_1controllers_1_1_request_controller_a9ff333ff517fe3d46a84e5a57f6c2dea}} 
+\index{com.ml.primerainfanciarest.controllers.RequestController@{com.ml.primerainfanciarest.controllers.RequestController}!put@{put}}
+\index{put@{put}!com.ml.primerainfanciarest.controllers.RequestController@{com.ml.primerainfanciarest.controllers.RequestController}}
+\doxysubsubsection{put()}
+{\footnotesize\ttfamily boolean com.\+ml.\+primerainfanciarest.\+controllers.\+Request\+Controller.\+put (\begin{DoxyParamCaption}\item[{@Path\+Variable(\char`\"{}id\char`\"{}) int}]{id }\end{DoxyParamCaption})}
+
+Marca como \textquotesingle{}respondida\textquotesingle{} la solicitud que coincide con el id recibido 
+
+Se accede mediante el método P\+UT y agregando al path inicial el id de la solicitud que se quiere editar
+
+Solo es accesible para el usuario logueado
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & único del request que se desea editar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean que indica si se realizó la edición correctamente 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file Request\+Controller.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/sole/\+Sole/\+Primera\+Infancia/primera\+Infancia\+Rest/src/main/java/com/ml/primerainfanciarest/controllers/Request\+Controller.\+java\end{DoxyCompactItemize}

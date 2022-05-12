@@ -13,6 +13,11 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Servicio encargado de la lógica relacionada con las imageGallery
+ * @author sole
+ * @version 1.0
+ */
 @Service("ImageGalleryService")
 public class ImageGalleryService {
     @Autowired
@@ -24,8 +29,8 @@ public class ImageGalleryService {
     private ImageGalleryConverter converter;
 
     /**
-     * Obtiene el listado de imágenes
-     * @return
+     * Obtiene el listado de imageGallery
+     * @return galería de imágenes completa en forma de lista
      */
     public List<ImageGalleryModel> get() {
         List<ImageGalleryModel> images = new ArrayList<>();
@@ -36,9 +41,9 @@ public class ImageGalleryService {
     }
 
     /**
-     * Obtiene una imagen coincidente con el id recibido por parámetro
-     * @param id
-     * @return
+     * Obtiene una imageGallery coincidente con el id recibido
+     * @param id de la imageGallery que se desea recuperar
+     * @return imageGallery solicitada
      */
     public ImageGalleryModel getById(int id) {
         ImageGallery ig = this.repository.getById(id);
@@ -47,9 +52,9 @@ public class ImageGalleryService {
     }
 
     /**
-     * Guarda la imagen en la BDD
-     * @param imageGallery
-     * @return
+     * Guarda la imagen
+     * @param imageGallery a guardar
+     * @return boolean indicador del éxito en la transacción
      */
     public boolean post(ImageGallery imageGallery) {
         try {

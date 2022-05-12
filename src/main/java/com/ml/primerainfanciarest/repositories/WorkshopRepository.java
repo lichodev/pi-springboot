@@ -7,6 +7,11 @@ import org.springframework.stereotype.Repository;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * repositorio encargado de las transacciones con la BBDD correspondientes a la tabla workshop
+ * @author sole
+ * @version 1.0
+ */
 @Repository("WorkshopRepository")
 public interface WorkshopRepository extends JpaRepository<Workshop, Serializable> {
     public abstract List<Workshop> findAll();
