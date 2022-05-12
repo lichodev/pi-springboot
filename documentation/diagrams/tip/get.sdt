@@ -1,1 +1,0 @@
-({"_classDescription":{"_className":"com.ml.primerainfanciarest.controllers.TipController","_attributes":["public"]},"_methodName":"get","_attributes":["public"],"_argNames":[],"_argTypes":[],"_returnType":"java.util.List\u003ccom.ml.primerainfanciarest.models.TipModel\u003e","offset":1110} )
