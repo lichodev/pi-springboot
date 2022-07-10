@@ -62,7 +62,7 @@ public class TipController {
     @PostMapping()
     public boolean post(@RequestParam("title") String title, @RequestParam("text") String text, @RequestParam("file") MultipartFile image) {
         if (image.isEmpty()) return false;
-        byte[] byteImage = FileHelper.saveFile(image, "images/tips");
+        byte[] byteImage = FileHelper.getBytesFile(image);
         if (byteImage != null) {
             Tip tip = new Tip(title, text, FileHelper.compressBytes(byteImage), 0, 0);
             return this.service.post(tip);

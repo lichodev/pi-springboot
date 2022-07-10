@@ -1,9 +1,6 @@
 package com.ml.primerainfanciarest.entities;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Objects;
 
 /**
@@ -33,6 +30,7 @@ public class Tip {
         this.dislikes = dislikes;
     }
 
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id")
     public int getId() {
@@ -64,7 +62,7 @@ public class Tip {
     }
 
     @Basic
-    @Column(name = "image")
+    @Column(name = "image" )
     public byte[] getImage() {
         return image;
     }

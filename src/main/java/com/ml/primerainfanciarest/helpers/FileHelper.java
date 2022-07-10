@@ -4,9 +4,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.zip.DataFormatException;
 import java.util.zip.Deflater;
 import java.util.zip.Inflater;
@@ -21,16 +18,11 @@ public interface FileHelper {
      * Guarda el File recibido en el path indicado
      * Devuelve la imagen/audio/video como un conjunto de bytes
      * @param file
-     * @param path
      * @return
      */
-    public static byte[] saveFile(MultipartFile file, String path) {
-        Path directory = Paths.get(MAIN_PATH + path);
-        String absolutePath = directory.toFile().getAbsolutePath();
+    public static byte[] getBytesFile(MultipartFile file) {
         try {
             byte[] byteFile = file.getBytes();
-            Path imageCompletePath = Paths.get(absolutePath + "//" + file.getOriginalFilename());
-            Files.write(imageCompletePath, byteFile);
             return byteFile;
         } catch (IOException e) {
             e.printStackTrace();

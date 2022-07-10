@@ -1,20 +1,14 @@
 package com.ml.primerainfanciarest.controllers;
 
 import com.ml.primerainfanciarest.entities.Reminder;
-import com.ml.primerainfanciarest.entities.Tip;
 import com.ml.primerainfanciarest.helpers.FileHelper;
 import com.ml.primerainfanciarest.models.ReminderModel;
 import com.ml.primerainfanciarest.services.ReminderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.List;
 
 /**
@@ -66,7 +60,7 @@ public class ReminderController {
     @PostMapping()
     public boolean post(@RequestParam("since") int since, @RequestParam("until") int until, @RequestParam("file") MultipartFile image) {
         if (image.isEmpty()) return false;
-        byte[] byteImage = FileHelper.saveFile(image, "images/reminders");
+        byte[] byteImage = FileHelper.getBytesFile(image);
         if (byteImage != null) {
             Reminder reminder = new Reminder(since, until, FileHelper.compressBytes(byteImage), 0, 0);
             return this.service.post(reminder);

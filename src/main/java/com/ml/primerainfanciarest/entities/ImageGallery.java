@@ -24,6 +24,7 @@ public class ImageGallery {
         this.description = description;
     }
 
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id")
     public int getId() {

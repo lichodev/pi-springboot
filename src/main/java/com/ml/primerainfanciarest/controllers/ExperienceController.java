@@ -1,21 +1,14 @@
 package com.ml.primerainfanciarest.controllers;
 
 import com.ml.primerainfanciarest.entities.Experience;
-import com.ml.primerainfanciarest.entities.Reminder;
-import com.ml.primerainfanciarest.entities.Tip;
 import com.ml.primerainfanciarest.helpers.FileHelper;
 import com.ml.primerainfanciarest.models.ExperienceModel;
 import com.ml.primerainfanciarest.services.ExperienceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.List;
 
 /**
@@ -67,7 +60,7 @@ public class ExperienceController {
     @PostMapping()
     public boolean post(@RequestParam("text") String text, @RequestParam(value = "file", required=false) MultipartFile image) {
         if (!image.isEmpty()) {
-            byte[] byteImage = FileHelper.saveFile(image, "images/experiences");
+            byte[] byteImage = FileHelper.getBytesFile(image);
             if (byteImage != null) {
                 Experience experience = new Experience(text, FileHelper.compressBytes(byteImage), false);
                 return this.service.post(experience);

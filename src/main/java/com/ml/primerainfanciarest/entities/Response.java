@@ -25,6 +25,7 @@ public class Response {
         this.questionId = questionId;
     }
 
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id")
     public int getId() {

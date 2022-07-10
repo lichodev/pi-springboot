@@ -15,6 +15,8 @@
     <description>primeraInfanciaRest</description>
     <properties>
         <java.version>11</java.version>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     <dependencies>
         <dependency>
@@ -73,10 +75,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <source>3.5.2</source>
-                    <target>3.5.2</target>
-                </configuration>
             </plugin>
         </plugins>
     </build>

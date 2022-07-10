@@ -24,6 +24,7 @@ public class UserPi {
         this.password = password;
     }
 
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id")
     public int getId() {
