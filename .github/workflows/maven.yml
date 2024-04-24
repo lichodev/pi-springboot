@@ -27,6 +27,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-    - name: Build with Maven
-      run: mvn clean verify
-    - run: ls target/
+    - name: Install dependencies
+      run: mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+    - name: Run tests and collect coverage
+      run: mvn -B test
