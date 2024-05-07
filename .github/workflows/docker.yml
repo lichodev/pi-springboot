@@ -28,8 +28,6 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-        if: false
 
       - name: "Push Docker images"
         run: "docker push -a ${{ env.NAME }}"
-        if: false
