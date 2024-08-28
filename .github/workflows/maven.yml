@@ -11,9 +11,19 @@ name: Java CI with Maven
 on:
   push:
     branches: [ "master" ]
+    paths:
+      - "src/**"
+      - Dockerfile
+      - mwnw*
+      - pom.xml
   pull_request:
     branches: [ "master" ]
-
+    paths:
+      - "src/**"
+      - Dockerfile
+      - mwnw*
+      - pom.xml
+      
 jobs:
   test:
 

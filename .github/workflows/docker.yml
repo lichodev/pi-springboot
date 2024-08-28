@@ -39,4 +39,4 @@ jobs:
         with:
           node-version: 20
       - name: Redeploy stack on Portainer
-        run: node redeploy.mjs
+        run: node ./redeploy.mjs
