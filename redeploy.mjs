@@ -1,23 +1,25 @@
-const API = "https://priminf.unicen.edu.ar/portainer/api";
+const API = "https://priminf.lichodev.com.ar/portainer/api";
+const id = 1;
+const endpointId = 2;
 const headers = {
   "X-API-Key": process.env.PORTAINER_ACCESS_TOKEN,
 };
 
 let body = {
-  id: 1,
+  id,
   prune: true,
   pullImage: true,
 };
 
 let { StackFileContent } = await (
-  await fetch(`${API}/stacks/1/file`, { headers })
+  await fetch(`${API}/stacks/${id}/file`, { headers })
 ).json();
 
-let { Env } = await (await fetch(`${API}/stacks/1`, { headers })).json();
+let { Env } = await (await fetch(`${API}/stacks/${id}`, { headers })).json();
 
 body = { ...body, stackFileContent: StackFileContent, env: Env };
 
-const { ok, status } = await fetch(`${API}/stacks/1?endpointId=2`, {
+const { ok, status } = await fetch(`${API}/stacks/${id}?endpointId=${endpointId}`, {
   headers,
   body: JSON.stringify(body),
   method: "PUT",
